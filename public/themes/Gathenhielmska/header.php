@@ -40,6 +40,8 @@ if (is_front_page()) {
 
             </ul>
         </div>
+
+        <?php get_search_form(); ?>
     </nav>
 
     <div class="container">
