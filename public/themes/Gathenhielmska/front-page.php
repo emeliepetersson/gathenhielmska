@@ -25,7 +25,10 @@
                                                                                     ?></p> -->
                     <?php if (has_post_thumbnail()) : ?>
 
-                        <div class="swiper-slide"> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a> </div>
+                        <div class="swiper-slide">
+                            <div class="slider-text"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
+                            <?php the_post_thumbnail(); ?>
+                        </div>
                         <!-- <p><?php //the_excerpt();
                                 ?></p> -->
             <?php
