@@ -1,54 +1,66 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : ?>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <?php if (have_posts()) : ?>
 
-    <!-- ******* Display featured news! ******* -->
-    <div>
-        <?php
-        $args = array(
-            'news_per_page' => 5,
-            'meta_key' => 'meta-checkbox',
-            'post_type' => 'news',
-            'meta_value' => 'yes'
-        );
-        $featured = new WP_Query($args);
+            <!-- ******* Display featured news! ******* -->
 
-        if ($featured->have_posts()) : while ($featured->have_posts()) : $featured->the_post(); ?>
-                <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
-                <p class="details">By <a href="<?php the_author_posts() ?>"><?php the_author(); ?> </a> / On <?php echo get_the_date('F j, Y'); ?> / In <?php the_category(', '); ?></p>
-                <?php if (has_post_thumbnail()) : ?>
+            <?php
+            $args = array(
+                'news_per_page' => 5,
+                'meta_key' => 'meta-checkbox',
+                'post_type' => 'news',
+                'meta_value' => 'yes'
+            );
+            $featured = new WP_Query($args);
 
-                    <figure> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a> </figure>
-                    <p><?php the_excerpt(); ?></p>
-        <?php
-                endif;
-            endwhile;
-        else :
-        endif;
-        ?>
-    </div>
+            if ($featured->have_posts()) : while ($featured->have_posts()) : $featured->the_post(); ?>
+                    <!-- <h3><a href="<?php //the_permalink();
+                                        ?>"> <?php //the_title();
+                                                ?></a></h3> -->
+                    <!-- <p class="details">By <a href="<?php //the_author_posts()
+                                                        ?>"><?php //the_author();
+                                                            ?> </a> / On <?php //echo get_the_date('F j, Y');
+                                                                            ?> / In <?php //the_category(', ');
+                                                                                    ?></p> -->
+                    <?php if (has_post_thumbnail()) : ?>
 
-    <!-- ******* END OF Display featured news! ******* -->
-
-    <div>
-        <?php while (have_posts()) : the_post(); ?>
-
-            <div>
-                <h1><?php the_title(); ?></h1>
-                <?php if (has_post_thumbnail()) : ?>
-                    <div>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                            <?php the_post_thumbnail(); ?>
-                        </a>
-                    </div>
-
-                <?php endif; ?>
-                <?php the_content(); ?>
-
-            </div>
-
-        <?php endwhile; ?>
+                        <div class="swiper-slide"> <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a> </div>
+                        <!-- <p><?php //the_excerpt();
+                                ?></p> -->
+            <?php
+                    endif;
+                endwhile;
+            else :
+            endif;
+            ?>
 
     </div>
+    <div class="swiper-pagination swiper-pagination-black"></div>
+</div>
+
+<!-- ******* END OF Display featured news! ******* -->
+
+<div>
+    <?php while (have_posts()) : the_post(); ?>
+
+        <div>
+            <h1><?php the_title(); ?></h1>
+            <?php if (has_post_thumbnail()) : ?>
+                <div>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
+                </div>
+
+            <?php endif; ?>
+            <?php the_content(); ?>
+
+        </div>
+
+    <?php endwhile; ?>
+
+</div>
 <?php endif; ?>
 
 <?php get_footer(); ?>
