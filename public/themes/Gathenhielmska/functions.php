@@ -13,8 +13,11 @@ add_filter('show_admin_bar', '__return_false');
 function custom_stylesheet()
 {
     // link style sheets
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/css/swiper.css');
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('calendar', get_template_directory_uri() . '/assets/styles/calendar.css');
+    wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper.js',  array(), 5.2, true);
+    wp_enqueue_script('interaction', get_template_directory_uri() . '/js/interaction.js', array(), 1.0, true);
 }
 
 // Call custom stylesheet function
