@@ -34,12 +34,22 @@ if (is_front_page()) {
                     <li class="
                     <?php $obj_id = get_queried_object_id();
                     $current_url = get_permalink($obj_id);
-
+                    if ($page->post_parent) {
+                        echo "hide ";
+                    }
                     // Add active state to current url
                     if ($current_url === get_page_link($page->ID)) {
                         echo "active";
-                    }; ?>
+                    }
+                    ?>
                     ">
+                        <?php
+                        $children = get_pages(['child_of' => $page->ID]);
+
+                        if (!$page->post_parent && count($children) > 0) { ?>
+                            <p class="show">+</p> <?php
+                                                }
+                                                    ?>
                         <a href="<?php echo get_page_link($page->ID); ?>"><?php echo $page->post_title; ?></a>
                     </li>
                 <?php endforeach; ?>
