@@ -1,0 +1,28 @@
+/* HAMBURGER ICON */
+.hamburger {
+  width: 2em;
+  margin: 20px;
+
+  .bar1,
+  .bar2 {
+    width: 2.2em;
+    border-radius: 1em;
+    height: 0.2em;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .bar2 {
+    margin-top: 0.6em;
+  }
+}
+
+/* When clicking on hamburger icon */
+.change {
+  .bar1 {
+    transform: rotate(-45deg) translate(-0.5em, 0.1em);
+  }
+  .bar2 {
+    transform: rotate(45deg) translate(-0.5em, -0.1em);
+  }
+}
