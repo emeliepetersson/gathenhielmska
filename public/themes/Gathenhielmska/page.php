@@ -17,15 +17,6 @@
                 <?php endif; ?>
                 <?php the_content(); ?>
 
-                <div>
-                    <div>
-                        <?php echo previous_post_link(); ?>
-                    </div>
-                    <div>
-                        <?php echo next_post_link(); ?>
-                    </div>
-                </div>
-
             </div>
 
         <?php endwhile; ?>
