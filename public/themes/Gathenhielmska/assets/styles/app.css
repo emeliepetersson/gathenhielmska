@@ -6,3 +6,22 @@
 ul {
   list-style-type: none;
 }
+
+/* Slider styles */
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.slider-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
