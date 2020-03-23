@@ -1,27 +1,59 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : ?>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <?php if (have_posts()) : ?>
 
-    <div>
+            <!-- ******* Display featured news! ******* -->
 
-        <?php while (have_posts()) : the_post(); ?>
+            <?php
+            $args = array(
+                'news_per_page' => 5,
+                'meta_key' => 'meta-checkbox',
+                'post_type' => 'news',
+                'meta_value' => 'yes'
+            );
+            $featured = new WP_Query($args);
 
-            <div>
-                <h1><?php the_title(); ?></h1>
-                <?php if (has_post_thumbnail()) : ?>
-                    <div>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+            if ($featured->have_posts()) : while ($featured->have_posts()) : $featured->the_post(); ?>
+                    <?php if (has_post_thumbnail()) : ?>
+
+                        <div class="swiper-slide">
+                            <div class="slider-text"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
                             <?php the_post_thumbnail(); ?>
-                        </a>
-                    </div>
-
-                <?php endif; ?>
-                <?php the_content(); ?>
-
-            </div>
-
-        <?php endwhile; ?>
+                        </div>
+            <?php
+                    endif;
+                endwhile;
+            else :
+            endif;
+            ?>
 
     </div>
+    <div class="swiper-pagination swiper-pagination-black"></div>
+</div>
+
+<!-- ******* END OF Display featured news! ******* -->
+
+<div>
+    <?php while (have_posts()) : the_post(); ?>
+
+        <div>
+            <h1><?php the_title(); ?></h1>
+            <?php if (has_post_thumbnail()) : ?>
+                <div>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
+                </div>
+
+            <?php endif; ?>
+            <?php the_content(); ?>
+
+        </div>
+
+    <?php endwhile; ?>
+
+</div>
 <?php endif; ?>
 
 <?php get_footer(); ?>
