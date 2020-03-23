@@ -53,3 +53,7 @@ nav .container {
 .hide {
   display: none;
 }
+
+.showChild {
+  display: block;
+}
