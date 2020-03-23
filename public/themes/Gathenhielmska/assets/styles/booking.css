@@ -1,0 +1,15 @@
+.areas {
+  width: 100%;
+}
+
+.areas img {
+  width: 100%;
+}
+
+.areas .area-wrapper {
+  display: none;
+}
+
+.areas .show {
+  display: block;
+}
