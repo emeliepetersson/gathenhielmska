@@ -13,7 +13,12 @@ add_filter('show_admin_bar', '__return_false');
 function custom_stylesheet()
 {
     // link style sheets
-    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('style', get_template_directory_uri() . '/assets/styles/app.css');
+    wp_enqueue_style('nav', get_template_directory_uri() . '/assets/styles/nav.css');
+
+    // link scripts
+    wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/app.js', array(), 1.0, true);
+    wp_enqueue_script('hamburger menu', get_template_directory_uri() . '/assets/scripts/nav.js', array(), 1.0, true);
 }
 
 // Call custom stylesheet function
