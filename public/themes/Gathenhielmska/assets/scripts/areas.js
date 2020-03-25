@@ -1,9 +1,9 @@
 "use strict";
 
-const expandArrows = document.querySelectorAll(".expand-arrow");
+const showAreaIcons = document.querySelectorAll(".show-area");
 
-expandArrows.forEach(expandArrow => {
-  expandArrow.addEventListener("click", e => {
+showAreaIcons.forEach(showAreaIcon => {
+  showAreaIcon.addEventListener("click", e => {
     const description = e.currentTarget.parentElement.nextElementSibling;
     description.classList.toggle("show");
   });
