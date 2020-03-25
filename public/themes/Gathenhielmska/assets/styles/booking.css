@@ -1,4 +1,8 @@
 /** GENERAL STYLING **/
+.container-booking {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .container-booking h1 {
   margin: 10px 0;
 }
@@ -113,13 +117,15 @@
 }
 
 /* checkboxes */
+
 .wpcf7
   .wpcf7-form
   p
   .wpcf7-form-control-wrap
   .wpcf7-form-control
   .wpcf7-list-item {
-  margin-left: 0;
+  margin: 5px 0;
+  display: block;
 }
 
 /* Button */
@@ -131,6 +137,7 @@
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 20px 0;
 }
 
 .wpcf7 .wpcf7-form p input[type="submit"]:hover {
