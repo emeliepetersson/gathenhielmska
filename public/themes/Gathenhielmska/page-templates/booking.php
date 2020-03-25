@@ -13,14 +13,15 @@
             </div>
 
             <div class="areas">
+                <h2>Lokaler</h2>
                 <?php
 
                 if (have_rows("bookable_areas")) :
                     while (have_rows("bookable_areas")) : the_row();
                 ?>
-                        <div>
+                        <div class="title-wrapper">
                             <h3><?php the_sub_field("name"); ?></h3>
-                            <img src="public/themes/Gathenhielmska/assets/images/expand-arrow.png" class="expand-arrow" alt="expand arrow">
+                            <img src="/themes/Gathenhielmska/assets/images/expand-arrow.png" class="expand-arrow" alt="expand arrow">
                         </div>
 
                         <div class="area-wrapper">
@@ -34,7 +35,9 @@
 
                 ?>
             </div>
+            <?php echo do_shortcode('[contact-form-7 id="53" title="Contact form 1"]'); ?>
         <?php endwhile; ?>
+
 
     </div>
 <?php endif; ?>
