@@ -12,17 +12,23 @@ add_filter('show_admin_bar', '__return_false');
 // stylesheets and scripts
 function custom_stylesheet()
 {
+    // link fonts
+    wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap', false);
+
     // link style sheets
     wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/styles/swiper.css');
+    wp_enqueue_style('plus icon', get_template_directory_uri() . '/assets/styles/plus-icon.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/styles/app.css');
     wp_enqueue_style('nav', get_template_directory_uri() . '/assets/styles/nav.css');
     wp_enqueue_style('booking', get_template_directory_uri() . '/assets/styles/booking.css');
+
 
     // link scripts
     wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/scripts/swiper.js',  array(), 5.2, true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/scripts/app.js', array(), 1.0, true);
     wp_enqueue_script('hamburger menu', get_template_directory_uri() . '/assets/scripts/nav.js', array(), 1.0, true);
     wp_enqueue_script('areas', get_template_directory_uri() . '/assets/scripts/areas.js', array(), 1.0, true);
+    wp_enqueue_script('plus icon', get_template_directory_uri() . '/assets/scripts/plus-icons.js', array(), 1.0, true);
 }
 
 // Call custom stylesheet function
