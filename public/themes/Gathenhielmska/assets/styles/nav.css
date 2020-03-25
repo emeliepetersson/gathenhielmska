@@ -19,6 +19,7 @@ nav .container {
 .hamburger {
   width: 2em;
   margin: 20px;
+  z-index: 11;
 }
 
 .hamburger .bar1,
@@ -35,10 +36,10 @@ nav .container {
 }
 
 /* When clicking on hamburger icon */
-.change .bar1 {
+.hamburger.change .bar1 {
   transform: rotate(-45deg) translate(-0.5em, 0.1em);
 }
-.change .bar2 {
+.hamburger.change .bar2 {
   transform: rotate(45deg) translate(-0.5em, -0.1em);
 }
 

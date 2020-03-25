@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -9,6 +10,16 @@ ul {
 
 body {
   padding: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
 }
 
 /* Slider styles */
