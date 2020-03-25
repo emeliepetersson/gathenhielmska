@@ -7,6 +7,10 @@ ul {
   list-style-type: none;
 }
 
+body {
+  padding: 20px;
+}
+
 /* Slider styles */
 .swiper-container {
   width: 100%;

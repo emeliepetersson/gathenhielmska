@@ -1,3 +1,9 @@
+/** GENERAL STYLING **/
+h2 {
+  margin-top: 30px;
+}
+
+/** BOOKING AREAS **/
 .areas {
   width: 100%;
 }
@@ -10,6 +16,104 @@
   display: none;
 }
 
+.areas .title-wrapper {
+  display: flex;
+}
+
 .areas .show {
   display: block;
+}
+
+.areas .expand-arrow {
+  width: 34px;
+}
+
+/** BOOKING FORM **/
+.wpcf7-form {
+  width: 100%;
+  margin-right: 0;
+}
+
+.wpcf7-form p {
+  margin: 10px 0;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 50px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Bookable areas */
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding-left: 23px;
+  height: 50px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* time */
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap .start-time,
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap .stop-time {
+  width: 40%;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap {
+  width: 47%;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
+  background-color: #f3f3f3;
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+
+.wpcf7 .wpcf7-form .time {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Image */
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input[type="file"] {
+  padding-top: 23px;
+}
+
+/* Description/textarea */
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+  height: 200px;
+  padding-top: 23px;
+}
+
+/* checkboxes */
+.wpcf7
+  .wpcf7-form
+  p
+  .wpcf7-form-control-wrap
+  .wpcf7-form-control
+  .wpcf7-list-item {
+  margin-left: 0;
+}
+
+/* Button */
+.wpcf7 .wpcf7-form p input[type="submit"] {
+  border: 2px solid black;
+  width: 177px;
+  height: 51px;
+  background-color: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wpcf7 .wpcf7-form p input[type="submit"]:hover {
+  border: 3px inset rgb(161, 157, 157);
+  color: rgb(73, 72, 72);
 }
