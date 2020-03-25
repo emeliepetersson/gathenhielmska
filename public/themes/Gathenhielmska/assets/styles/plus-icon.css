@@ -1,0 +1,21 @@
+.plus-icon {
+  width: 20px;
+  margin: 20px;
+}
+
+.plus-icon .bar1,
+.plus-icon .bar2 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.plus-icon .bar2 {
+  margin-top: -1px;
+  transform: rotate(90deg);
+}
+
+.plus-icon.change .bar2 {
+  transform: rotate(0deg);
+}

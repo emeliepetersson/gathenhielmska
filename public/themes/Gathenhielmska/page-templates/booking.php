@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 
-    <div>
+    <div class="container-booking">
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -21,7 +21,10 @@
                 ?>
                         <div class="title-wrapper">
                             <h3><?php the_sub_field("name"); ?></h3>
-                            <img src="/themes/Gathenhielmska/assets/images/expand-arrow.png" class="expand-arrow" alt="expand arrow">
+                            <div class="show-area plus-icon">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
                         </div>
 
                         <div class="area-wrapper">
