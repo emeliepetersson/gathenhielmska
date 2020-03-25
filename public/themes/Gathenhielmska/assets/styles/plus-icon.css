@@ -1,6 +1,7 @@
 .plus-icon {
-  width: 20px;
-  margin: 20px;
+  width: 30px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .plus-icon .bar1,
