@@ -21,6 +21,7 @@ function custom_stylesheet()
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/styles/app.css');
     wp_enqueue_style('nav', get_template_directory_uri() . '/assets/styles/nav.css');
     wp_enqueue_style('booking', get_template_directory_uri() . '/assets/styles/booking.css');
+    wp_enqueue_style('contact', get_template_directory_uri() . '/assets/styles/contact.css');
 
 
     // link scripts
