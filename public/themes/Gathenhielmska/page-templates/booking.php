@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 
-    <div class="container-booking">
+    <div class="container container-booking">
 
         <?php while (have_posts()) : the_post(); ?>
 
