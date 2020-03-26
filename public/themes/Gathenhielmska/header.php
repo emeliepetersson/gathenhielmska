@@ -19,9 +19,9 @@ if (is_front_page()) {
 <body <?php body_class($awesome_classes); ?>>
 
 
-    <nav>
+    <nav class="container">
         <a href="/index.php">Gathenhielmska</a>
-        <div class="container">
+        <div class="menu-container">
             <?php get_search_form(); ?>
             <div class="hamburger">
                 <div class="bar1"></div>
@@ -57,4 +57,4 @@ if (is_front_page()) {
     </nav>
 
 
-    <div class="container">
+    <div>
