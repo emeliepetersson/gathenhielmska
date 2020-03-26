@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 
-    <div class="container-booking">
+    <div class="container container-booking">
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -18,9 +18,9 @@
                 if (have_rows("bookable_areas")) :
                     while (have_rows("bookable_areas")) : the_row();
                 ?>
-                        <div class="title-wrapper">
+                        <div class="show-area title-wrapper">
                             <h3><?php the_sub_field("name"); ?></h3>
-                            <div class="show-area plus-icon">
+                            <div class="plus-icon">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                             </div>

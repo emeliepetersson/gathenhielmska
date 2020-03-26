@@ -2,9 +2,8 @@
 
 <?php get_header(); ?>
 
-<?php if (have_posts()) : ?>
-
-    <div>
+<div class="container">
+    <?php if (have_posts()) : ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -15,8 +14,8 @@
 
         <?php endwhile; ?>
 
-    </div>
-<?php endif; ?>
-<?php echo do_shortcode('[contact-form-7 id="104" title="Kontakta oss"]'); ?>
 
+    <?php endif; ?>
+    <?php echo do_shortcode('[contact-form-7 id="104" title="Kontakta oss"]'); ?>
+</div>
 <?php get_footer(); ?>
