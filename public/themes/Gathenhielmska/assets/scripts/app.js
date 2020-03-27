@@ -99,6 +99,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _general__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./general */ "./resources/scripts/general.js");
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
+/* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
+
 
 
 
@@ -170,20 +172,20 @@ __webpack_require__.r(__webpack_exports__);
 
 var hamburger = document.querySelector(".hamburger");
 var menuItems = document.querySelector(".menu-items");
-var hideChild = document.querySelectorAll(".hide");
-var show = document.querySelectorAll(".show-child"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
+var hideChild = document.querySelectorAll(".hide-child");
+var parent = document.querySelectorAll(".parent"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
 
 var menu = function () {
   hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("change");
     menuItems.classList.toggle("show-menu");
   });
-  show[0].addEventListener("click", function () {
-    hideChild[0].classList.toggle("showChild");
-    hideChild[1].classList.toggle("showChild");
+  parent[0].addEventListener("click", function () {
+    hideChild[0].classList.toggle("show-child");
+    hideChild[1].classList.toggle("show-child");
   });
-  show[1].addEventListener("click", function () {
-    hideChild[2].classList.toggle("showChild");
+  parent[1].addEventListener("click", function () {
+    hideChild[2].classList.toggle("show-child");
   });
 }();
 
@@ -211,6 +213,29 @@ var eventListenerForPlusIcons = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (eventListenerForPlusIcons);
+
+/***/ }),
+
+/***/ "./resources/scripts/search-form.js":
+/*!******************************************!*\
+  !*** ./resources/scripts/search-form.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var searchIcon = document.querySelector("#search");
+var searchInput = document.querySelector("#search-input");
+
+var searchForm = function () {
+  searchIcon.addEventListener("click", function (e) {
+    e.preventDefault();
+    searchInput.classList.add("show");
+  });
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (searchForm);
 
 /***/ }),
 
