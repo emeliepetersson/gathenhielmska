@@ -2,8 +2,8 @@
 
 const hamburger = document.querySelector(".hamburger");
 const menuItems = document.querySelector(".menu-items");
-const hideChild = document.querySelectorAll(".hide");
-const show = document.querySelectorAll(".show-child");
+const hideChild = document.querySelectorAll(".hide-child");
+const parent = document.querySelectorAll(".parent");
 
 // Toggle between class names to show/hide menu items and change styling to menu and icon.
 const menu = (function() {
@@ -12,13 +12,13 @@ const menu = (function() {
     menuItems.classList.toggle("show-menu");
   });
 
-  show[0].addEventListener("click", () => {
-    hideChild[0].classList.toggle("showChild");
-    hideChild[1].classList.toggle("showChild");
+  parent[0].addEventListener("click", () => {
+    hideChild[0].classList.toggle("show-child");
+    hideChild[1].classList.toggle("show-child");
   });
 
-  show[1].addEventListener("click", () => {
-    hideChild[2].classList.toggle("showChild");
+  parent[1].addEventListener("click", () => {
+    hideChild[2].classList.toggle("show-child");
   });
 })();
 
