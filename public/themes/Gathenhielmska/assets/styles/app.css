@@ -35,9 +35,12 @@
 .areas .title-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: white;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.areas .title-wrapper .plus-icon {
+  z-index: -1;
 }
 
 .areas .show {
