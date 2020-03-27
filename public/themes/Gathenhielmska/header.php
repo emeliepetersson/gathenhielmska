@@ -46,9 +46,9 @@ if (is_front_page()) {
                         $children = get_pages(['child_of' => $page->ID]);
 
                         if (!$page->post_parent && count($children) > 0) { ?>
-                            <p class="show">+</p> <?php
-                                                }
-                                                    ?>
+                            <p class="show-child">+</p> <?php
+                                                    }
+                                                        ?>
                         <a href="<?php echo get_page_link($page->ID); ?>"><?php echo $page->post_title; ?></a>
                     </li>
                 <?php endforeach; ?>

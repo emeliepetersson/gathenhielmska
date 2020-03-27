@@ -171,7 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 var hamburger = document.querySelector(".hamburger");
 var menuItems = document.querySelector(".menu-items");
 var hideChild = document.querySelectorAll(".hide");
-var show = document.querySelectorAll(".show"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
+var show = document.querySelectorAll(".show-child"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
 
 var menu = function () {
   hamburger.addEventListener("click", function () {
@@ -180,9 +180,10 @@ var menu = function () {
   });
   show[0].addEventListener("click", function () {
     hideChild[0].classList.toggle("showChild");
+    hideChild[1].classList.toggle("showChild");
   });
   show[1].addEventListener("click", function () {
-    hideChild[1].classList.toggle("showChild");
+    hideChild[2].classList.toggle("showChild");
   });
 }();
 
