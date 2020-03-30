@@ -173,19 +173,44 @@ __webpack_require__.r(__webpack_exports__);
 var hamburger = document.querySelector(".hamburger");
 var menuItems = document.querySelector(".menu-items");
 var hideChild = document.querySelectorAll(".hide-child");
-var parent = document.querySelectorAll(".parent"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
+var parents = document.querySelectorAll(".parent");
+
+var togglePlusIcon = function togglePlusIcon(e) {
+  var plusIcon = e.currentTarget.querySelector(".plus-icon");
+  plusIcon.classList.toggle("change");
+};
 
 var menu = function () {
   hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("change");
     menuItems.classList.toggle("show-menu");
-  });
-  parent[0].addEventListener("click", function () {
+  }); //Show child-pages when parent is the active nav-link
+
+  if (parents[0].classList.contains("active")) {
+    hideChild[0].classList.add("show-child");
+    hideChild[1].classList.add("show-child");
+  }
+
+  if (parents[1].classList.contains("active")) {
+    hideChild[2].classList.add("show-child");
+  } // Toggle between class names to show/hide menu items and change styling to menu and icon.
+
+
+  parents[0].addEventListener("click", function (e) {
     hideChild[0].classList.toggle("show-child");
     hideChild[1].classList.toggle("show-child");
+    togglePlusIcon(e);
   });
-  parent[1].addEventListener("click", function () {
+  parents[1].addEventListener("click", function (e) {
     hideChild[2].classList.toggle("show-child");
+    togglePlusIcon(e);
+  }); // Hide menu when clicking on anything else than menu-elements
+
+  window.addEventListener("click", function (e) {
+    if (e.target != menuItems && e.target != hamburger && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
+      menuItems.classList.remove("show-menu");
+      hamburger.classList.remove("change");
+    }
   });
 }();
 

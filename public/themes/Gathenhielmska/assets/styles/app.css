@@ -37,6 +37,7 @@
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .areas .title-wrapper .plus-icon {
@@ -215,20 +216,31 @@ nav .show-menu {
 }
 
 nav .show-menu li {
-  padding-bottom: 20px;
+  margin: 15px 0 10px;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+nav .show-menu li a:hover {
+  color: #4e4d4d;
 }
 
 nav .show-menu li .plus-icon {
   display: inline-block;
   padding-top: 13px;
+  z-index: -1;
 }
 
 nav .show-menu .parent {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+nav .show-menu .active a {
+  border-bottom: 1px solid black;
 }
 
 nav .show-menu .hide-child {
@@ -238,18 +250,19 @@ nav .show-menu .hide-child {
 nav .show-menu .show-child {
   display: block;
   text-transform: initial;
-  font-size: 18px;
+  font-size: 17px;
+  margin: 10px 0 0;
 }
 
 nav .show-menu .logo {
   display: block;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 nav .show-menu .languages {
   position: absolute;
   left: 30px;
-  bottom: 90px;
+  bottom: 80px;
   font-size: 16px;
 }
 
@@ -267,27 +280,34 @@ nav .hamburger {
   width: 30px;
   margin-left: 20px;
   z-index: 11;
+  cursor: pointer;
 }
 
 nav .hamburger .bar1,
-nav .hamburger .bar2 {
-  width: 35px;
+nav .hamburger .bar2,
+nav .hamburger .bar3 {
+  width: 30px;
   border-radius: 2px;
-  height: 1.5px;
+  height: 1px;
   background-color: black;
   transition: 0.3s;
 }
 
-nav .hamburger .bar2 {
-  margin-top: 10px;
+nav .hamburger .bar2,
+nav .hamburger .bar3 {
+  margin-top: 8px;
 }
 
 nav .hamburger.change .bar1 {
-  transform: rotate(-45deg) translate(-7px, 1px);
+  transform: rotate(-45deg) translate(-5.7px, 1px);
 }
 
 nav .hamburger.change .bar2 {
-  transform: rotate(45deg) translate(-7px, -1px);
+  display: none;
+}
+
+nav .hamburger.change .bar3 {
+  transform: rotate(45deg) translate(-5.7px, -1px);
 }
 
 .plus-icon {
