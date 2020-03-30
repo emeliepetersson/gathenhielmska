@@ -18,7 +18,12 @@
                     <?php if (has_post_thumbnail()) : ?>
 
                         <div class="swiper-slide">
-                            <div class="slider-text"><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></div>
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="slider-text">
+                                    <h2><?php the_title(); ?></h2>
+                                    <?php the_excerpt(); ?>
+                                </div>
+                            </a>
                             <?php the_post_thumbnail(); ?>
                         </div>
             <?php

@@ -18,16 +18,17 @@ nav {
 
       &.show {
         display: flex;
-        width: 150px;
+        width: 140px;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
       }
       input[type=text] {
-        height: 30px;
+        height: 15px;
         width: 120px;
         padding-left: 5px;
+        background-color: transparent;
         border: none;
-        box-shadow: inset 4px 4px 5px #d3d1d1;
+        border-bottom: 1px solid black;
       }
     }
     .search-icon {
