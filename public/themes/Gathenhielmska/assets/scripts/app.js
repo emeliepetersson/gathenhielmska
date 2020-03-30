@@ -99,6 +99,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _general__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./general */ "./resources/scripts/general.js");
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
+/* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
+
 
 
 
@@ -170,19 +172,45 @@ __webpack_require__.r(__webpack_exports__);
 
 var hamburger = document.querySelector(".hamburger");
 var menuItems = document.querySelector(".menu-items");
-var hideChild = document.querySelectorAll(".hide");
-var show = document.querySelectorAll(".show"); // Toggle between class names to show/hide menu items and change styling to menu and icon.
+var hideChild = document.querySelectorAll(".hide-child");
+var parents = document.querySelectorAll(".parent");
+
+var togglePlusIcon = function togglePlusIcon(e) {
+  var plusIcon = e.currentTarget.querySelector(".plus-icon");
+  plusIcon.classList.toggle("change");
+};
 
 var menu = function () {
   hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("change");
     menuItems.classList.toggle("show-menu");
+  }); //Show child-pages when parent is the active nav-link
+
+  if (parents[0].classList.contains("active")) {
+    hideChild[0].classList.add("show-child");
+    hideChild[1].classList.add("show-child");
+  }
+
+  if (parents[1].classList.contains("active")) {
+    hideChild[2].classList.add("show-child");
+  } // Toggle between class names to show/hide menu items and change styling to menu and icon.
+
+
+  parents[0].addEventListener("click", function (e) {
+    hideChild[0].classList.toggle("show-child");
+    hideChild[1].classList.toggle("show-child");
+    togglePlusIcon(e);
   });
-  show[0].addEventListener("click", function () {
-    hideChild[0].classList.toggle("showChild");
-  });
-  show[1].addEventListener("click", function () {
-    hideChild[1].classList.toggle("showChild");
+  parents[1].addEventListener("click", function (e) {
+    hideChild[2].classList.toggle("show-child");
+    togglePlusIcon(e);
+  }); // Hide menu when clicking on anything else than menu-elements
+
+  window.addEventListener("click", function (e) {
+    if (e.target != menuItems && e.target != hamburger && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
+      menuItems.classList.remove("show-menu");
+      hamburger.classList.remove("change");
+    }
   });
 }();
 
@@ -210,6 +238,29 @@ var eventListenerForPlusIcons = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (eventListenerForPlusIcons);
+
+/***/ }),
+
+/***/ "./resources/scripts/search-form.js":
+/*!******************************************!*\
+  !*** ./resources/scripts/search-form.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var searchIcon = document.querySelector(".search-icon");
+var searchForm = document.querySelector(".search-form");
+
+var showSearchForm = function () {
+  searchIcon.addEventListener("click", function (e) {
+    searchForm.classList.add("show");
+    searchIcon.classList.add("hide");
+  });
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (showSearchForm);
 
 /***/ }),
 
