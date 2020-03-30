@@ -191,12 +191,31 @@ nav .menu-container {
   align-items: center;
 }
 
-nav .menu-container .search-form input[type=text] {
+nav .menu-container .search-form {
   display: none;
 }
 
-nav .menu-container .search-form input[type=text].show {
-  display: inline-block;
+nav .menu-container .search-form.show {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-container .search-form input[type=text] {
+  height: 30px;
+  width: 120px;
+  padding-left: 5px;
+  border: none;
+  box-shadow: inset 4px 4px 5px #d3d1d1;
+}
+
+nav .menu-container .search-icon {
+  cursor: pointer;
+}
+
+nav .menu-container .search-icon.hide {
+  display: none;
 }
 
 nav .menu-items {

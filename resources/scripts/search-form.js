@@ -1,11 +1,11 @@
-const searchIcon = document.querySelector("#search");
-const searchInput = document.querySelector("#search-input");
+const searchIcon = document.querySelector(".search-icon");
+const searchForm = document.querySelector(".search-form");
 
-const searchForm = (function() {
+const showSearchForm = (function() {
   searchIcon.addEventListener("click", e => {
-    e.preventDefault();
-    searchInput.classList.add("show");
+    searchForm.classList.add("show");
+    searchIcon.classList.add("hide");
   });
 })();
 
-export default searchForm;
+export default showSearchForm;

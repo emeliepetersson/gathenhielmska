@@ -250,17 +250,17 @@ var eventListenerForPlusIcons = function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var searchIcon = document.querySelector("#search");
-var searchInput = document.querySelector("#search-input");
+var searchIcon = document.querySelector(".search-icon");
+var searchForm = document.querySelector(".search-form");
 
-var searchForm = function () {
+var showSearchForm = function () {
   searchIcon.addEventListener("click", function (e) {
-    e.preventDefault();
-    searchInput.classList.add("show");
+    searchForm.classList.add("show");
+    searchIcon.classList.add("hide");
   });
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (searchForm);
+/* harmony default export */ __webpack_exports__["default"] = (showSearchForm);
 
 /***/ }),
 

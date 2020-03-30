@@ -14,12 +14,27 @@ nav {
   align-items: center;
 
     .search-form {
-      input[type="text"] {
         display: none;
 
-        &.show {
-          display: inline-block;
-        }
+      &.show {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      input[type=text] {
+        height: 30px;
+        width: 120px;
+        padding-left: 5px;
+        border: none;
+        box-shadow: inset 4px 4px 5px #d3d1d1;
+      }
+    }
+    .search-icon {
+      cursor: pointer;
+
+      &.hide {
+      display: none;
       }
     }
   }
