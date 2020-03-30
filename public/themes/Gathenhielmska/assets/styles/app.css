@@ -8,7 +8,7 @@
 }
 
 .container-booking h1 {
-  margin: 10px 0;
+  margin: 70px 0 10px;
 }
 
 .container-booking h2 {
@@ -157,6 +157,7 @@
 .wpcf7 .wpcf7-form p input[type=submit]:hover {
   border: 3px inset #a19d9d;
   color: #494848;
+  font-size: 17px;
 }
 
 /**
@@ -197,17 +198,18 @@ nav .menu-container .search-form {
 
 nav .menu-container .search-form.show {
   display: flex;
-  width: 150px;
+  width: 140px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 nav .menu-container .search-form input[type=text] {
-  height: 30px;
+  height: 15px;
   width: 120px;
   padding-left: 5px;
+  background-color: transparent;
   border: none;
-  box-shadow: inset 4px 4px 5px #d3d1d1;
+  border-bottom: 1px solid black;
 }
 
 nav .menu-container .search-icon {
@@ -1038,20 +1040,44 @@ a {
 /* Slider styles */
 
 .swiper-container {
+  padding-top: 70px;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 
-.swiper-slide img {
+.swiper-container .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center bottom;
 }
 
-.slider-text {
+.swiper-container .slider-text {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: 50px;
+  width: 100vw;
+  height: 200px;
+  background-color: #C4C4C4;
+  padding: 10px 40px 10px 10px;
+}
+
+.swiper-container .slider-text h2 {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.swiper-container .slider-text a {
+  color: white;
+  font-family: Playfair Display;
+}
+
+.swiper-container .slider-text .read-more {
+  display: block;
+  width: 130px;
+  height: 40px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  margin-top: 20px;
 }
 
