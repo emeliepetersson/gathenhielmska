@@ -3,22 +3,53 @@
 const hamburger = document.querySelector(".hamburger");
 const menuItems = document.querySelector(".menu-items");
 const hideChild = document.querySelectorAll(".hide-child");
-const parent = document.querySelectorAll(".parent");
+const parents = document.querySelectorAll(".parent");
 
-// Toggle between class names to show/hide menu items and change styling to menu and icon.
+const togglePlusIcon = e => {
+  const plusIcon = e.currentTarget.querySelector(".plus-icon");
+  plusIcon.classList.toggle("change");
+};
+
 const menu = (function() {
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("change");
     menuItems.classList.toggle("show-menu");
   });
 
-  parent[0].addEventListener("click", () => {
+  //Show child-pages when parent is the active nav-link
+  if (parents[0].classList.contains("active")) {
+    hideChild[0].classList.add("show-child");
+    hideChild[1].classList.add("show-child");
+  }
+  if (parents[1].classList.contains("active")) {
+    hideChild[2].classList.add("show-child");
+  }
+
+  // Toggle between class names to show/hide menu items and change styling to menu and icon.
+  parents[0].addEventListener("click", e => {
     hideChild[0].classList.toggle("show-child");
     hideChild[1].classList.toggle("show-child");
+    togglePlusIcon(e);
   });
 
-  parent[1].addEventListener("click", () => {
+  parents[1].addEventListener("click", e => {
     hideChild[2].classList.toggle("show-child");
+    togglePlusIcon(e);
+  });
+
+  // Hide menu when clicking on anything else than menu-elements
+  window.addEventListener("click", e => {
+    if (
+      e.target != menuItems &&
+      e.target != hamburger &&
+      e.target.parentNode.parentNode != menuItems &&
+      e.target.parentNode != menuItems &&
+      e.target.parentNode != hamburger &&
+      menuItems.classList.contains("show-menu")
+    ) {
+      menuItems.classList.remove("show-menu");
+      hamburger.classList.remove("change");
+    }
   });
 })();
 

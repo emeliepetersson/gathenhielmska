@@ -26,10 +26,13 @@ if (is_front_page()) {
             <div class="hamburger">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
 
             <ul class="menu-items">
-                <a class="logo" href="/index.php">Gathenhielmska</a>
+                <div class="logo">
+                    <a href="/index.php">Gathenhielmska</a>
+                </div>
                 <?php foreach (get_pages(['sort_column' =>  'menu_order']) as $page) : ?>
                     <li class="
                     <?php
@@ -61,7 +64,7 @@ if (is_front_page()) {
                         <?php endif ?>
                     </li>
                 <?php endforeach; ?>
-                <li class="languages">Other language</li>
+                <li class="languages">Other languages</li>
                 <li class="media-icons">
                     <a href="#"><img src="/themes/Gathenhielmska/assets/images/Facebook.svg" alt="Facebook icon"></a>
                     <a href="#"><img src="/themes/Gathenhielmska/assets/images/Instagram.svg" alt="Instagram icon"></a>
