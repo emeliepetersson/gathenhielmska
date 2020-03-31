@@ -7,7 +7,7 @@
 
             <?php
             $args = array(
-                'news_per_page' => 5,
+                'news_per_page' => 3,
                 'meta_key' => 'meta-checkbox',
                 'post_type' => 'news',
                 'meta_value' => 'yes'
