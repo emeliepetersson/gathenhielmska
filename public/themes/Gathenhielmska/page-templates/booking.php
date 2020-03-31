@@ -12,9 +12,7 @@
             </div>
 
             <div class="areas">
-                <h2>Lokaler</h2>
                 <?php
-
                 if (have_rows("bookable_areas")) :
                     while (have_rows("bookable_areas")) : the_row();
                 ?>
@@ -34,7 +32,6 @@
                 <?php
                     endwhile;
                 endif;
-
                 ?>
             </div>
             <?php echo do_shortcode('[contact-form-7 id="53" title="Contact form 1"]'); ?>
