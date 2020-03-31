@@ -1095,16 +1095,48 @@ button:hover {
 
 /* Events */
 
-.upcoming-wrapper .owl-item .event-carousel-type2-head {
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .event-carousel-type2-head {
   border: none;
+  padding: 0;
+  margin: 0 20px;
 }
 
-.upcoming-wrapper .owl-item .mec-event-sharing-wrap {
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .event-carousel-type2-head .mec-event-image {
+  width: 100%;
+}
+
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .event-carousel-type2-head .mec-event-image img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .event-carousel-type2-head .mec-event-carousel-content-type2 {
+  min-height: 100px;
+}
+
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .mec-event-sharing-wrap {
   display: none;
 }
 
-.upcoming-wrapper .owl-item .mec-booking-button {
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .mec-booking-button {
   display: none;
+}
+
+.upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .mec-event-carousel-title {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.upcoming-wrapper .mec-wrap .owl-nav button {
+  width: 60px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.upcoming-wrapper .mec-wrap .owl-nav button i {
+  font-size: 30px;
 }
 
 .upcoming-wrapper h2 {
@@ -1128,10 +1160,6 @@ button:hover {
 
 .upcoming-wrapper .text-wrapper button {
   margin-top: 30px;
-}
-
-.owl-nav {
-  display: none;
 }
 
 /* Info */
