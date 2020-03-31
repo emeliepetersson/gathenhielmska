@@ -52,14 +52,25 @@
         </div>
 
         <div class="about-wrapper">
-            <?php the_content() ?>
+            <?php if (has_post_thumbnail()) : ?>
+                <div class="image">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+            <?php endif; ?>
+            <h1><?php the_field("the-house") ?></h1>
+            <p><?php the_field("paragraph_1") ?></p>
+            <p class="center"><?php the_field("paragraph_2") ?></p>
+            <div class="button-wrapper">
+                <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
+                <button><a href="<?php echo the_field("booking_link") ?>"><?php the_field("link_label_2") ?></a></button>
+            </div>
         </div>
 
         <div class="footer-wrapper">
             <div class="contact-wrapper">
                 <h3><?php the_field("title_1") ?></h3>
                 <p><?php the_field("adress") ?></p>
-                <p><?php the_field("phone-number") ?></p>
+                <p><?php the_field("phone_number") ?></p>
                 <p>Mail: <?php the_field("email") ?></p>
             </div>
 
