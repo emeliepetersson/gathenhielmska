@@ -105,6 +105,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var mySwiper = new Swiper(".swiper-container", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true
+  },
+  autoplay: {
+    delay: 5000
+  }
+});
 
 /***/ }),
 
