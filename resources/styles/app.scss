@@ -58,17 +58,62 @@ button {
 /* Events */
 
 .upcoming-wrapper {
-  .owl-item{
-    .event-carousel-type2-head {
-      border: none;
+  .mec-wrap {
+
+    .owl-stage{
+
+
+      .owl-item{
+
+        .mec-event-article {
+
+          .event-carousel-type2-head {
+            border: none;
+            padding: 0;
+            margin: 0 20px;
+
+            .mec-event-image {
+              width: 100%;
+              img {
+                height: 450px;
+                object-fit: cover;
+              }
+            }
+            .mec-event-carousel-content-type2 {
+              min-height: 100px;
+            }
+          }
+
+          .mec-event-sharing-wrap {
+            display: none;
+          }
+
+          .mec-booking-button {
+            display: none;
+          }
+
+          .mec-event-carousel-title {
+            font-family: Playfair Display;
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
     }
-    .mec-event-sharing-wrap {
-      display: none;
-    }
-    .mec-booking-button {
-      display: none;
+    .owl-nav {
+      button {
+        width: 60px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+
+        i {
+          font-size: 30px;
+        }
+      }
     }
   }
+
 
 
   h2{
@@ -93,10 +138,6 @@ button {
       margin-top: 30px;
     }
   }
-}
-
-.owl-nav {
-  display: none;
 }
 
 /* Info */
