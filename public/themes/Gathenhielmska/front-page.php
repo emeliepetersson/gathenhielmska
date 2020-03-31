@@ -42,18 +42,48 @@
 <div>
     <?php while (have_posts()) : the_post(); ?>
 
-        <div>
-            <h1><?php the_title(); ?></h1>
-            <?php if (has_post_thumbnail()) : ?>
-                <div>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                        <?php the_post_thumbnail(); ?>
-                    </a>
-                </div>
+        <div class="upcoming-wrapper">
+            <h2><?php the_field("events-title"); ?></h2>
+            <?php echo do_shortcode('[MEC id="153"]') ?>
+            <div class="text-wrapper">
+                <p><?php the_field("events-description") ?></p>
+                <button><a href="<?php the_field("events-link") ?>">Program</a></button>
+            </div>
+        </div>
 
-            <?php endif; ?>
-            <?php the_content(); ?>
+        <div class="about-wrapper">
+            <?php the_content() ?>
+        </div>
 
+        <div class="footer-wrapper">
+            <div class="contact-wrapper">
+                <h3><?php the_field("title_1") ?></h3>
+                <p><?php the_field("adress") ?></p>
+                <p><?php the_field("phone-number") ?></p>
+                <p>Mail: <?php the_field("email") ?></p>
+            </div>
+
+            <div class="social-media-wrapper">
+                <h3><?php the_field("title_2") ?></h3>
+                <a href="<?php get_field("facebook-link") ?>"><img src="/themes/Gathenhielmska/assets/images/Facebook.svg" alt="Facebook icon"></a>
+                <a href="<?php get_field("Instagram-link") ?>"><img src="/themes/Gathenhielmska/assets/images/Instagram.svg" alt="Instagram icon"></a>
+            </div>
+
+            <div class="sponsors-wrapper">
+                <h3><?php the_field("title_3") ?></h3>
+
+                <?php
+                if (have_rows("sponsors")) :
+                    while (have_rows("sponsors")) : the_row();
+                ?>
+                        <a href="<?php get_sub_field("link") ?>"></a><img src="<?php echo get_sub_field("logo") ?>" alt="sponsor's logo">
+                <?php
+                    endwhile;
+                endif;
+
+                ?>
+
+            </div>
         </div>
 
     <?php endwhile; ?>
