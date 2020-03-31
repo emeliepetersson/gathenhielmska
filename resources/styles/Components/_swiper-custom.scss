@@ -1,0 +1,41 @@
+.swiper-container {
+  padding-top: 70px;
+  width: 100%;
+  height: 95vh;
+
+  .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  }
+
+  .slider-text {
+    position: absolute;
+    bottom: 50px;
+    width: 100vw;
+    height: 200px;
+    background-color:  rgba(243, 240, 231, 0.6);
+    padding: 10px 40px 10px 10px;
+
+    h2 {
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #15201f;
+      font-family: Playfair Display;
+    }
+
+    .read-more {
+      display: block;
+      width: 130px;
+      height: 40px;
+      border: 1px solid #15201f;
+      text-transform: uppercase;
+      padding: 10px 28px;
+      margin-top: 20px;
+    }
+  }
+}
