@@ -1000,6 +1000,16 @@ button.swiper-pagination-bullet {
   background: #c4c4c4;
 }
 
+.about {
+  padding-top: 70px;
+}
+
+.historia {
+  text-align: center;
+  padding: 20px;
+  background: #e5e5e5;
+}
+
 .swiper-container {
   padding-top: 70px;
   width: 100%;
