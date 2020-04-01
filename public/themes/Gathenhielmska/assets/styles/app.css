@@ -1071,6 +1071,16 @@ button:hover {
   background-color: #FF823F;
 }
 
+.about {
+  padding-top: 70px;
+}
+
+.historia {
+  text-align: center;
+  padding: 20px;
+  background: #e5e5e5;
+}
+
 * {
   margin: 0;
   padding: 0;
