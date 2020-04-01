@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 
-    <div>
+    <div class="about">
 
         <?php while (have_posts()) : the_post(); ?>
 
