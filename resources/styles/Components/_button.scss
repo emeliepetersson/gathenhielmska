@@ -1,0 +1,15 @@
+button {
+  font-family: Playfair Display;
+  border: 1px solid black;
+  width: 177px;
+  height: 51px;
+  background-color: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px 0;
+
+  &:hover {
+    background-color: #FF823F;
+  }
+}

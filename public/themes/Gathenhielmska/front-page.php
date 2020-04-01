@@ -57,12 +57,14 @@
                     <?php the_post_thumbnail(); ?>
                 </div>
             <?php endif; ?>
-            <h1><?php the_field("the-house") ?></h1>
-            <p><?php the_field("paragraph_1") ?></p>
-            <p class="center"><?php the_field("paragraph_2") ?></p>
-            <div class="button-wrapper">
-                <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
-                <button><a href="<?php echo the_field("booking_link") ?>"><?php the_field("link_label_2") ?></a></button>
+            <div class="text-wrapper">
+                <h1><?php the_field("the-house") ?></h1>
+                <p><?php the_field("paragraph_1") ?></p>
+                <p class="center"><?php the_field("paragraph_2") ?></p>
+                <div class="button-wrapper">
+                    <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
+                    <button><a href="<?php echo the_field("booking_link") ?>"><?php the_field("link_label_2") ?></a></button>
+                </div>
             </div>
         </div>
 
