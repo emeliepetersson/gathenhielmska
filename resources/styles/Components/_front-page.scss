@@ -1,0 +1,241 @@
+/* Events */
+
+.upcoming-wrapper {
+  .mec-wrap {
+
+    .owl-stage{
+
+
+      .owl-item{
+
+        .mec-event-article {
+
+          .event-carousel-type2-head {
+            border: none;
+            padding: 0;
+            margin: 0 20px;
+
+            .mec-event-image {
+              width: 100%;
+              img {
+                height: 450px;
+                object-fit: cover;
+              }
+            }
+            .mec-event-carousel-content-type2 {
+              min-height: 100px;
+            }
+          }
+
+          .mec-event-sharing-wrap {
+            display: none;
+          }
+
+          .mec-booking-button {
+            display: none;
+          }
+
+          .mec-event-carousel-title {
+            font-family: Playfair Display;
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      button {
+        width: 60px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+
+
+  h2{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 100px;
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Info */
+.about-wrapper {
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .image {
+    min-width: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .text-wrapper {
+    max-width: 400px;
+
+    h1 {
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin: 10px 0 30px;
+    }
+
+    p {
+      font-weight: normal;
+      line-height: 25px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .center {
+      text-align: center;
+      font-family: Playfair Display;
+    }
+
+    .button-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      button {
+        width: 155px;
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer-wrapper {
+  padding: 30px 20px 20px;
+  background-color: #223533;
+  color: #F3F0E7;
+  text-align: center;
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .social-media-wrapper {
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .sponsors-wrapper {
+    img {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* Info */
+  .about-wrapper {
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 730px;
+
+    .image {
+      max-width: 40vw;
+      min-width: 40vw;
+      height: 100%;
+      order: 2;
+    }
+
+    .text-wrapper {
+      background: url(/themes/Gathenhielmska/assets/images/flower-wall.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 60vw;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      color: #ffffff;
+      padding-top: 110px;
+
+      h1 {
+        width: 60%;
+      }
+
+      p {
+        width: 60%;
+      }
+
+      .center {
+        padding-top: 180px;
+      }
+
+      .button-wrapper {
+        button {
+          border: 1px solid #ffffff;
+          margin-right: 10px;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+    }
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px 150px 0;
+
+    .social-media-wrapper, .contact-wrapper{
+      text-align: left;
+    }
+
+    .sponsors-wrapper {
+      grid-column: 1/3;
+    }
+  }
+}
