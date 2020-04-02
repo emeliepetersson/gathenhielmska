@@ -3,12 +3,11 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
 
-    <div>
+    <div class="archive">
 
         <?php while (have_posts()) : the_post(); ?>
 
             <div>
-                <h1><?php the_title(); ?></h1>
                 <?php if (has_post_thumbnail()) : ?>
                     <div>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -26,7 +25,7 @@
     </div>
 <?php endif; ?>
 
-<div class="images-posts">
+<div class="images-posts show">
     <?php $imagesPosts = get_posts(['post_type' => 'images']); ?>
 
     <?php if (count($imagesPosts)) : ?>
@@ -35,10 +34,12 @@
 
             <div class="post">
                 <?php the_title(); ?>
-                <?php the_content(); ?>
-
                 <?php the_field("date_and_time") ?>
                 <?php the_field("location") ?>
+
+                <?php the_content(); ?>
+
+
 
                 <div class="images">
                     <?php
@@ -71,10 +72,12 @@
 
             <div class="post">
                 <?php the_title(); ?>
-                <?php the_content(); ?>
-
                 <?php the_field("date_and_time") ?>
                 <?php the_field("location") ?>
+
+                <?php the_content(); ?>
+
+
 
                 <div class="videos">
                     <?php

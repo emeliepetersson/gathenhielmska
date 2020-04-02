@@ -285,12 +285,38 @@ var VideosPosts = document.querySelector(".videos-posts");
 
 var showAndHidePosts = function () {
   ImagesButton.addEventListener("click", function () {
-    ImagesPosts.classList.add("show");
-    VideosPosts.classList.remove("show");
+    if (!ImagesButton.classList.contains("active")) {
+      ImagesButton.classList.add("active");
+    }
+
+    if (VideosButton.classList.contains("active")) {
+      VideosButton.classList.remove("active");
+    }
+
+    if (!ImagesPosts.classList.contains("show")) {
+      ImagesPosts.classList.add("show");
+    }
+
+    if (VideosPosts.classList.contains("show")) {
+      VideosPosts.classList.remove("show");
+    }
   });
   VideosButton.addEventListener("click", function () {
-    VideosPosts.classList.add("show");
-    ImagesPosts.classList.remove("show");
+    if (!VideosButton.classList.contains("active")) {
+      VideosButton.classList.add("active");
+    }
+
+    if (ImagesButton.classList.contains("active")) {
+      ImagesButton.classList.remove("active");
+    }
+
+    if (!VideosPosts.classList.contains("show")) {
+      VideosPosts.classList.add("show");
+    }
+
+    if (ImagesPosts.classList.contains("show")) {
+      ImagesPosts.classList.remove("show");
+    }
   });
 }();
 
