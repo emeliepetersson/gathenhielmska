@@ -100,6 +100,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
+/* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
+
 
 
 
@@ -271,6 +273,35 @@ var showSearchForm = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (showSearchForm);
+
+/***/ }),
+
+/***/ "./resources/scripts/show-gallery-post.js":
+/*!************************************************!*\
+  !*** ./resources/scripts/show-gallery-post.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var ImagesButton = document.querySelector(".show-images");
+var VideosButton = document.querySelector(".show-videos");
+var ImagesPosts = document.querySelector(".images-posts");
+var VideosPosts = document.querySelector(".videos-posts");
+
+var showAndHidePosts = function () {
+  ImagesButton.addEventListener("click", function () {
+    ImagesPosts.classList.add("show");
+    VideosPosts.classList.remove("show");
+  });
+  VideosButton.addEventListener("click", function () {
+    VideosPosts.classList.add("show");
+    ImagesPosts.classList.remove("show");
+  });
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (showAndHidePosts);
 
 /***/ }),
 

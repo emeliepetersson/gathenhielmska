@@ -1342,3 +1342,46 @@ a {
   padding: 20px;
 }
 
+/* ARKIV */
+
+.images-posts,
+.videos-posts {
+  display: none;
+}
+
+.images-posts.show,
+.videos-posts.show {
+  display: initial;
+}
+
+.images-posts .images,
+.images-posts .videos,
+.videos-posts .images,
+.videos-posts .videos {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.images-posts .images div,
+.images-posts .videos div,
+.videos-posts .images div,
+.videos-posts .videos div {
+  height: 200px;
+  overflow: hidden;
+}
+
+.images-posts .images div img,
+.images-posts .images div video,
+.images-posts .videos div img,
+.images-posts .videos div video,
+.videos-posts .images div img,
+.videos-posts .images div video,
+.videos-posts .videos div img,
+.videos-posts .videos div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+

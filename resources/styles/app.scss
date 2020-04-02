@@ -35,3 +35,31 @@ a {
   padding: 20px;
 }
 
+/* ARKIV */
+
+.images-posts, .videos-posts{
+  display: none;
+
+  &.show{
+    display: initial;
+  }
+
+  .images, .videos {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div {
+      height: 200px;
+      overflow: hidden;
+      img, video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+
