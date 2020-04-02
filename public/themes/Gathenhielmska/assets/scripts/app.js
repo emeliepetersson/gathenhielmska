@@ -112,7 +112,7 @@ var mySwiper = new Swiper(".swiper-container", {
     clickable: true
   },
   autoplay: {
-    delay: 6000
+    delay: 2000
   }
 });
 
@@ -292,8 +292,8 @@ var showSearchForm = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/scripts/app.js */"./resources/scripts/app.js");
-module.exports = __webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/styles/app.scss */"./resources/styles/app.scss");
+__webpack_require__(/*! /Users/emeliepetersson/Documents/GitHub/gathenhielmska/resources/scripts/app.js */"./resources/scripts/app.js");
+module.exports = __webpack_require__(/*! /Users/emeliepetersson/Documents/GitHub/gathenhielmska/resources/styles/app.scss */"./resources/styles/app.scss");
 
 
 /***/ })
