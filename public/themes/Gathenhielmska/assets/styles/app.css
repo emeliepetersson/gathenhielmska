@@ -2,9 +2,10 @@
 
 /** GENERAL STYLING **/
 
-.container-booking {
+div .container-booking {
   max-width: 700px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 
 .container-booking h1 {
@@ -1000,17 +1001,6 @@ button.swiper-pagination-bullet {
   background: #c4c4c4;
 }
 
-.about {
-  padding-top: 70px;
-}
-
-.historia {
-  text-align: center;
-  padding: 20px;
-  background: #e5e5e5;
-}
-
-
 /* Events */
 
 .upcoming-wrapper .mec-wrap .owl-stage .owl-item .mec-event-article .event-carousel-type2-head {
@@ -1307,6 +1297,16 @@ button {
 
 button:hover {
   background-color: #FF823F;
+}
+
+.about {
+  padding-top: 70px;
+}
+
+.historia {
+  text-align: center;
+  padding: 20px;
+  background: #e5e5e5;
 }
 
 * {

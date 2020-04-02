@@ -11,6 +11,6 @@ var mySwiper = new Swiper(".swiper-container", {
     clickable: true
   },
   autoplay: {
-    delay: 6000
+    delay: 2000
   }
 });
