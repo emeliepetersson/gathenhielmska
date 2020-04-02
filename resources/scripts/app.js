@@ -3,6 +3,7 @@ import "./general";
 import "./nav";
 import "./plus-icons";
 import "./search-form";
+import "./show-gallery-post";
 
 var mySwiper = new Swiper(".swiper-container", {
   pagination: {
