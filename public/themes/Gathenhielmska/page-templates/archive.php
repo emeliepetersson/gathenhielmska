@@ -71,13 +71,11 @@
         <?php foreach ($videosPosts as $post) : setup_postdata($post); ?>
 
             <div class="post">
-                <?php the_title(); ?>
-                <?php the_field("date_and_time") ?>
-                <?php the_field("location") ?>
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_field("date_and_time") ?></p>
+                <p><?php the_field("location") ?></p>
 
                 <?php the_content(); ?>
-
-
 
                 <div class="videos">
                     <?php
