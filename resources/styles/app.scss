@@ -35,65 +35,12 @@ a {
   padding: 20px;
 }
 
-/* ARKIV */
-.archive {
-  padding-top: 100px;
 
-  h1 {
-    padding: 0 20px 20px;
-  }
+/* Program */
 
-  p {
-    padding: 0 20px 10px;
-  }
-
-  .button-wrapper {
-    margin: 40px 0 30px;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #cccccc;
-
-    button {
-      border: none;
-      text-transform: initial;
-      margin: 0;
-      width: 60px;
-      height: 30px;
-
-      &.active {
-        border-bottom: 1px solid black;
-      }
-    }
-    button:hover {
-      background-color: transparent;
-    }
-  }
-}
-
-.images-posts, .videos-posts{
-  display: none;
-
-  &.show{
-    display: initial;
-  }
-
-  .images, .videos {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    div {
-      height: 200px;
-      overflow: hidden;
-      img, video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-    }
+.mec-skin-list-container {
+  .mec-search-form {
+    display: none;
   }
 }
 

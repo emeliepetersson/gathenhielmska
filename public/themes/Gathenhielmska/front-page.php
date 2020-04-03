@@ -39,12 +39,14 @@
 
 <!-- ******* END OF Display featured news! ******* -->
 
-<div>
+<div class="front-page-wrapper">
     <?php while (have_posts()) : the_post(); ?>
+
+        <?php the_content(); ?>
 
         <div class="upcoming-wrapper">
             <h2><?php the_field("events-title"); ?></h2>
-            <?php echo do_shortcode('[MEC id="153"]') ?>
+            <?php echo do_shortcode('[MEC id="240"]') ?>
             <div class="text-wrapper">
                 <p><?php the_field("events-description") ?></p>
                 <button><a href="<?php the_field("events-link") ?>">Program</a></button>
