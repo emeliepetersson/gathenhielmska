@@ -83,7 +83,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-bottom: 20px;
 
     .filter {
       font-family: Roboto;
@@ -102,7 +101,8 @@ a {
   /* Events */
   .mec-skin-list-container {
     .mec-search-form {
-
+      background-color: #C4C4C4;
+      border: none;
 
       &.show {
         display: initial;
@@ -114,6 +114,7 @@ a {
     }
 
     .mec-event-article {
+      margin-top: 20px;
       background-color: rgb(224, 221, 221);
       height: 200px;
       padding: 0;

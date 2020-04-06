@@ -1527,7 +1527,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 20px;
 }
 
 .program .filter-wrapper .filter {
@@ -1543,6 +1542,11 @@ a {
   background-color: initial;
 }
 
+.program .mec-skin-list-container .mec-search-form {
+  background-color: #C4C4C4;
+  border: none;
+}
+
 .program .mec-skin-list-container .mec-search-form.show {
   display: initial;
 }
@@ -1552,6 +1556,7 @@ a {
 }
 
 .program .mec-skin-list-container .mec-event-article {
+  margin-top: 20px;
   background-color: #e0dddd;
   height: 200px;
   padding: 0;
