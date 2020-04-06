@@ -101,6 +101,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
 /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
+/* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
+
 
 
 
@@ -266,6 +268,29 @@ var showSearchForm = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (showSearchForm);
+
+/***/ }),
+
+/***/ "./resources/scripts/show-filter.js":
+/*!******************************************!*\
+  !*** ./resources/scripts/show-filter.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var filterButton = document.querySelector(".filter-wrapper");
+var filters = document.querySelector(".mec-search-form");
+
+var showAndHideFilters = function () {
+  filterButton.addEventListener("click", function (e) {
+    filters.classList.toggle("show");
+    console.log("works");
+  });
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (showAndHideFilters);
 
 /***/ }),
 
