@@ -96,6 +96,18 @@ a {
         background-color: initial;
       }
     }
+    .filter-icon.rotate {
+      animation: 100ms rotate linear forwards;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   /* Events */
@@ -103,9 +115,38 @@ a {
     .mec-search-form {
       background-color: #C4C4C4;
       border: none;
+      display: none;
 
       &.show {
-        display: initial;
+        display: block;
+      }
+
+      .mec-dropdown-wrap .mec-dropdown-search select {
+        width: calc(100% - 46px);
+        margin-left: 10px;
+        border-radius: 0;
+      }
+
+      .mec-date-search {
+
+        .mec-sl-calendar {
+          margin-right: 10px;
+        }
+
+        select:last-child {
+          width: 65px;
+          margin-left: 10px;
+          padding-right: 0;
+        }
+
+        select {
+          border-radius: 0;
+        }
+      }
+
+      input[type=search] {
+        width: calc(100% - 46px);
+        margin-left: 10px;
       }
     }
 
@@ -173,6 +214,48 @@ a {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .program {
+    h1, p, .button-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 0 50px;
+    }
+
+    .button-wrapper {
+      justify-content: flex-start;
+      margin-bottom: 40px;
+
+      button {
+        margin-left: 20px;
+      }
+    }
+
+    .mec-wrap {
+      margin: 10px;
+
+      .mec-event-list-classic{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .mec-event-article {
+          width: 33%;
+          height: 500px;
+
+          .mec-event-image {
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

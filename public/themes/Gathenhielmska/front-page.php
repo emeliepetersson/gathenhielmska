@@ -72,16 +72,18 @@
                     <a href="<?php echo esc_url($link_url); ?>">
                         <?php echo esc_html($link_title); ?>
                         <picture>
-                            <source srcset="/themes/Gathenhielmska/assets/images/white-arrow.svg" media="(min-width: 900px)" />
+                            <source srcset="/themes/Gathenhielmska/assets/images/white-arrow.svg" media="(min-width: 1000px)" />
                             <img src="/themes/Gathenhielmska/assets/images/black-arrow.svg" loading="lazy" alt="Arrow">
                         </picture>
                     </a>
                 <?php endif; ?>
 
-                <p class="center"><?php the_field("paragraph_2") ?></p>
-                <div class="button-wrapper">
-                    <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
-                    <button><a href="<?php echo the_field("booking_link") ?>"><?php the_field("link_label_2") ?></a></button>
+                <div class="center">
+                    <p><?php the_field("paragraph_2") ?></p>
+                    <div class="button-wrapper">
+                        <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
+                        <button><a href="<?php echo the_field("booking_link") ?>"><?php the_field("link_label_2") ?></a></button>
+                    </div>
                 </div>
             </div>
         </div>
