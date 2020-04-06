@@ -100,15 +100,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
-/* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
-/* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
+/* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
 
 
 
 
+ // import "./show-gallery-post";
 
 
-
+console.log("Hej");
 
 /***/ }),
 
@@ -282,70 +282,16 @@ var showSearchForm = function () {
 __webpack_require__.r(__webpack_exports__);
 var filterButton = document.querySelector(".filter-wrapper");
 var filters = document.querySelector(".mec-search-form");
+var filterIcon = document.querySelector(".filter-icon");
 
 var showAndHideFilters = function () {
   filterButton.addEventListener("click", function (e) {
     filters.classList.toggle("show");
-    console.log("works");
+    filterIcon.classList.toggle("rotate");
   });
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (showAndHideFilters);
-
-/***/ }),
-
-/***/ "./resources/scripts/show-gallery-post.js":
-/*!************************************************!*\
-  !*** ./resources/scripts/show-gallery-post.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var ImagesButton = document.querySelector(".show-images");
-var VideosButton = document.querySelector(".show-videos");
-var ImagesPosts = document.querySelector(".images-posts");
-var VideosPosts = document.querySelector(".videos-posts");
-
-var showAndHidePosts = function () {
-  ImagesButton.addEventListener("click", function () {
-    if (!ImagesButton.classList.contains("active")) {
-      ImagesButton.classList.add("active");
-    }
-
-    if (VideosButton.classList.contains("active")) {
-      VideosButton.classList.remove("active");
-    }
-
-    if (!ImagesPosts.classList.contains("show")) {
-      ImagesPosts.classList.add("show");
-    }
-
-    if (VideosPosts.classList.contains("show")) {
-      VideosPosts.classList.remove("show");
-    }
-  });
-  VideosButton.addEventListener("click", function () {
-    if (!VideosButton.classList.contains("active")) {
-      VideosButton.classList.add("active");
-    }
-
-    if (ImagesButton.classList.contains("active")) {
-      ImagesButton.classList.remove("active");
-    }
-
-    if (!VideosPosts.classList.contains("show")) {
-      VideosPosts.classList.add("show");
-    }
-
-    if (ImagesPosts.classList.contains("show")) {
-      ImagesPosts.classList.remove("show");
-    }
-  });
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (showAndHidePosts);
 
 /***/ }),
 
