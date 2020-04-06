@@ -1299,13 +1299,21 @@ button:hover {
 }
 
 .about {
-  padding-top: 70px;
+  padding: 70px 20px 20px 20px;
 }
 
 .historia {
   text-align: center;
   padding: 20px;
   background: #e5e5e5;
+}
+
+.aboutHide {
+  display: none;
+}
+
+.aboutHide.show {
+  display: block;
 }
 
 .aboutImage img {
