@@ -62,6 +62,22 @@
             <div class="text-wrapper">
                 <h1><?php the_field("the-house") ?></h1>
                 <p><?php the_field("paragraph_1") ?></p>
+
+                <?php
+                $link = get_field('link');
+                if ($link) :
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                ?>
+                    <a href="<?php echo esc_url($link_url); ?>">
+                        <?php echo esc_html($link_title); ?>
+                        <picture>
+                            <source srcset="/themes/Gathenhielmska/assets/images/white-arrow.svg" media="(min-width: 900px)" />
+                            <img src="/themes/Gathenhielmska/assets/images/black-arrow.svg" loading="lazy" alt="Arrow">
+                        </picture>
+                    </a>
+                <?php endif; ?>
+
                 <p class="center"><?php the_field("paragraph_2") ?></p>
                 <div class="button-wrapper">
                     <button><a href="<?php echo the_field("rooms-link") ?>"><?php the_field("link_label_1") ?></a></button>
