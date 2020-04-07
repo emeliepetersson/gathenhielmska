@@ -53,9 +53,11 @@
     grid-template-columns: 1fr 1fr;
 
     div {
-      margin: 5px;
-      height: 200px;
+      margin: 1px 0;
+      width: 99%;
+      height: 170px;
       overflow: hidden;
+
       img, video {
         width: 100%;
         height: 100%;
