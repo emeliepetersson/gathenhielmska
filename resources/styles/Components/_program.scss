@@ -1,0 +1,281 @@
+.program {
+  padding-top: 100px;
+
+  h1 {
+    padding: 0 20px 20px;
+  }
+
+  p {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  /* buttons */
+  .button-wrapper {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* Filter */
+  .filter-wrapper {
+    background-color: #C4C4C4;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    .filter {
+      font-family: Roboto;
+      font-size: 18px;
+      text-transform: initial;
+      border: none;
+      width: 100px;
+      margin: 0;
+
+      &:hover {
+        background-color: initial;
+      }
+    }
+    .filter-icon.rotate {
+      animation: 100ms rotate linear forwards;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  /* Events */
+  .mec-skin-list-container {
+    .mec-search-form {
+      background-color: #C4C4C4;
+      border: none;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+
+      .mec-dropdown-wrap .mec-dropdown-search select {
+        width: calc(100% - 46px);
+        margin-left: 10px;
+        border-radius: 0;
+      }
+
+      .mec-date-search {
+
+        .mec-sl-calendar {
+          margin-right: 10px;
+        }
+
+        select:last-child {
+          width: 65px;
+          margin-left: 10px;
+          padding-right: 0;
+        }
+
+        select {
+          border-radius: 0;
+        }
+      }
+
+      input[type=search] {
+        width: calc(100% - 46px);
+        margin-left: 10px;
+      }
+    }
+
+    .mec-month-divider {
+      display: none;
+    }
+
+    .mec-event-article {
+      margin-top: 20px;
+      background-color: rgb(224, 221, 221);
+      height: 200px;
+      padding: 0;
+
+      .mec-event-image {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .mec-event-time, .mec-end-date-label, .mec-sl-calendar, .mec-start-date-label, .mec-start-time, .mec-end-time {
+        color: #000000;
+        font-family: roboto;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+
+      .mec-start-date-label {
+        display: inline-block;
+        padding-top: 10px;
+      }
+
+      .mec-time-details {
+        display: none;
+      }
+
+      .mec-event-title {
+        font-family: Playfair Display;
+        font-size: 20px;
+        text-transform: initial;
+        padding-right: 30px;
+
+        .mec-color-hover:hover {
+          color: grey;
+        }
+      }
+
+      .event-color, .mec-sl-calendar, .mec-sl-clock {
+        display: none;
+      }
+    }
+    .mec-load-more-button {
+      font-family: Playfair Display;
+      border: 1px solid black;
+      border-radius: initial;
+      width: 177px;
+      height: 51px;
+      font-size: 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding-top: 5px;
+      color: black;
+
+      &:hover {
+        background-color: #ff823f;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .program {
+    h1, p, .button-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 0 50px;
+    }
+
+    .button-wrapper {
+      justify-content: flex-start;
+      margin-bottom: 40px;
+
+      button {
+        margin-left: 20px;
+      }
+    }
+
+    /* Events filter*/
+    .filter-wrapper {
+      display: none;
+    }
+
+    .mec-skin-list-container {
+      .mec-search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mec-dropdown-wrap {
+          width: 200px;
+          display: inline-block;
+
+          select {
+            margin: 0;
+          }
+        }
+
+        .mec-date-search {
+          width: 250px;
+
+          select:nth-child(3) {
+            width: 40%;
+          }
+        }
+
+        .mec-text-input-search{
+          width: 400px;
+        }
+      }
+    }
+
+    /* Events */
+    .mec-wrap {
+
+      .mec-month-divider {
+        display: block;
+        width: 100%;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 48px;
+
+        span {
+          border-bottom: 0;
+        }
+
+        span:before {
+          display: none;
+        }
+      }
+
+      .mec-event-list-classic{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .mec-event-article {
+          margin: 10px;
+          width: 400px;
+          height: 550px;
+
+          .mec-event-image {
+            width: 100%;
+            height: 400px;
+            margin: 0;
+          }
+
+          .mec-event-time,
+          .mec-end-date-label,
+          .mec-sl-calendar,
+          .mec-start-date-label,
+          .mec-start-time,
+          .mec-end-time {
+            font-size: 20px;
+            font-weight: 300;
+          }
+
+          .mec-event-title {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
