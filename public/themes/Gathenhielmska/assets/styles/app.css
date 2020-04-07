@@ -995,6 +995,10 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.contact {
+  padding: 70px 20px 20px 20px;
+}
+
 .contact-card {
   padding: 10px;
   background: #c4c4c4;
@@ -1302,23 +1306,98 @@ button:hover {
   padding: 70px 20px 20px 20px;
 }
 
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.company-house {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 80px;
+  position: relative;
+}
+
+.company-house h3,
+.company-house p {
+  padding-left: 20px;
+}
+
+.company-house a {
+  position: absolute;
+  right: 20px;
+  bottom: 3px;
+}
+
+.company-house p {
+  position: absolute;
+  bottom: 3px;
+}
+
+.company-ledningsgruppen {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 200px;
+  position: relative;
+}
+
+.company-ledningsgruppen .company-left {
+  float: left;
+}
+
+.company-ledningsgruppen .company-left img {
+  object-fit: cover;
+  width: 134px;
+  height: 200px;
+}
+
+.company-ledningsgruppen .company-right {
+  float: left;
+  position: relative;
+  height: 200px;
+  width: 30%;
+}
+
+.company-ledningsgruppen .company-right h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right p {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right .mail {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
 .historia {
   text-align: center;
   padding: 20px;
   background: #e5e5e5;
 }
 
-.aboutHide {
+.about-hide {
   display: none;
 }
 
-.aboutHide.show {
+.about-hide.show {
   display: block;
-}
-
-.aboutImage img {
-  width: 100%;
-  height: auto;
 }
 
 * {
