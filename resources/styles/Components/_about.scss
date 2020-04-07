@@ -87,9 +87,18 @@
 }
 
 .about-info {
-}
+  position: relative;
+  .about-title {
+    h3 {
+      display: inline;
+    }
 
-.about-title {
+    .plus-icon {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
 }
 
 .about-hide {

@@ -13,11 +13,37 @@
             </div>
 
         <?php endwhile; ?>
-        <div class="Test">
-            <h3>Test</h3>
-            <div class="plus-icon">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
+        <div class="about-info">
+            <div class="about-title">
+                <h3>Test</h3>
+                <div class="plus-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+            </div>
+            <div class="about-hide">
+                Content
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="about-title">
+                <h3>Test</h3>
+                <div class="plus-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+            </div>
+            <div class="about-hide">
+                Content
+            </div>
+        </div>
+        <div class="about-info">
+            <div class="about-title">
+                <h3>Test</h3>
+                <div class="plus-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
             </div>
             <div class="about-hide">
                 Content
@@ -25,7 +51,5 @@
         </div>
     </div>
 <?php endif; ?>
-
-
 
 <?php get_footer(); ?>
