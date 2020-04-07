@@ -176,6 +176,8 @@ a {
       .mec-event-time, .mec-end-date-label, .mec-sl-calendar, .mec-start-date-label, .mec-start-time, .mec-end-time {
         color: #000000;
         font-family: roboto;
+        font-size: 15px;
+        margin-top: 5px;
       }
 
       .mec-start-date-label {
@@ -189,6 +191,13 @@ a {
 
       .mec-event-title {
         font-family: Playfair Display;
+        font-size: 20px;
+        text-transform: initial;
+        padding-right: 30px;
+
+        .mec-color-hover:hover {
+          color: grey;
+        }
       }
 
       .event-color, .mec-sl-calendar, .mec-sl-clock {
@@ -235,21 +244,89 @@ a {
       }
     }
 
+    /* Events filter*/
+    .filter-wrapper {
+      display: none;
+    }
+
+    .mec-skin-list-container {
+      .mec-search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mec-dropdown-wrap {
+          width: 200px;
+          display: inline-block;
+
+          select {
+            margin: 0;
+          }
+        }
+
+        .mec-date-search {
+          width: 250px;
+
+          select:nth-child(3) {
+            width: 40%;
+          }
+        }
+
+        .mec-text-input-search{
+          width: 400px;
+        }
+      }
+    }
+
+    /* Events */
     .mec-wrap {
-      margin: 10px;
+
+      .mec-month-divider {
+        display: block;
+        width: 100%;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 48px;
+
+        span {
+          border-bottom: 0;
+        }
+
+        span:before {
+          display: none;
+        }
+      }
 
       .mec-event-list-classic{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
 
         .mec-event-article {
-          width: 33%;
-          height: 500px;
+          margin: 10px;
+          width: 400px;
+          height: 550px;
 
           .mec-event-image {
             width: 100%;
-            height: 300px;
+            height: 400px;
+            margin: 0;
+          }
+
+          .mec-event-time,
+          .mec-end-date-label,
+          .mec-sl-calendar,
+          .mec-start-date-label,
+          .mec-start-time,
+          .mec-end-time {
+            font-size: 20px;
+            font-weight: 300;
+          }
+
+          .mec-event-title {
+            font-size: 24px;
           }
         }
       }

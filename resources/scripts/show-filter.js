@@ -1,12 +1,20 @@
 const filterButton = document.querySelector(".filter-wrapper");
 const filters = document.querySelector(".mec-search-form");
 const filterIcon = document.querySelector(".filter-icon");
+const monthFilter = document.querySelector("#mec_sf_month_242");
+const yearFilter = document.querySelector("#mec_sf_year_242");
 
-const showAndHideFilters = (function () {
-  filterButton.addEventListener("click", (e) => {
-    filters.classList.toggle("show");
-    filterIcon.classList.toggle("rotate");
-  });
+const showAndHideFilters = (function() {
+  //Change text content of month and year select tags
+  monthFilter.querySelector(".mec-none-item").textContent = "Month";
+  yearFilter.querySelector(".mec-none-item").textContent = "Year";
+
+  if (filterButton !== null) {
+    filterButton.addEventListener("click", e => {
+      filters.classList.toggle("show");
+      filterIcon.classList.toggle("rotate");
+    });
+  }
 })();
 
 export default showAndHideFilters;
