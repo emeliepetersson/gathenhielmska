@@ -1392,6 +1392,20 @@ button:hover {
   background: #e5e5e5;
 }
 
+.about-info {
+  position: relative;
+}
+
+.about-info .about-title h3 {
+  display: inline;
+}
+
+.about-info .about-title .plus-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .about-hide {
   display: none;
 }
