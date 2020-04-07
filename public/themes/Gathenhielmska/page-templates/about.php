@@ -19,8 +19,8 @@
                 <div class="bar1"></div>
                 <div class="bar2"></div>
             </div>
-            <div class="aboutHide">
-                TEst
+            <div class="about-hide">
+                Content
             </div>
         </div>
     </div>

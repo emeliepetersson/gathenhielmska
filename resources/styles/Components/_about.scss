@@ -2,27 +2,100 @@
   padding: 70px 20px 20px 20px;
 }
 
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.company-house {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 80px;
+  position: relative;
+
+  h3,
+  p {
+    padding-left: 20px;
+  }
+
+  a {
+    position: absolute;
+    right: 20px;
+    bottom: 3px;
+  }
+
+  p {
+    position: absolute;
+    bottom: 3px;
+  }
+}
+
+.company-ledningsgruppen {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 200px;
+  position: relative;
+
+  .company-left {
+    float: left;
+    img {
+      object-fit: cover;
+      width: 134px;
+      height: 200px;
+    }
+  }
+
+  .company-right {
+    float: left;
+    position: relative;
+    height: 200px;
+    width: 30%;
+    h3 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    p {
+      position: absolute;
+      top: 35px;
+      left: 10px;
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .mail {
+      position: absolute;
+      bottom: 30px;
+      left: 10px;
+    }
+  }
+}
+
 .historia {
   text-align: center;
   padding: 20px;
   background: #e5e5e5;
 }
 
-.aboutInfo {
+.about-info {
 }
 
-.aboutTitle {
+.about-title {
 }
 
-.aboutHide {
+.about-hide {
   display: none;
 }
 
-.aboutHide.show {
+.about-hide.show {
   display: block;
-}
-
-.aboutImage img {
-  width: 100%;
-  height: auto;
 }

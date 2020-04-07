@@ -97,7 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 
 
-var showAbout = document.querySelectorAll(".aboutHide");
+var showAbout = document.querySelectorAll(".about-hide");
 var icon = document.querySelectorAll(".plus-icon");
 /* harmony default export */ __webpack_exports__["default"] = (about);
 
