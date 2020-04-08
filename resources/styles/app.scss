@@ -50,3 +50,45 @@ a {
 .container {
   padding: 20px;
 }
+
+/* Single event page */
+
+.single-event-wrapper {
+  padding-top: 100px;
+
+  h1 {
+    margin: 0 20px 30px;
+  }
+
+  i {
+    display: none;
+  }
+
+  i + h3 {
+    display: none;
+  }
+
+  .mec-single-event-date,
+  .mec-single-event-time,
+  .mec-single-event-location,
+  .mec-event-more-info,
+  .mec-single-event-category {
+    background-color: transparent;
+  }
+
+
+  .buy-wrapper {
+    .image-wrapper {
+      margin: 0 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .date-wrapper {
+      background-color: rgb(172, 172, 172);
+      display: flex;
+    }
+  }
+}
