@@ -1,8 +1,29 @@
 .contact {
-  padding: 70px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
+  h3 {
+    padding: 20px 0 10px 0;
+    color: #ff823f;
+  }
+
+  h2 {
+    padding: 20px 0 0 0;
+  }
+}
+
+.contact-cards {
+  margin: 20px 0 20px 0;
 }
 
 .contact-card {
-  padding: 10px;
-  background: #c4c4c4;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff823f;
+  background: #223533;
+  text-align: center;
+  margin-bottom: 5px;
+  p {
+    padding: 10px 0 10px 0;
+  }
 }

@@ -1,10 +1,28 @@
 .about {
-  padding: 70px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
+
+  h2,
+  h3 {
+    padding: 20px 0 20px 0;
+  }
+
+  h2 {
+    color: #ff823f;
+  }
 }
 
 .about img {
   width: 100%;
   height: auto;
+}
+
+.about-facility {
+  h2 {
+    color: black;
+  }
+  h3 {
+    color: #ff823f;
+  }
 }
 
 .company-house {
@@ -55,6 +73,7 @@
     height: 200px;
     width: 30%;
     h3 {
+      padding: 0;
       position: absolute;
       top: 10px;
       left: 10px;
@@ -82,12 +101,21 @@
 
 .historia {
   text-align: center;
+  margin: 20px 0 20px 0;
   padding: 20px;
-  background: #e5e5e5;
+  background: #f3f0e7;
+  h3 {
+    color: #ff823f;
+  }
+
+  p {
+    padding: 20px;
+  }
 }
 
 .about-info {
   position: relative;
+  padding: 10px 0 10px 0;
   .about-title {
     h3 {
       display: inline;
@@ -102,6 +130,7 @@
 }
 
 .about-hide {
+  padding: 10px 0 10px 0;
   display: none;
 }
 

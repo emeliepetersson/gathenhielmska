@@ -15,14 +15,6 @@
         <?php endwhile; ?>
 
     <?php endif; ?>
-    <?php if (have_rows('company')) :
-        while (have_rows('company')) : the_row(); ?>
-            <div class="company-house">
-                <h3><?php the_sub_field("name"); ?></h3>
-                <a href="<?php the_sub_field("link"); ?>">Hemsida</a>
-                <p><?php the_sub_field("proffesion"); ?></p>
-            </div> <?php endwhile;
-            endif; ?>
     <h2>Ledningsgruppen</h2>
     <?php if (have_rows('ledningsgruppen')) :
         while (have_rows('ledningsgruppen')) : the_row(); ?>
@@ -39,4 +31,16 @@
                 </div>
             </div>
     <?php endwhile;
-    endif; ?> </div> <?php get_footer(); ?>
+    endif; ?>
+
+    <h2>In-houseaktörer</h2>
+    <?php if (have_rows('company')) :
+        while (have_rows('company')) : the_row(); ?>
+            <div class="company-house">
+                <h3><?php the_sub_field("name"); ?></h3>
+                <a href="<?php the_sub_field("link"); ?>">Hemsida</a>
+                <p><?php the_sub_field("proffesion"); ?></p>
+            </div> <?php endwhile;
+            endif; ?>
+    </div>
+    <?php get_footer(); ?>

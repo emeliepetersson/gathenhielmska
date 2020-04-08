@@ -996,12 +996,35 @@ button.swiper-pagination-bullet {
 }
 
 .contact {
-  padding: 70px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
+}
+
+.contact h3 {
+  padding: 20px 0 10px 0;
+  color: #ff823f;
+}
+
+.contact h2 {
+  padding: 20px 0 0 0;
+}
+
+.contact-cards {
+  margin: 20px 0 20px 0;
 }
 
 .contact-card {
-  padding: 10px;
-  background: #c4c4c4;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff823f;
+  background: #223533;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  padding: 10px 0 10px 0;
 }
 
 /* Events */
@@ -1303,12 +1326,29 @@ button:hover {
 }
 
 .about {
-  padding: 70px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
+}
+
+.about h2,
+.about h3 {
+  padding: 20px 0 20px 0;
+}
+
+.about h2 {
+  color: #ff823f;
 }
 
 .about img {
   width: 100%;
   height: auto;
+}
+
+.about-facility h2 {
+  color: black;
+}
+
+.about-facility h3 {
+  color: #ff823f;
 }
 
 .company-house {
@@ -1363,6 +1403,7 @@ button:hover {
 }
 
 .company-ledningsgruppen .company-right h3 {
+  padding: 0;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -1388,12 +1429,22 @@ button:hover {
 
 .historia {
   text-align: center;
+  margin: 20px 0 20px 0;
   padding: 20px;
-  background: #e5e5e5;
+  background: #f3f0e7;
+}
+
+.historia h3 {
+  color: #ff823f;
+}
+
+.historia p {
+  padding: 20px;
 }
 
 .about-info {
   position: relative;
+  padding: 10px 0 10px 0;
 }
 
 .about-info .about-title h3 {
@@ -1407,6 +1458,7 @@ button:hover {
 }
 
 .about-hide {
+  padding: 10px 0 10px 0;
   display: none;
 }
 
