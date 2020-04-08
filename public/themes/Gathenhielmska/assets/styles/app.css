@@ -996,9 +996,36 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.contact {
+  padding: 100px 20px 20px 20px;
+}
+
+.contact h3 {
+  padding: 20px 0 10px 0;
+  color: #ff823f;
+}
+
+.contact h2 {
+  padding: 20px 0 0 0;
+}
+
+.contact-cards {
+  margin: 20px 0 20px 0;
+}
+
 .contact-card {
-  padding: 10px;
-  background: #c4c4c4;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff823f;
+  background: #223533;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contact-card p {
+  padding: 10px 0 10px 0;
 }
 
 /* Events carousel */
@@ -1336,18 +1363,153 @@ button:hover {
 }
 
 .about {
-  padding-top: 70px;
+  padding: 100px 20px 20px 20px;
+}
+
+.about h2,
+.about h3 {
+  padding: 20px 0 20px 0;
+}
+
+.about h2 {
+  color: #ff823f;
+}
+
+.about .right-button {
+  width: calc(50% - 5px);
+}
+
+.about .left-button {
+  float: right;
+  width: calc(50% - 5px);
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.about-facility h2 {
+  color: black;
+}
+
+.about-facility h3 {
+  color: #ff823f;
+}
+
+.company-house {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 80px;
+  position: relative;
+}
+
+.company-house h3,
+.company-house p {
+  padding-left: 20px;
+}
+
+.company-house a {
+  position: absolute;
+  right: 20px;
+  bottom: 3px;
+}
+
+.company-house p {
+  position: absolute;
+  bottom: 3px;
+}
+
+.company-ledningsgruppen {
+  background: #f3f0e7;
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 200px;
+  position: relative;
+}
+
+.company-ledningsgruppen .company-left {
+  float: left;
+}
+
+.company-ledningsgruppen .company-left img {
+  object-fit: cover;
+  width: 134px;
+  height: 200px;
+}
+
+.company-ledningsgruppen .company-right {
+  float: left;
+  position: relative;
+  height: 200px;
+  width: 30%;
+}
+
+.company-ledningsgruppen .company-right h3 {
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right p {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.company-ledningsgruppen .company-right .mail {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
 }
 
 .historia {
   text-align: center;
+  margin: 20px 0 20px 0;
   padding: 20px;
-  background: #e5e5e5;
+  background: #f3f0e7;
 }
 
-.aboutImage img {
-  width: 100%;
-  height: auto;
+.historia h3 {
+  color: #ff823f;
+}
+
+.historia p {
+  padding: 20px;
+}
+
+.about-info {
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+
+.about-info .about-title h3 {
+  display: inline;
+}
+
+.about-info .about-title .plus-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.about-hide {
+  padding: 10px 0 10px 0;
+  display: none;
+}
+
+.about-hide.show {
+  display: block;
 }
 
 .archive {
