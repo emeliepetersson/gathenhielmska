@@ -9,6 +9,15 @@
   h2 {
     color: #ff823f;
   }
+
+  .right-button {
+    width: calc(50% - 5px);
+  }
+
+  .left-button {
+    float: right;
+    width: calc(50% - 5px);
+  }
 }
 
 .about img {
