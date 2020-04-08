@@ -4,6 +4,9 @@ const swiper = new Swiper(".swiper-container", {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true
+  },
+  autoplay: {
+    delay: 4000
   }
 });
 

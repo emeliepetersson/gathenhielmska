@@ -49,8 +49,11 @@ require __DIR__ . "/plate.php";
 // Register news custom post type.
 require get_template_directory() . "/post-types/news.php";
 
-// Register person custom post type.
-require get_template_directory() . "/post-types/person.php";
+// Register images custom post type.
+require get_template_directory() . "/post-types/images.php";
+
+// Register videos custom post type.
+require get_template_directory() . "/post-types/videos.php";
 
 
 /**
