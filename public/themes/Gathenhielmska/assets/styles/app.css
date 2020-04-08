@@ -1338,6 +1338,15 @@ button:hover {
   color: #ff823f;
 }
 
+.about .right-button {
+  width: calc(50% - 5px);
+}
+
+.about .left-button {
+  float: right;
+  width: calc(50% - 5px);
+}
+
 .about img {
   width: 100%;
   height: auto;
