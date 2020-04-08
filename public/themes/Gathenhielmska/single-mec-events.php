@@ -14,7 +14,7 @@
 
             <h1><?php the_title() ?></h1>
 
-            <div class="buy-wrapper">
+            <div class="info-wrapper">
                 <?php
                 $image_id = get_post_thumbnail_id();
                 $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
@@ -23,25 +23,34 @@
                     <img src="<?php echo get_the_post_thumbnail_url() ?>" alt=" <?php echo $image_alt ?>">
                 </div>
 
-                <div class="date-wrapper">
-                    <?php $single->display_date_widget($single_event_obj); ?>
-                    <div class="start-time">
-                        <?php
-                        $hours = get_post_meta(get_the_ID(), 'mec_start_time_hour', true);
-                        $minutes = get_post_meta(get_the_ID(), 'mec_start_time_minutes', true);
-                        ?>
-                        <?php if (strlen($hours) < 2) : ?>
-                            <p>0<?php echo $hours ?></p>
-                        <?php else : ?>
-                            <p><?php echo $hours ?></p>
-                        <?php endif; ?>
+                <div>
+                    <div class="date-wrapper">
+                        <?php $single->display_date_widget($single_event_obj); ?>
+                        <div class="start-time">
+                            <?php
+                            $hours = get_post_meta(get_the_ID(), 'mec_start_time_hour', true);
+                            $minutes = get_post_meta(get_the_ID(), 'mec_start_time_minutes', true);
+                            ?>
+                            <?php if (strlen($hours) < 2) : ?>
+                                <p>0<?php echo $hours ?>:</p>
+                            <?php else : ?>
+                                <p><?php echo $hours ?>:</p>
+                            <?php endif; ?>
+                            <?php if (strlen($minutes) < 2) : ?>
+                                <p>0<?php echo $minutes ?></p>
+                            <?php else : ?>
+                                <p><?php echo $minutes ?></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="buy-wrapper">
+                        <?php $single->display_location_widget($single_event_obj); ?>
+                        <p><?php echo get_post_meta(get_the_ID(), 'mec_cost', true); ?></p>
+                        <button><?php $single->display_more_info_widget($single_event_obj); ?></button>
                     </div>
                 </div>
-                <?php $single->display_location_widget($single_event_obj); ?>
-                <?php echo get_post_meta(get_the_ID(), 'mec_cost', true); ?>
-                <?php $single->display_more_info_widget($single_event_obj); ?>
             </div>
-            <div class="info-wrapper">
+            <div class="content-wrapper">
                 <?php $single->display_category_widget($single_event_obj); ?>
                 <?php the_content() ?>
             </div>
