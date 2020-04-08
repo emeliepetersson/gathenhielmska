@@ -86,6 +86,33 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./resources/scripts/about.js":
+/*!************************************!*\
+  !*** ./resources/scripts/about.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var showAbout = document.querySelectorAll(".about-hide");
+var icon = document.querySelectorAll(".plus-icon");
+icon[2].addEventListener("click", function () {
+  showAbout[0].classList.toggle("show");
+});
+icon[3].addEventListener("click", function () {
+  showAbout[1].classList.toggle("show");
+});
+icon[4].addEventListener("click", function () {
+  showAbout[2].classList.toggle("show");
+});
+icon[5].addEventListener("click", function () {
+  showAbout[3].classList.toggle("show");
+}); // export default about;
+
+/***/ }),
+
 /***/ "./resources/scripts/app.js":
 /*!**********************************!*\
   !*** ./resources/scripts/app.js ***!
@@ -100,9 +127,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
 /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
+<<<<<<< HEAD
 /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
 /* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
 
+=======
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_5__);
+>>>>>>> feature
 
 
 
