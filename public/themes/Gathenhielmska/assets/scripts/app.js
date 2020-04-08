@@ -98,8 +98,6 @@
 
 var showAbout = document.querySelectorAll(".about-hide");
 var icon = document.querySelectorAll(".plus-icon");
-console.log(icon);
-console.log(showAbout);
 icon[2].addEventListener("click", function () {
   showAbout[0].classList.toggle("show");
 });
