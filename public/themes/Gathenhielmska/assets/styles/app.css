@@ -1784,3 +1784,42 @@ a {
   padding: 20px;
 }
 
+/* Single event page */
+
+.single-event-wrapper {
+  padding-top: 100px;
+}
+
+.single-event-wrapper h1 {
+  margin: 0 20px 30px;
+}
+
+.single-event-wrapper i {
+  display: none;
+}
+
+.single-event-wrapper i + h3 {
+  display: none;
+}
+
+.single-event-wrapper .mec-single-event-date,
+.single-event-wrapper .mec-single-event-time,
+.single-event-wrapper .mec-single-event-location,
+.single-event-wrapper .mec-event-more-info,
+.single-event-wrapper .mec-single-event-category {
+  background-color: transparent;
+}
+
+.single-event-wrapper .buy-wrapper .image-wrapper {
+  margin: 0 20px;
+}
+
+.single-event-wrapper .buy-wrapper .image-wrapper img {
+  width: 100%;
+}
+
+.single-event-wrapper .buy-wrapper .date-wrapper {
+  background-color: #acacac;
+  display: flex;
+}
+
