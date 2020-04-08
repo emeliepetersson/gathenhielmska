@@ -30,7 +30,11 @@
                         $hours = get_post_meta(get_the_ID(), 'mec_start_time_hour', true);
                         $minutes = get_post_meta(get_the_ID(), 'mec_start_time_minutes', true);
                         ?>
-                        <?php die(var_dump(strlen($hours))); ?>
+                        <?php if (strlen($hours) < 2) : ?>
+                            <p>0<?php echo $hours ?></p>
+                        <?php else : ?>
+                            <p><?php echo $hours ?></p>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <?php $single->display_location_widget($single_event_obj); ?>
