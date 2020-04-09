@@ -169,7 +169,7 @@ var showAreas = function () {
   showAreaIcons.forEach(function (showAreaIcon) {
     showAreaIcon.addEventListener("click", function (e) {
       // Get the area description and toggle show
-      var description = e.currentTarget.nextElementSibling;
+      var description = e.currentTarget.querySelector(".area-wrapper");
       description.classList.toggle("show"); // Get the plus icon and toggle change
 
       var plusIcon = e.currentTarget.querySelector(".plus-icon");
