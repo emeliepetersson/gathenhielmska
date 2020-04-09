@@ -1,474 +1,430 @@
-/******/ (function(modules) {
-  // webpackBootstrap
-  /******/ // The module cache
-  /******/ var installedModules = {}; // The require function
-  /******/
-  /******/ /******/ function __webpack_require__(moduleId) {
-    /******/
-    /******/ // Check if module is in cache
-    /******/ if (installedModules[moduleId]) {
-      /******/ return installedModules[moduleId].exports;
-      /******/
-    } // Create a new module (and put it into the cache)
-    /******/ /******/ var module = (installedModules[moduleId] = {
-      /******/ i: moduleId,
-      /******/ l: false,
-      /******/ exports: {}
-      /******/
-    }); // Execute the module function
-    /******/
-    /******/ /******/ modules[moduleId].call(
-      module.exports,
-      module,
-      module.exports,
-      __webpack_require__
-    ); // Flag the module as loaded
-    /******/
-    /******/ /******/ module.l = true; // Return the exports of the module
-    /******/
-    /******/ /******/ return module.exports;
-    /******/
-  } // expose the modules object (__webpack_modules__)
-  /******/
-  /******/
-  /******/ /******/ __webpack_require__.m = modules; // expose the module cache
-  /******/
-  /******/ /******/ __webpack_require__.c = installedModules; // define getter function for harmony exports
-  /******/
-  /******/ /******/ __webpack_require__.d = function(exports, name, getter) {
-    /******/ if (!__webpack_require__.o(exports, name)) {
-      /******/ Object.defineProperty(exports, name, {
-        enumerable: true,
-        get: getter
-      });
-      /******/
-    }
-    /******/
-  }; // define __esModule on exports
-  /******/
-  /******/ /******/ __webpack_require__.r = function(exports) {
-    /******/ if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
-      /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-        value: "Module"
-      });
-      /******/
-    }
-    /******/ Object.defineProperty(exports, "__esModule", { value: true });
-    /******/
-  }; // create a fake namespace object // mode & 1: value is a module id, require it // mode & 2: merge all properties of value into the ns // mode & 4: return value when already ns object // mode & 8|1: behave like require
-  /******/
-  /******/ /******/ /******/ /******/ /******/ /******/ __webpack_require__.t = function(
-    value,
-    mode
-  ) {
-    /******/ if (mode & 1) value = __webpack_require__(value);
-    /******/ if (mode & 8) return value;
-    /******/ if (
-      mode & 4 &&
-      typeof value === "object" &&
-      value &&
-      value.__esModule
-    )
-      return value;
-    /******/ var ns = Object.create(null);
-    /******/ __webpack_require__.r(ns);
-    /******/ Object.defineProperty(ns, "default", {
-      enumerable: true,
-      value: value
-    });
-    /******/ if (mode & 2 && typeof value != "string")
-      for (var key in value)
-        __webpack_require__.d(
-          ns,
-          key,
-          function(key) {
-            return value[key];
-          }.bind(null, key)
-        );
-    /******/ return ns;
-    /******/
-  }; // getDefaultExport function for compatibility with non-harmony modules
-  /******/
-  /******/ /******/ __webpack_require__.n = function(module) {
-    /******/ var getter =
-      module && module.__esModule
-        ? /******/ function getDefault() {
-            return module["default"];
-          }
-        : /******/ function getModuleExports() {
-            return module;
-          };
-    /******/ __webpack_require__.d(getter, "a", getter);
-    /******/ return getter;
-    /******/
-  }; // Object.prototype.hasOwnProperty.call
-  /******/
-  /******/ /******/ __webpack_require__.o = function(object, property) {
-    return Object.prototype.hasOwnProperty.call(object, property);
-  }; // __webpack_public_path__
-  /******/
-  /******/ /******/ __webpack_require__.p = "/"; // Load entry module and return exports
-  /******/
-  /******/
-  /******/ /******/ return __webpack_require__((__webpack_require__.s = 0));
-  /******/
-})(
-  /************************************************************************/
-  /******/ {
-    /***/ "./resources/scripts/about.js":
-      /*!************************************!*\
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./resources/scripts/about.js":
+/*!************************************!*\
   !*** ./resources/scripts/about.js ***!
   \************************************/
-      /*! no static exports found */
-      /***/ function(module, exports, __webpack_require__) {
-        "use strict";
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-        var showAbout = document.querySelectorAll(".about-hide");
-        var icon = document.querySelectorAll(".plus-icon");
-        icon[2].addEventListener("click", function() {
-          showAbout[0].classList.toggle("show");
-        });
-        icon[3].addEventListener("click", function() {
-          showAbout[1].classList.toggle("show");
-        });
-        icon[4].addEventListener("click", function() {
-          showAbout[2].classList.toggle("show");
-        });
-        icon[5].addEventListener("click", function() {
-          showAbout[3].classList.toggle("show");
-        }); // export default about;
+"use strict";
 
-        /***/
-      },
 
-    /***/ "./resources/scripts/app.js":
-      /*!**********************************!*\
+var showAbout = document.querySelectorAll(".about-hide");
+var icon = document.querySelectorAll(".plus-icon");
+icon[2].addEventListener("click", function () {
+  showAbout[0].classList.toggle("show");
+});
+icon[3].addEventListener("click", function () {
+  showAbout[1].classList.toggle("show");
+});
+icon[4].addEventListener("click", function () {
+  showAbout[2].classList.toggle("show");
+});
+icon[5].addEventListener("click", function () {
+  showAbout[3].classList.toggle("show");
+}); // export default about;
+
+/***/ }),
+
+/***/ "./resources/scripts/app.js":
+/*!**********************************!*\
   !*** ./resources/scripts/app.js ***!
   \**********************************/
-      /*! no exports provided */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        /* harmony import */ var _areas__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-          /*! ./areas */ "./resources/scripts/areas.js"
-        );
-        /* harmony import */ var _general__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-          /*! ./general */ "./resources/scripts/general.js"
-        );
-        /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-          /*! ./nav */ "./resources/scripts/nav.js"
-        );
-        /* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-          /*! ./plus-icons */ "./resources/scripts/plus-icons.js"
-        );
-        /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-          /*! ./search-form */ "./resources/scripts/search-form.js"
-        );
-        /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-          /*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js"
-        );
-        /* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-          /*! ./show-filter */ "./resources/scripts/show-filter.js"
-        );
-        /* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-          /*! ./about */ "./resources/scripts/about.js"
-        );
-        /* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/ __webpack_require__.n(
-          _about__WEBPACK_IMPORTED_MODULE_5__
-        );
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        /***/
-      },
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _areas__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./areas */ "./resources/scripts/areas.js");
+/* harmony import */ var _general__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./general */ "./resources/scripts/general.js");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav */ "./resources/scripts/nav.js");
+/* harmony import */ var _plus_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./plus-icons */ "./resources/scripts/plus-icons.js");
+/* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
+/* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
+/* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_7__);
 
-    /***/ "./resources/scripts/areas.js":
-      /*!************************************!*\
+
+
+
+
+
+
+
+var mySwiper = new Swiper(".swiper-container", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true
+  },
+  autoplay: {
+    delay: 6000
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/scripts/areas.js":
+/*!************************************!*\
   !*** ./resources/scripts/areas.js ***!
   \************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var showAreaIcons = document.querySelectorAll(".show-area");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 
-        var showAreas = (function() {
-          showAreaIcons.forEach(function(showAreaIcon) {
-            showAreaIcon.addEventListener("click", function(e) {
-              // Get the area description and toggle show
-              var description = e.currentTarget.nextElementSibling;
-              description.classList.toggle("show"); // Get the plus icon and toggle change
 
-              var plusIcon = e.currentTarget.querySelector(".plus-icon");
-              plusIcon.classList.toggle("change");
-            });
-          });
-        })();
+var showAreaIcons = document.querySelectorAll(".show-area");
 
-        /* harmony default export */ __webpack_exports__["default"] = showAreas;
+var showAreas = function () {
+  showAreaIcons.forEach(function (showAreaIcon) {
+    showAreaIcon.addEventListener("click", function (e) {
+      // Get the area description and toggle show
+      var description = e.currentTarget.nextElementSibling;
+      description.classList.toggle("show"); // Get the plus icon and toggle change
 
-        /***/
-      },
+      var plusIcon = e.currentTarget.querySelector(".plus-icon");
+      plusIcon.classList.toggle("change");
+    });
+  });
+}();
 
-    /***/ "./resources/scripts/general.js":
-      /*!**************************************!*\
+/* harmony default export */ __webpack_exports__["default"] = (showAreas);
+
+/***/ }),
+
+/***/ "./resources/scripts/general.js":
+/*!**************************************!*\
   !*** ./resources/scripts/general.js ***!
   \**************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        var swiper = new Swiper(".swiper-container", {
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "bullets",
-            clickable: true
-          },
-          autoplay: {
-            delay: 4000
-          }
-        });
-        /* harmony default export */ __webpack_exports__["default"] = swiper;
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        /***/
-      },
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var swiper = new Swiper(".swiper-container", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true
+  },
+  autoplay: {
+    delay: 4000
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (swiper);
 
-    /***/ "./resources/scripts/nav.js":
-      /*!**********************************!*\
+/***/ }),
+
+/***/ "./resources/scripts/nav.js":
+/*!**********************************!*\
   !*** ./resources/scripts/nav.js ***!
   \**********************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var hamburger = document.querySelector(".hamburger");
-        var menuItems = document.querySelector(".menu-items");
-        var hideChild = document.querySelectorAll(".hide-child");
-        var parents = document.querySelectorAll(".parent");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 
-        var togglePlusIcon = function togglePlusIcon(e) {
-          var plusIcon = e.currentTarget.querySelector(".plus-icon");
-          plusIcon.classList.toggle("change");
-        };
 
-        var menu = (function() {
-          hamburger.addEventListener("click", function() {
-            hamburger.classList.toggle("change");
-            menuItems.classList.toggle("show-menu");
-          }); //Show child-pages when parent is the active nav-link
+var hamburger = document.querySelector(".hamburger");
+var menuItems = document.querySelector(".menu-items");
+var hideChild = document.querySelectorAll(".hide-child");
+var parents = document.querySelectorAll(".parent");
 
-          if (parents[0].classList.contains("active")) {
-            hideChild[0].classList.add("show-child");
-            hideChild[1].classList.add("show-child");
-          }
+var togglePlusIcon = function togglePlusIcon(e) {
+  var plusIcon = e.currentTarget.querySelector(".plus-icon");
+  plusIcon.classList.toggle("change");
+};
 
-          if (parents[1].classList.contains("active")) {
-            hideChild[2].classList.add("show-child");
-          } // Toggle between class names to show/hide menu items and change styling to menu and icon.
+var menu = function () {
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("change");
+    menuItems.classList.toggle("show-menu");
+  }); //Show child-pages when parent is the active nav-link
 
-          parents[0].addEventListener("click", function(e) {
-            hideChild[0].classList.toggle("show-child");
-            hideChild[1].classList.toggle("show-child");
-            togglePlusIcon(e);
-          });
-          parents[1].addEventListener("click", function(e) {
-            hideChild[2].classList.toggle("show-child");
-            togglePlusIcon(e);
-          }); // Hide menu when clicking on anything else than menu-elements
+  if (parents[0].classList.contains("active")) {
+    hideChild[0].classList.add("show-child");
+    hideChild[1].classList.add("show-child");
+  }
 
-          window.addEventListener("click", function(e) {
-            if (
-              e.target != menuItems &&
-              e.target != hamburger &&
-              e.target.parentNode.parentNode != menuItems &&
-              e.target.parentNode != menuItems &&
-              e.target.parentNode != hamburger &&
-              menuItems.classList.contains("show-menu")
-            ) {
-              menuItems.classList.remove("show-menu");
-              hamburger.classList.remove("change");
-            }
-          });
-        })();
+  if (parents[1].classList.contains("active")) {
+    hideChild[2].classList.add("show-child");
+  } // Toggle between class names to show/hide menu items and change styling to menu and icon.
 
-        /* harmony default export */ __webpack_exports__["default"] = menu;
 
-        /***/
-      },
+  parents[0].addEventListener("click", function (e) {
+    hideChild[0].classList.toggle("show-child");
+    hideChild[1].classList.toggle("show-child");
+    togglePlusIcon(e);
+  });
+  parents[1].addEventListener("click", function (e) {
+    hideChild[2].classList.toggle("show-child");
+    togglePlusIcon(e);
+  }); // Hide menu when clicking on anything else than menu-elements
 
-    /***/ "./resources/scripts/plus-icons.js":
-      /*!*****************************************!*\
+  window.addEventListener("click", function (e) {
+    if (e.target != menuItems && e.target != hamburger && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
+      menuItems.classList.remove("show-menu");
+      hamburger.classList.remove("change");
+    }
+  });
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (menu);
+
+/***/ }),
+
+/***/ "./resources/scripts/plus-icons.js":
+/*!*****************************************!*\
   !*** ./resources/scripts/plus-icons.js ***!
   \*****************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        var plusIcons = document.querySelectorAll(".plus-icon");
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var eventListenerForPlusIcons = (function() {
-          plusIcons.forEach(function(plusIcon) {
-            plusIcon.addEventListener("click", function(e) {
-              e.currentTarget.classList.toggle("change");
-            });
-          });
-        })();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var plusIcons = document.querySelectorAll(".plus-icon");
 
-        /* harmony default export */ __webpack_exports__[
-          "default"
-        ] = eventListenerForPlusIcons;
+var eventListenerForPlusIcons = function () {
+  plusIcons.forEach(function (plusIcon) {
+    plusIcon.addEventListener("click", function (e) {
+      e.currentTarget.classList.toggle("change");
+    });
+  });
+}();
 
-        /***/
-      },
+/* harmony default export */ __webpack_exports__["default"] = (eventListenerForPlusIcons);
 
-    /***/ "./resources/scripts/search-form.js":
-      /*!******************************************!*\
+/***/ }),
+
+/***/ "./resources/scripts/search-form.js":
+/*!******************************************!*\
   !*** ./resources/scripts/search-form.js ***!
   \******************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        var searchIcon = document.querySelector(".search-icon");
-        var searchForm = document.querySelector(".search-form");
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var showSearchForm = (function() {
-          searchIcon.addEventListener("click", function(e) {
-            searchForm.classList.add("show");
-            searchIcon.classList.add("hide");
-          });
-        })();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var searchIcon = document.querySelector(".search-icon");
+var searchForm = document.querySelector(".search-form");
 
-        /* harmony default export */ __webpack_exports__[
-          "default"
-        ] = showSearchForm;
+var showSearchForm = function () {
+  searchIcon.addEventListener("click", function (e) {
+    searchForm.classList.add("show");
+    searchIcon.classList.add("hide");
+  });
+}();
 
-        /***/
-      },
+/* harmony default export */ __webpack_exports__["default"] = (showSearchForm);
 
-    /***/ "./resources/scripts/show-filter.js":
-      /*!******************************************!*\
+/***/ }),
+
+/***/ "./resources/scripts/show-filter.js":
+/*!******************************************!*\
   !*** ./resources/scripts/show-filter.js ***!
   \******************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        var filterButton = document.querySelector(".filter-wrapper");
-        var filters = document.querySelector(".mec-search-form");
-        var filterIcon = document.querySelector(".filter-icon");
-        var monthFilter = document.querySelector("#mec_sf_month_242");
-        var yearFilter = document.querySelector("#mec_sf_year_242");
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var showAndHideFilters = (function() {
-          //Change text content of month and year select tags
-          monthFilter.querySelector(".mec-none-item").textContent = "Month";
-          yearFilter.querySelector(".mec-none-item").textContent = "Year";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var filterButton = document.querySelector(".filter-wrapper");
+var filters = document.querySelector(".mec-search-form");
+var filterIcon = document.querySelector(".filter-icon");
+var monthFilter = document.querySelector("#mec_sf_month_242");
+var yearFilter = document.querySelector("#mec_sf_year_242");
 
-          if (filterButton !== null) {
-            filterButton.addEventListener("click", function(e) {
-              filters.classList.toggle("show");
-              filterIcon.classList.toggle("rotate");
-            });
-          }
-        })();
+var showAndHideFilters = function () {
+  //Change text content of month and year select tags
+  monthFilter.querySelector(".mec-none-item").textContent = "Month";
+  yearFilter.querySelector(".mec-none-item").textContent = "Year";
 
-        /* harmony default export */ __webpack_exports__[
-          "default"
-        ] = showAndHideFilters;
+  if (filterButton !== null) {
+    filterButton.addEventListener("click", function (e) {
+      filters.classList.toggle("show");
+      filterIcon.classList.toggle("rotate");
+    });
+  }
+}();
 
-        /***/
-      },
+/* harmony default export */ __webpack_exports__["default"] = (showAndHideFilters);
 
-    /***/ "./resources/scripts/show-gallery-post.js":
-      /*!************************************************!*\
+/***/ }),
+
+/***/ "./resources/scripts/show-gallery-post.js":
+/*!************************************************!*\
   !*** ./resources/scripts/show-gallery-post.js ***!
   \************************************************/
-      /*! exports provided: default */
-      /***/ function(module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        __webpack_require__.r(__webpack_exports__);
-        var imagesButton = document.querySelector(".show-images");
-        var videosButton = document.querySelector(".show-videos");
-        var imagesPosts = document.querySelector(".images-posts");
-        var videosPosts = document.querySelector(".videos-posts");
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-        var showAndHidePosts = (function() {
-          if (imagesButton !== null) {
-            imagesButton.addEventListener("click", function() {
-              if (!imagesButton.classList.contains("active")) {
-                imagesButton.classList.add("active");
-              }
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var imagesButton = document.querySelector(".show-images");
+var videosButton = document.querySelector(".show-videos");
+var imagesPosts = document.querySelector(".images-posts");
+var videosPosts = document.querySelector(".videos-posts");
 
-              if (videosButton.classList.contains("active")) {
-                videosButton.classList.remove("active");
-              }
-
-              if (!imagesPosts.classList.contains("show")) {
-                imagesPosts.classList.add("show");
-              }
-
-              if (videosPosts.classList.contains("show")) {
-                videosPosts.classList.remove("show");
-              }
-            });
-          }
-
-          if (videosButton !== null) {
-            videosButton.addEventListener("click", function() {
-              if (!videosButton.classList.contains("active")) {
-                videosButton.classList.add("active");
-              }
-
-              if (imagesButton.classList.contains("active")) {
-                imagesButton.classList.remove("active");
-              }
-
-              if (!videosPosts.classList.contains("show")) {
-                videosPosts.classList.add("show");
-              }
-
-              if (imagesPosts.classList.contains("show")) {
-                imagesPosts.classList.remove("show");
-              }
-            });
-          }
-        })();
-
-        /* harmony default export */ __webpack_exports__[
-          "default"
-        ] = showAndHidePosts;
-
-        /***/
-      },
-
-    /***/ "./resources/styles/app.scss":
-      /*!***********************************!*\
-  !*** ./resources/styles/app.scss ***!
-  \***********************************/
-      /*! no static exports found */
-      /***/ function(module, exports) {
-        // removed by extract-text-webpack-plugin
-        /***/
-      },
-
-    /***/ 0:
-      /*!********************************************************************!*\
-  !*** multi ./resources/scripts/app.js ./resources/styles/app.scss ***!
-  \********************************************************************/
-      /*! no static exports found */
-      /***/ function(module, exports, __webpack_require__) {
-        __webpack_require__(
-          /*! /Users/mark/GitHub/gathenhielmska/resources/scripts/app.js */ "./resources/scripts/app.js"
-        );
-        module.exports = __webpack_require__(
-          /*! /Users/mark/GitHub/gathenhielmska/resources/styles/app.scss */ "./resources/styles/app.scss"
-        );
-
-        /***/
+var showAndHidePosts = function () {
+  if (imagesButton !== null) {
+    imagesButton.addEventListener("click", function () {
+      if (!imagesButton.classList.contains("active")) {
+        imagesButton.classList.add("active");
       }
 
-    /******/
+      if (videosButton.classList.contains("active")) {
+        videosButton.classList.remove("active");
+      }
+
+      if (!imagesPosts.classList.contains("show")) {
+        imagesPosts.classList.add("show");
+      }
+
+      if (videosPosts.classList.contains("show")) {
+        videosPosts.classList.remove("show");
+      }
+    });
   }
-);
+
+  if (videosButton !== null) {
+    videosButton.addEventListener("click", function () {
+      if (!videosButton.classList.contains("active")) {
+        videosButton.classList.add("active");
+      }
+
+      if (imagesButton.classList.contains("active")) {
+        imagesButton.classList.remove("active");
+      }
+
+      if (!videosPosts.classList.contains("show")) {
+        videosPosts.classList.add("show");
+      }
+
+      if (imagesPosts.classList.contains("show")) {
+        imagesPosts.classList.remove("show");
+      }
+    });
+  }
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (showAndHidePosts);
+
+/***/ }),
+
+/***/ "./resources/styles/app.scss":
+/*!***********************************!*\
+  !*** ./resources/styles/app.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!********************************************************************!*\
+  !*** multi ./resources/scripts/app.js ./resources/styles/app.scss ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/scripts/app.js */"./resources/scripts/app.js");
+module.exports = __webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/styles/app.scss */"./resources/styles/app.scss");
+
+
+/***/ })
+
+/******/ });
