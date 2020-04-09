@@ -55,6 +55,11 @@ a {
 
 .single-event-wrapper {
   padding-top: 100px;
+  padding-bottom: 50px;
+
+  &>a img{
+    margin: 0 20px 10px;
+  }
 
   h1 {
     margin: 0 20px 30px;
@@ -230,5 +235,4 @@ a {
       }
     }
   }
-
 }

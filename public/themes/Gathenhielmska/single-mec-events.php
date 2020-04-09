@@ -11,6 +11,7 @@
         ?>
 
         <div class="single-event-wrapper">
+            <a href="/program"><img src="/themes/Gathenhielmska/assets/images/back-arrow.svg" alt="back-arrow"></a>
 
             <h1><?php the_title() ?></h1>
 
