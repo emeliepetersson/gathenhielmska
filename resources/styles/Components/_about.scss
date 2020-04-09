@@ -1,9 +1,13 @@
 .about {
   padding: 100px 20px 20px 20px;
 
+  p {
+    padding: 10px 0 10px 0;
+  }
+
   h2,
   h3 {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 10px 0;
   }
 
   h2 {
@@ -26,6 +30,9 @@
 }
 
 .about-facility {
+  p {
+    padding: 0 0 0 0;
+  }
   h2 {
     color: black;
   }
@@ -145,4 +152,7 @@
 
 .about-hide.show {
   display: block;
+}
+
+@media screen and (min-width: 1000px) {
 }
