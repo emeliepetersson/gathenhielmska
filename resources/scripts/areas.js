@@ -6,7 +6,7 @@ const showAreas = (function() {
   showAreaIcons.forEach(showAreaIcon => {
     showAreaIcon.addEventListener("click", e => {
       // Get the area description and toggle show
-      const description = e.currentTarget.nextElementSibling;
+      const description = e.currentTarget.querySelector(".area-wrapper");
       description.classList.toggle("show");
 
       // Get the plus icon and toggle change

@@ -1,44 +1,78 @@
 /** GENERAL STYLING **/
 div .container-booking {
-  max-width: 700px;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-.container-booking h1 {
-  margin: 70px 0 10px;
-}
-.container-booking h2 {
-  margin: 30px 0 10px;
+  padding: 100px 20px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin: 30px 0 10px;
+  }
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+  }
 }
 
 /** BOOKING AREAS **/
 .areas {
   width: 100%;
 
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .area-wrapper {
-    display: none;
-    transition: 0.3s;
-  }
-
-  .title-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .show-area {
+    position: relative;
     margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
 
+    .title-wrapper {
+      width: 100%;
+      background-color: rgba(221, 215, 215, 0.39);
+      z-index: -2;
+      padding: 10px;
+      height: 50px;
+    }
+
     .plus-icon {
+      position: absolute;
+      top: 10px;
+      right: 0;
       z-index: -1;
     }
-  }
-  .show {
-    display: block;
+
+    .area-wrapper {
+      display: none;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      &.show {
+        display: block;
+        top: 50px;
+        background-color: white;
+        z-index: 2;
+        background-color: rgb(218, 216, 216);
+        transform-origin: top;
+        animation: slide-in 200ms linear forwards;
+
+        @keyframes slide-in {
+          0% {
+            transform: scaleY(0);
+          }
+          100% {
+            transform: scaleY(1);
+          }
+        }
+      }
+      p {
+        padding: 20px 10px;
+      }
+    }
   }
 }
 
@@ -46,6 +80,10 @@ div .container-booking {
 .wpcf7-form {
   width: 100%;
   margin-right: 0;
+
+  label {
+    font-size: 18px;
+  }
 }
 
 .wpcf7-form p {
@@ -85,11 +123,6 @@ div .container-booking {
 }
 
 /* time */
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap .start-time,
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap .stop-time {
-  width: 40%;
-}
-
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap {
   width: 47%;
 }
@@ -109,6 +142,10 @@ div .container-booking {
 .wpcf7 .wpcf7-form .time {
   display: flex;
   justify-content: space-between;
+
+  br{
+    display: none;
+  }
 }
 
 /* Image */
@@ -151,3 +188,87 @@ div .container-booking {
   color: rgb(73, 72, 72);
   font-size: 17px;
 }
+
+@media screen and (min-width: 1000px) {
+  div .container-booking {
+
+   .content {
+      p, h1 {
+        width: 70%;
+        margin: 0 auto;
+      }
+      h2 {
+        padding: 0 20px;
+      }
+    }
+
+    .areas {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 70px;
+
+      &>div {
+        width: 32%;
+      }
+    }
+
+    h1 {
+      padding: 40px 0 50px;
+      text-align: center;
+    }
+    h2 {
+      margin: 110px 0 10px;
+    }
+  }
+  .wpcf7 {
+    .wpcf7-form {
+      background-color: rgb(196, 194, 194);
+      padding: 20px 100px;
+      margin: 20px 90px;
+      width: initial;
+
+      .text {
+        padding-bottom: 30px;
+        padding-left: 30%;
+      }
+
+      h2 {
+        margin-top: 20px;
+        padding-left: 30%;
+      }
+
+      p {
+        label {
+          display: flex;
+          .label {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 30%;
+            text-align: right;
+            padding-right: 15px;
+
+            &.description {
+              align-items: flex-start;
+              padding-top: 10px;
+            }
+          }
+          .wpcf7-form-control-wrap {
+            width: 50%;
+          }
+        }
+
+        .time {
+          width: 50%;
+        }
+      }
+      p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item, p input[type="submit"]  {
+         margin-left: 30%;
+      }
+    }
+  }
+}
+
