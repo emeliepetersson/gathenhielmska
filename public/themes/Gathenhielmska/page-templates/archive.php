@@ -8,16 +8,7 @@
         <?php while (have_posts()) : the_post(); ?>
 
             <div>
-                <?php if (has_post_thumbnail()) : ?>
-                    <div>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                            <?php the_post_thumbnail(); ?>
-                        </a>
-                    </div>
-
-                <?php endif; ?>
                 <?php the_content(); ?>
-
             </div>
 
         <?php endwhile; ?>
@@ -33,13 +24,13 @@
         <?php foreach ($imagesPosts as $post) : setup_postdata($post); ?>
 
             <div class="post">
-                <?php the_title(); ?>
-                <?php the_field("date_and_time") ?>
-                <?php the_field("location") ?>
+                <h2><?php the_title(); ?></h2>
+                <div class="info">
+                    <span><?php the_field("date_and_time") ?></span>
+                    <span><?php the_field("location") ?></span>
+                </div>
 
                 <?php the_content(); ?>
-
-
 
                 <div class="images">
                     <?php
@@ -47,9 +38,8 @@
                         while (have_rows("images")) : the_row();
                     ?>
                             <div class="image">
-                                <img src="<?php echo the_sub_field("image") ?>" alt="post image">
+                                <img src="<?php echo the_sub_field("image") ?>" id="image-modal" alt="post image">
                             </div>
-
                     <?php
                         endwhile;
                     endif;
@@ -63,6 +53,13 @@
     <?php endif; ?>
 </div>
 
+<!-- Image modal -->
+<div id="modal" class="modal">
+    <span class="close" id="close-modal">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption" class="caption"></div>
+</div>
+
 <div class="videos-posts">
     <?php $videosPosts = get_posts(['post_type' => 'videos']); ?>
 
@@ -72,8 +69,10 @@
 
             <div class="post">
                 <h2><?php the_title(); ?></h2>
-                <p><?php the_field("date_and_time") ?></p>
-                <p><?php the_field("location") ?></p>
+                <div class="info">
+                    <span><?php the_field("date_and_time") ?></span>
+                    <span><?php the_field("location") ?></span>
+                </div>
 
                 <?php the_content(); ?>
 

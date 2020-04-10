@@ -5,7 +5,8 @@ import "./plus-icons";
 import "./search-form";
 import "./show-gallery-post";
 import "./show-filter";
-import "./about";
+import "./image-modal";
+// import "./about";
 
 var mySwiper = new Swiper(".swiper-container", {
   pagination: {
