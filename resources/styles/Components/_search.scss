@@ -1,0 +1,36 @@
+.search-page {
+  padding: 100px 20px 20px 20px;
+}
+
+.search-result {
+  button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  button:hover {
+    cursor: default;
+    background: white;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  h2 {
+    padding: 20px 0 10px 0;
+  }
+
+  p {
+    padding: 0 0 10px 0;
+  }
+  .search-link {
+    position: relative;
+    a {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+    }
+  }
+}
