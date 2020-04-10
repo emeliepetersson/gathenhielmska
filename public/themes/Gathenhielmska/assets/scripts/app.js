@@ -86,33 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/scripts/about.js":
-/*!************************************!*\
-  !*** ./resources/scripts/about.js ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var showAbout = document.querySelectorAll(".about-hide");
-var icon = document.querySelectorAll(".plus-icon");
-icon[2].addEventListener("click", function () {
-  showAbout[0].classList.toggle("show");
-});
-icon[3].addEventListener("click", function () {
-  showAbout[1].classList.toggle("show");
-});
-icon[4].addEventListener("click", function () {
-  showAbout[2].classList.toggle("show");
-});
-icon[5].addEventListener("click", function () {
-  showAbout[3].classList.toggle("show");
-}); // export default about;
-
-/***/ }),
-
 /***/ "./resources/scripts/app.js":
 /*!**********************************!*\
   !*** ./resources/scripts/app.js ***!
@@ -129,8 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
 /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
 /* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _image_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./image-modal */ "./resources/scripts/image-modal.js");
 
 
 
@@ -138,6 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import "./about";
 
 var mySwiper = new Swiper(".swiper-container", {
   pagination: {
@@ -203,6 +176,41 @@ var swiper = new Swiper(".swiper-container", {
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (swiper);
+
+/***/ }),
+
+/***/ "./resources/scripts/image-modal.js":
+/*!******************************************!*\
+  !*** ./resources/scripts/image-modal.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var modal = document.querySelector(".modal");
+var images = document.querySelectorAll("#image-modal");
+var modalImg = document.querySelector("#modal-img");
+var captionText = document.getElementById("caption");
+
+var showHideImageModal = function () {
+  // Insert the image inside the modal - use its "alt" text as a caption
+  images.forEach(function (image) {
+    image.addEventListener("click", function (e) {
+      modal.classList.add("show");
+      modalImg.src = e.currentTarget.src;
+      captionText.innerHTML = e.currentTarget.alt;
+    });
+  }); // Get the <span> element that closes the modal
+
+  var close = document.querySelector("#close-modal"); // When the user clicks on close, close the modal
+
+  close.onclick = function () {
+    modal.classList.remove("show");
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (showHideImageModal);
 
 /***/ }),
 
@@ -328,8 +336,13 @@ var yearFilter = document.querySelector("#mec_sf_year_242");
 
 var showAndHideFilters = function () {
   //Change text content of month and year select tags
-  monthFilter.querySelector(".mec-none-item").textContent = "Month";
-  yearFilter.querySelector(".mec-none-item").textContent = "Year";
+  if (monthFilter !== null) {
+    monthFilter.querySelector(".mec-none-item").textContent = "Month";
+  }
+
+  if (yearFilter !== null) {
+    yearFilter.querySelector(".mec-none-item").textContent = "Year";
+  }
 
   if (filterButton !== null) {
     filterButton.addEventListener("click", function (e) {

@@ -7,11 +7,19 @@ div .container-booking {
 }
 
 div .container-booking h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 div .container-booking h2 {
   margin: 30px 0 10px;
+}
+
+div .container-booking p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
 }
 
 /** BOOKING AREAS **/
@@ -20,22 +28,8 @@ div .container-booking h2 {
   width: 100%;
 }
 
-.areas img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.areas .area-wrapper {
-  display: none;
-  transition: 0.3s;
-}
-
 .areas .show-area {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 20px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -43,7 +37,7 @@ div .container-booking h2 {
 
 .areas .show-area .title-wrapper {
   width: 100%;
-  background-color: #ddd7d7;
+  background-color: rgba(221, 215, 215, 0.39);
   z-index: -2;
   padding: 10px;
   height: 50px;
@@ -51,20 +45,42 @@ div .container-booking h2 {
 
 .areas .show-area .plus-icon {
   position: absolute;
+  top: 10px;
   right: 0;
   z-index: -1;
 }
 
-.areas .show-area .show {
+.areas .show-area .area-wrapper {
+  display: none;
+}
+
+.areas .show-area .area-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.areas .show-area .area-wrapper.show {
   display: block;
-  position: absolute;
   top: 50px;
   background-color: white;
   z-index: 2;
-  border: 1px solid #d1d0d0;
+  background-color: #dad8d8;
+  transform-origin: top;
+  animation: slide-in 200ms linear forwards;
 }
 
-.areas .show-area .show p {
+@keyframes slide-in {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.areas .show-area .area-wrapper p {
   padding: 20px 10px;
 }
 
@@ -73,6 +89,10 @@ div .container-booking h2 {
 .wpcf7-form {
   width: 100%;
   margin-right: 0;
+}
+
+.wpcf7-form label {
+  font-size: 18px;
 }
 
 .wpcf7-form p {
@@ -205,21 +225,28 @@ div .container-booking h2 {
 
   div .container-booking h1 {
     padding: 40px 0 50px;
+    text-align: center;
   }
 
   div .container-booking h2 {
-    margin: 30px 0 10px;
+    margin: 110px 0 10px;
   }
 
   .wpcf7 .wpcf7-form {
     background-color: #c4c2c2;
     padding: 20px 100px;
-    margin: 20px 100px;
+    margin: 20px 90px;
     width: initial;
   }
 
   .wpcf7 .wpcf7-form .text {
     padding-bottom: 30px;
+    padding-left: 30%;
+  }
+
+  .wpcf7 .wpcf7-form h2 {
+    margin-top: 20px;
+    padding-left: 30%;
   }
 
   .wpcf7 .wpcf7-form p label {
@@ -1615,21 +1642,30 @@ button:hover {
 
 .archive p {
   padding: 0 20px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
 }
 
 .archive .button-wrapper {
   margin: 40px 0 30px;
   height: 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #cccccc;
+}
+
+.archive .button-wrapper br {
+  display: none;
 }
 
 .archive .button-wrapper button {
   border: none;
   text-transform: initial;
-  margin: 0;
+  margin: 0 50px;
   width: 60px;
   height: 30px;
 }
@@ -1645,65 +1681,261 @@ button:hover {
 .images-posts,
 .videos-posts {
   display: none;
-  padding: 0 20px;
 }
 
 .images-posts.show,
 .videos-posts.show {
-  display: initial;
+  display: block;
 }
 
 .images-posts .post,
 .videos-posts .post {
-  padding: 0 20px;
+  padding: 0 10px 50px;
 }
 
-.images-posts .images,
-.images-posts .videos,
-.videos-posts .images,
-.videos-posts .videos {
+.images-posts .post .info,
+.videos-posts .post .info {
+  padding: 0 10px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
-.images-posts .images div,
-.images-posts .videos div,
-.videos-posts .images div,
-.videos-posts .videos div {
-  margin: 1px 0;
-  width: 99%;
-  height: 170px;
+.images-posts .post .info span,
+.videos-posts .post .info span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 157.19%;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.images-posts .post p,
+.videos-posts .post p {
+  padding: 10px 10px 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 157.19%;
+}
+
+.images-posts .post h2,
+.videos-posts .post h2 {
+  padding: 0 10px;
+}
+
+.images-posts .post .images,
+.images-posts .post .videos,
+.videos-posts .post .images,
+.videos-posts .post .videos {
+  width: 100%;
+  position: relative;
+}
+
+.images-posts .post .images div:last-child,
+.images-posts .post .videos div:last-child,
+.videos-posts .post .images div:last-child,
+.videos-posts .post .videos div:last-child {
+  margin-bottom: 40px;
+}
+
+.images-posts .post .images .image,
+.images-posts .post .videos .image,
+.videos-posts .post .images .image,
+.videos-posts .post .videos .image {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.images-posts .post .images .image:hover,
+.images-posts .post .videos .image:hover,
+.videos-posts .post .images .image:hover,
+.videos-posts .post .videos .image:hover {
+  opacity: 0.7;
+}
+
+.images-posts .post .images div,
+.images-posts .post .videos div,
+.videos-posts .post .images div,
+.videos-posts .post .videos div {
+  margin: 10px;
+  float: left;
+  position: relative;
+  width: 95%;
+  padding-bottom: 95%;
   overflow: hidden;
 }
 
-.images-posts .images div img,
-.images-posts .images div video,
-.images-posts .videos div img,
-.images-posts .videos div video,
-.videos-posts .images div img,
-.videos-posts .images div video,
-.videos-posts .videos div img,
-.videos-posts .videos div video {
+.images-posts .post .images div img,
+.images-posts .post .images div video,
+.images-posts .post .videos div img,
+.images-posts .post .videos div video,
+.videos-posts .post .images div img,
+.videos-posts .post .images div video,
+.videos-posts .post .videos div img,
+.videos-posts .post .videos div video {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-@media screen and (min-width: 1000px) {
-  .images-posts .images,
-  .images-posts .videos,
-  .videos-posts .images,
-  .videos-posts .videos {
-    grid-template-columns: 1fr 1fr 1fr;
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+  /* Modal Content (Image) */
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .modal-content {
+  margin: 50px auto 0;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal .caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal .modal-content,
+.modal .caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
   }
 
-  .images-posts .images div,
-  .images-posts .videos div,
-  .videos-posts .images div,
-  .videos-posts .videos div {
-    height: 500px;
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal .close {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal .modal-content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .archive {
+    padding-top: 100px;
+  }
+
+  .archive h1 {
+    padding: 40px 50px;
+    text-align: center;
+  }
+
+  .archive h1,
+  .archive p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .archive .button-wrapper {
+    margin-top: 90px;
+    justify-content: space-evenly;
+  }
+
+  .archive .button-wrapper button {
+    margin: 0;
+  }
+
+  .images-posts .post,
+  .videos-posts .post {
+    padding-bottom: 80px;
+  }
+
+  .images-posts .post .info,
+  .videos-posts .post .info {
+    justify-content: flex-start;
+  }
+
+  .images-posts .post .info span:last-child,
+  .videos-posts .post .info span:last-child {
+    padding-left: 20px;
+  }
+
+  .images-posts .post .images,
+  .images-posts .post .videos,
+  .videos-posts .post .images,
+  .videos-posts .post .videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .images-posts .post .images div:last-child,
+  .images-posts .post .videos div:last-child,
+  .videos-posts .post .images div:last-child,
+  .videos-posts .post .videos div:last-child {
+    margin-bottom: 10px;
+  }
+
+  .images-posts .post .images div,
+  .images-posts .post .videos div,
+  .videos-posts .post .images div,
+  .videos-posts .post .videos div {
+    width: 31%;
+    padding-bottom: 31%;
   }
 }
 
@@ -1993,7 +2225,6 @@ button:hover {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid black;
-    font-size: 12px;
   }
 
   .program .mec-wrap .mec-month-divider {

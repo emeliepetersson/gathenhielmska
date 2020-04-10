@@ -6,8 +6,12 @@ const yearFilter = document.querySelector("#mec_sf_year_242");
 
 const showAndHideFilters = (function() {
   //Change text content of month and year select tags
-  monthFilter.querySelector(".mec-none-item").textContent = "Month";
-  yearFilter.querySelector(".mec-none-item").textContent = "Year";
+  if (monthFilter !== null) {
+    monthFilter.querySelector(".mec-none-item").textContent = "Month";
+  }
+  if (yearFilter !== null) {
+    yearFilter.querySelector(".mec-none-item").textContent = "Year";
+  }
 
   if (filterButton !== null) {
     filterButton.addEventListener("click", e => {
