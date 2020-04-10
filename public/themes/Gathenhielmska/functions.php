@@ -30,6 +30,15 @@ add_action('wp_enqueue_scripts', 'custom_stylesheet');
 // Enable featured image
 add_theme_support('post-thumbnails');
 
+// Search only post news
+function SearchFilter($query)
+{
+    if ($query->is_search) {
+        $query->set('post_type', 'news');
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'SearchFilter');
 
 /**
  * Enable features from Soil when plugin is activated
