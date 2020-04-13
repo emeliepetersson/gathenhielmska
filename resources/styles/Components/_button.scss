@@ -1,6 +1,5 @@
 button {
-  font-family: Playfair Display;
-  border: 1px solid black;
+  font-family: Roboto;
   width: 177px;
   height: 51px;
   background-color: none;
@@ -8,9 +7,17 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   margin: 20px 0;
-  background-color: transparent;
+  border: none;
+  background-color: $deepTurquoise;
+  border-radius: 3px;
+
+  a {
+    color: $waveWhite;
+    font-family: Roboto;
+  }
 
   &:hover {
-    background-color: #ff823f;
+    background-color: #4B6966;
+    transform: translate(-2px, -2px);
   }
 }

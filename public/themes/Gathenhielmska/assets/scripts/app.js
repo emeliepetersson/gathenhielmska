@@ -222,6 +222,7 @@ var hamburger = document.querySelector(".hamburger");
 var menuItems = document.querySelector(".menu-items");
 var hideChild = document.querySelectorAll(".hide-child");
 var parents = document.querySelectorAll(".parent");
+var mediaIcons = document.querySelectorAll(".media-icons");
 
 var togglePlusIcon = function togglePlusIcon(e) {
   var plusIcon = e.currentTarget.querySelector(".plus-icon");
@@ -261,7 +262,7 @@ var menu = function () {
   }); // Hide menu when clicking on anything else than menu-elements
 
   window.addEventListener("click", function (e) {
-    if (e.target != menuItems && e.target != hamburger && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
+    if (e.target != menuItems && e.target != hamburger && e.target != mediaIcons && e.target.parentNode.parentNode != mediaIcons && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
       menuItems.classList.remove("show-menu");
       hamburger.classList.remove("change");
     }
