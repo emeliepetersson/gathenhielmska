@@ -1,12 +1,24 @@
 .contact {
   padding: 100px 20px 20px 20px;
+
+  h1 {
+    padding: 0 0 20px 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
   h3 {
     padding: 20px 0 10px 0;
+    font-size: 24px;
     color: #ff823f;
   }
 
   h2 {
-    padding: 20px 0 0 0;
+    padding: 20px 0 10px 0;
+    font-size: 36px;
   }
 }
 
@@ -23,7 +35,23 @@
   background: #223533;
   text-align: center;
   margin-bottom: 5px;
+
+  h3 {
+    font-family: Playfair Display;
+    font-size: 24px;
+  }
+
   p {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 5px 0;
+    font-size: 16px;
+    color: #f3f0e7;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact {
+    padding: 140px 20px 20px 20px;
+    width: 60%;
+    margin: auto;
   }
 }

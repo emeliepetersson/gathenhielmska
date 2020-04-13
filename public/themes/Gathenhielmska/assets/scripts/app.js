@@ -129,16 +129,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
 /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
 /* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
-/* harmony import */ var _image_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./image-modal */ "./resources/scripts/image-modal.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
 
 
-
+ // import "./image-modal";
 
 
 var mySwiper = new Swiper(".swiper-container", {
@@ -205,41 +204,6 @@ var swiper = new Swiper(".swiper-container", {
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (swiper);
-
-/***/ }),
-
-/***/ "./resources/scripts/image-modal.js":
-/*!******************************************!*\
-  !*** ./resources/scripts/image-modal.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var modal = document.querySelector(".modal");
-var images = document.querySelectorAll("#image-modal");
-var modalImg = document.querySelector("#modal-img");
-var captionText = document.getElementById("caption");
-
-var showHideImageModal = function () {
-  // Insert the image inside the modal - use its "alt" text as a caption
-  images.forEach(function (image) {
-    image.addEventListener("click", function (e) {
-      modal.classList.add("show");
-      modalImg.src = e.currentTarget.src;
-      captionText.innerHTML = e.currentTarget.alt;
-    });
-  }); // Get the <span> element that closes the modal
-
-  var close = document.querySelector("#close-modal"); // When the user clicks on close, close the modal
-
-  close.onclick = function () {
-    modal.classList.remove("show");
-  };
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (showHideImageModal);
 
 /***/ }),
 
