@@ -36,9 +36,11 @@
                     <?php
                     if (have_rows("images")) :
                         while (have_rows("images")) : the_row();
+
+                            $image = get_sub_field('image');
                     ?>
                             <div class="image">
-                                <img src="<?php echo the_sub_field("image") ?>" id="image-modal" alt="post image">
+                                <img src="<?php echo $image['url']; ?>" id="image-modal" alt="<?php echo $image['alt'] ?>">
                             </div>
                     <?php
                         endwhile;

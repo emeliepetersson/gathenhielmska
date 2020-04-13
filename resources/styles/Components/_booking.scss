@@ -1,12 +1,12 @@
-/** GENERAL STYLING **/
 div .container-booking {
-  padding: 100px 20px;
+  padding: 100px 20px 70px;
 
   h1 {
     margin-bottom: 20px;
   }
   h2 {
     margin: 30px 0 10px;
+    color: $mandarin;
   }
   p {
     font-family: Roboto;
@@ -23,16 +23,20 @@ div .container-booking {
 
   .show-area {
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 10px 0 5px;
     cursor: pointer;
 
     .title-wrapper {
       width: 100%;
-      background-color: rgba(221, 215, 215, 0.39);
       z-index: -2;
-      padding: 10px;
+      padding: 10px 10px 10px 0px;
       height: 50px;
+
+      h3 {
+        color: $deepTurquoise;
+        font-weight: lighter;
+        font-size: 20px;
+      }
     }
 
     .plus-icon {
@@ -56,11 +60,11 @@ div .container-booking {
         top: 50px;
         background-color: white;
         z-index: 2;
-        background-color: rgb(218, 216, 216);
+        background-color: $waveWhite;
         transform-origin: top;
-        animation: slide-in 200ms linear forwards;
+        animation: slide-down 200ms linear forwards;
 
-        @keyframes slide-in {
+        @keyframes slide-down {
           0% {
             transform: scaleY(0);
           }
@@ -143,9 +147,22 @@ div .container-booking {
 .wpcf7 .wpcf7-form .time {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  .label {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  label {
+    width: 48%;
+  }
 
   br{
     display: none;
+  }
+  .wpcf7-form-control-wrap input {
+    margin-bottom: 0;
   }
 }
 
@@ -173,8 +190,7 @@ div .container-booking {
 
 /* Button */
 .wpcf7 .wpcf7-form p input[type="submit"] {
-  font-family: Playfair Display;
-  border: 1px solid black;
+  font-family: Roboto;
   width: 177px;
   height: 51px;
   background-color: none;
@@ -182,12 +198,15 @@ div .container-booking {
   text-transform: uppercase;
   cursor: pointer;
   margin: 20px 0;
+  border: none;
+  background-color: $deepTurquoise;
+  border-radius: 3px;
+  color: $waveWhite;
 }
 
 .wpcf7 .wpcf7-form p input[type="submit"]:hover {
-  border: 3px inset rgb(161, 157, 157);
-  color: rgb(73, 72, 72);
-  font-size: 17px;
+  background-color: #4B6966;
+  transform: translate(-2px, -2px);
 }
 
 @media screen and (min-width: 1000px) {

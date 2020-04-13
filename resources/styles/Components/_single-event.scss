@@ -46,7 +46,7 @@
 
     .date-wrapper {
       width: 100%;
-      background-color: rgb(172, 172, 172);
+      background-color: $deepTurquoise;
       display: flex;
       justify-content: space-between;
       padding: 15px 20px;
@@ -55,15 +55,14 @@
       font-size: 24px;
       line-height: 28px;
 
-      .mec-single-event-date {
+      .mec-single-event-date, .mec-single-event-time {
         padding: 0;
         margin: 0;
+        color: $waveWhite;
       }
 
       .mec-single-event-time {
         font-size: 20px;
-        padding: 0;
-        margin: 0;
       }
     }
 
@@ -71,7 +70,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: rgb(231, 231, 231);
+      background-color: $waveWhite;
       width: 100%;
       padding: 20px 0;
 
@@ -99,6 +98,7 @@
           font-weight: normal;
           font-size: 24px;
           line-height: 32px;
+          color: $deepTurquoise;
           order: 1;
         }
       }
@@ -109,10 +109,16 @@
         font-size: 24px;
         line-height: 32px;
         margin: 10px 0;
+        color: $deepTurquoise;
       }
 
       button {
         width: 80%;
+
+        .mec-event-more-info {
+          padding: 0;
+          margin: 0;
+        }
       }
     }
   }
@@ -129,12 +135,16 @@
         margin-right: 10px;
         margin-top: 30px;
         display: inline-block;
-        border: 1px solid black;
+        border: 1px solid $mandarin;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
+
+        .mec-color-hover {
+          color: $mandarin;
+        }
       }
     }
     p {

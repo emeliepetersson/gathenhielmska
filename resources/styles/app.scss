@@ -24,6 +24,7 @@ ul {
 
 body {
   font-family: "Playfair Display", serif;
+  background-color: $background;
 }
 
 p {
@@ -33,6 +34,7 @@ p {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
+  color: $deepTurquoise;
 }
 
 h1 {
@@ -41,6 +43,7 @@ h1 {
   font-weight: normal;
   font-size: 36px;
   line-height: 121.2%;
+  color: $deepTurquoise;
 }
 
 h2 {
@@ -49,6 +52,7 @@ h2 {
   font-weight: normal;
   font-size: 24px;
   line-height: 157.19%;
+  color: $deepTurquoise;
 }
 
 a {
