@@ -20,9 +20,13 @@ const menu = (function() {
   if (parents[0].classList.contains("active")) {
     hideChild[0].classList.add("show-child");
     hideChild[1].classList.add("show-child");
+    const plusIcon = parents[0].querySelector(".plus-icon");
+    plusIcon.classList.add("change");
   }
   if (parents[1].classList.contains("active")) {
     hideChild[2].classList.add("show-child");
+    const plusIcon = parents[1].querySelector(".plus-icon");
+    plusIcon.classList.add("change");
   }
 
   // Toggle between class names to show/hide menu items and change styling to menu and icon.

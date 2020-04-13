@@ -16,15 +16,20 @@
 
   .mec-event-carousel-content{
     border: none;
-    padding: 30px 5px;
+    padding: 0 5px;
+    margin: 0;
     box-shadow: none;
-  }
 
-  .mec-wrap h4{
-    margin-top: 20px;
-    font-family: Playfair Display;
-    font-weight: bold;
-    font-size: 24px;
+    h4{
+      margin-top: 20px;
+      font-family: Playfair Display;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    p {
+      display: none;
+    }
   }
 
   .mec-event-image {
@@ -32,6 +37,18 @@
     img {
       height: 450px;
       object-fit: cover;
+    }
+  }
+
+  .mec-owl-theme .owl-dots .owl-dot {
+    &.active span {
+      background-color: #223533;
+    }
+    span{
+      border: 1px solid #223533;
+      background-color: transparent;
+      width: 15px;
+      height: 15px;
     }
   }
 
@@ -48,7 +65,7 @@
     padding: 80px 0 100px;
 
     p {
-      font-size: 20px;
+      font-size: 22px;
       text-align: center;
       font-family: Playfair Display;
       line-height: 130%;
@@ -189,6 +206,10 @@
       margin: 100px auto;
     }
 
+    .text-wrapper p {
+      font-size: 24px;
+    }
+
     .about-wrapper {
       padding: 0;
       margin-bottom: 40px;
@@ -227,6 +248,8 @@
           margin-top: 60px;
           font-size: 24px;
           color: white;
+          width: 330px;
+          text-align: right;
         }
 
         .button-wrapper {

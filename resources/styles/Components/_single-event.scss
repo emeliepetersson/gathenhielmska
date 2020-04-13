@@ -31,8 +31,12 @@
 
     .image-wrapper {
       margin: 0 20px 10px;
+      width: 89%;
+      padding-bottom: 89%;
+      position: relative;
 
       img {
+        position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -77,7 +81,7 @@
         align-items: center;
 
         .mec-address {
-          text-transform: uppercase;
+          display: none;
         }
 
         .location {
@@ -135,21 +139,27 @@
     }
     p {
       padding: 0 20px;
+      font-size: 20px;
+      line-height: 140%;
     }
   }
 }
 
 @media screen and (min-width: 1000px) {
   .single-event-wrapper {
+    padding-top: 130px;
     margin: 0 auto;
     width: 80vw;
 
+    h1 {
+      font-size: 52px;
+    }
     .info-wrapper {
       display: flex;
 
       .image-wrapper {
-        width: 750px;
-        height: 500px;
+        width: 70%;
+        padding-bottom: 60%;
       }
       .date-wrapper {
         background-color: transparent;
@@ -168,8 +178,14 @@
           align-items: flex-start;
           padding: 0;
         }
+
+        p {
+          font-size: 32px;
+          line-height: 43px;
+        }
+
         button {
-          width: 200px;
+          width: 250px;
         }
       }
     }
