@@ -43,9 +43,11 @@
   p {
     padding: 0 0 0 0;
   }
+
   h2 {
     color: black;
   }
+
   h3 {
     color: #ff823f;
   }
@@ -92,6 +94,7 @@
 
   .company-left {
     float: left;
+
     img {
       object-fit: cover;
       width: 134px;
@@ -104,6 +107,7 @@
     position: relative;
     height: 200px;
     width: 30%;
+
     .name {
       font-family: Playfair Display;
       font-size: 18px;
@@ -140,6 +144,7 @@
   margin: 20px 0 20px 0;
   padding: 20px;
   background: #f3f0e7;
+
   h3 {
     color: #ff823f;
   }
@@ -182,6 +187,62 @@
 
     h1 {
       text-align: center;
+    }
+  }
+
+  .company-ledningsgruppen {
+    width: 100%;
+    background: #f3f0e7;
+    margin-bottom: 5px;
+    margin-left: -20px;
+    margin-right: -20px;
+    height: 200px;
+    position: relative;
+
+    .company-left {
+      float: left;
+
+      img {
+        object-fit: cover;
+        width: 134px;
+        height: 200px;
+      }
+    }
+
+    .company-right {
+      float: left;
+      position: relative;
+      height: 200px;
+      width: 30%;
+
+      .name {
+        font-family: Playfair Display;
+        font-size: 18px;
+        padding: 0;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .proffesion {
+        font-size: 14px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+
+      a {
+        font-family: Roboto;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .mail {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+      }
     }
   }
 }
