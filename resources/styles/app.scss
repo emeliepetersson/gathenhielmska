@@ -1,7 +1,5 @@
 /* WordPlate */
 
-@import 'components/_components';
-
 /* Colors */
 $waveWhite: #F3F0E7;
 $mandarin: #FF823F;
@@ -9,6 +7,9 @@ $deepTurquoise: #223533;
 $linenBlue:  #6C8381;
 $background: #FFFDF8;
 $formText:  #C9C5BB;
+
+
+@import 'components/_components';
 
 /* General styling */
 * {
