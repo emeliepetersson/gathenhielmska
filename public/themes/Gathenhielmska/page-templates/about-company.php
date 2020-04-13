@@ -24,8 +24,8 @@
                     <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" />
                 </div>
                 <div class="company-right">
-                    <h3><?php the_sub_field("name"); ?></h3>
-                    <p><?php the_sub_field("proffesion"); ?></p>
+                    <p class="name"><?php the_sub_field("name"); ?></p>
+                    <p class='proffesion'><?php the_sub_field("proffesion"); ?></p>
                     <a class="mail" href="mailto:<?php the_sub_field("email"); ?>"><?php the_sub_field("email"); ?></a>
                     <a href="callto:<?php the_sub_field("number"); ?>"><?php the_sub_field("number"); ?></a>
                 </div>
@@ -37,9 +37,9 @@
     <?php if (have_rows('company')) :
         while (have_rows('company')) : the_row(); ?>
             <div class="company-house">
-                <h3><?php the_sub_field("name"); ?></h3>
-                <a href="<?php the_sub_field("link"); ?>">Hemsida</a>
-                <p><?php the_sub_field("proffesion"); ?></p>
+                <p class="name"><?php the_sub_field("name"); ?></p>
+                <a href="<?php the_sub_field("link"); ?>">HEMSIDA</a>
+                <p class='proffesion'><?php the_sub_field("proffesion"); ?></p>
             </div> <?php endwhile;
             endif; ?>
     </div>
