@@ -87,38 +87,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="footer-wrapper">
-            <div class="contact-wrapper">
-                <h3><?php the_field("title_1") ?></h3>
-                <p><?php the_field("adress") ?></p>
-                <p><?php the_field("phone_number") ?></p>
-                <p>Mail: <?php the_field("email") ?></p>
-            </div>
-
-            <div class="social-media-wrapper">
-                <h3><?php the_field("title_2") ?></h3>
-                <a href="<?php get_field("facebook-link") ?>"><img src="/themes/Gathenhielmska/assets/images/Facebook.svg" alt="Facebook icon"></a>
-                <a href="<?php get_field("Instagram-link") ?>"><img src="/themes/Gathenhielmska/assets/images/Instagram.svg" alt="Instagram icon"></a>
-            </div>
-
-            <div class="sponsors-wrapper">
-                <h3><?php the_field("title_3") ?></h3>
-
-                <?php
-                if (have_rows("sponsors")) :
-                    while (have_rows("sponsors")) : the_row();
-                ?>
-                        <a href="<?php get_sub_field("link") ?>"></a><img src="<?php echo get_sub_field("logo") ?>" alt="sponsor's logo">
-                <?php
-                    endwhile;
-                endif;
-
-                ?>
-
-            </div>
-        </div>
-
     <?php endwhile; ?>
 
 </div>

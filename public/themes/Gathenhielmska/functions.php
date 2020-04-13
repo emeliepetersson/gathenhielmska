@@ -148,3 +148,11 @@ function wpdocs_excerpt_more($more)
     return $more;
 }
 add_filter('excerpt_more', 'wpdocs_excerpt_more');
+
+/**
+ * Add an option page for the footer
+ */
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page();
+}

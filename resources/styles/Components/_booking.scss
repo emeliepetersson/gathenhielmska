@@ -137,6 +137,7 @@ div .container-booking {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -194,7 +195,7 @@ div .container-booking {
 
    .content {
       p, h1 {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
       }
       h2 {
@@ -226,9 +227,9 @@ div .container-booking {
   .wpcf7 {
     .wpcf7-form {
       background-color: rgb(196, 194, 194);
-      padding: 20px 100px;
-      margin: 20px 90px;
-      width: initial;
+      padding: 20px 50px;
+      margin: 20px auto;
+      width: 70%;
 
       .text {
         padding-bottom: 30px;

@@ -12,6 +12,10 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 140%;
+
+    a {
+      border-bottom: 1px solid black;
+    }
   }
 
   .button-wrapper {
@@ -27,11 +31,12 @@
     }
 
     button {
+      font-family: Roboto;
       border: none;
       text-transform: initial;
       margin: 0 50px;
       width: 60px;
-      height: 30px;
+      height: 25px;
 
       &.active {
         border-bottom: 1px solid black;
@@ -145,7 +150,7 @@
   .modal-content {
     margin: 50px auto 0;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
   }
 
@@ -189,19 +194,7 @@
     text-decoration: none;
     cursor: pointer;
   }
-
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
 }
-
-// END of image modal
-
-
-
 
 @media screen and (min-width: 1000px) {
   .archive {
@@ -213,7 +206,7 @@
     }
 
     h1, p {
-      width: 70%;
+      width: 60%;
       margin: 0 auto;
     }
 
@@ -227,7 +220,7 @@
     }
   }
 
-  .images-posts, .videos-posts{
+  .images-posts, .videos-posts {
     .post {
       padding-bottom: 80px;
 
@@ -252,5 +245,8 @@
         }
       }
     }
+  }
+  .modal-content {
+    width: 80%;
   }
 }
