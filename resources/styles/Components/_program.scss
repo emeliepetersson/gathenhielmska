@@ -13,10 +13,14 @@
 
   /* buttons */
   .button-wrapper {
-    margin: 15px 0;
+    margin: 15px 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    button {
+      width: 150px;
+    }
   }
 
   /* Filter */
@@ -40,8 +44,12 @@
         background-color: initial;
       }
     }
-    .filter-icon.rotate {
-      animation: 100ms rotate linear forwards;
+    .filter-icon{
+      justify-self: flex-end;
+
+      &.rotate {
+        animation: 100ms rotate linear forwards;
+      }
     }
 
     @keyframes rotate {
@@ -179,7 +187,7 @@
 @media screen and (min-width: 1000px) {
   .program {
     h1, p, .button-wrapper {
-      width: 70%;
+      width: 60%;
       margin: 0 auto;
     }
 

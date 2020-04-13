@@ -148,6 +148,7 @@ div .container-booking p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -202,7 +203,7 @@ div .container-booking p {
 @media screen and (min-width: 1000px) {
   div .container-booking .content p,
   div .container-booking .content h1 {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -234,9 +235,9 @@ div .container-booking p {
 
   .wpcf7 .wpcf7-form {
     background-color: #c4c2c2;
-    padding: 20px 100px;
-    margin: 20px 90px;
-    width: initial;
+    padding: 20px 50px;
+    margin: 20px auto;
+    width: 70%;
   }
 
   .wpcf7 .wpcf7-form .text {
@@ -404,7 +405,7 @@ nav .show-menu .logo {
 nav .show-menu .languages {
   position: absolute;
   left: 30px;
-  bottom: 80px;
+  bottom: 100px;
   font-size: 16px;
 }
 
@@ -1163,15 +1164,20 @@ button.swiper-pagination-bullet {
 
 .upcoming-wrapper .mec-event-carousel-content {
   border: none;
-  padding: 30px 5px;
+  padding: 0 5px;
+  margin: 0;
   box-shadow: none;
 }
 
-.upcoming-wrapper .mec-wrap h4 {
+.upcoming-wrapper .mec-event-carousel-content h4 {
   margin-top: 20px;
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 24px;
+}
+
+.upcoming-wrapper .mec-event-carousel-content p {
+  display: none;
 }
 
 .upcoming-wrapper .mec-event-image {
@@ -1181,6 +1187,17 @@ button.swiper-pagination-bullet {
 .upcoming-wrapper .mec-event-image img {
   height: 450px;
   object-fit: cover;
+}
+
+.upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot.active span {
+  background-color: #223533;
+}
+
+.upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot span {
+  border: 1px solid #223533;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
 }
 
 .upcoming-wrapper h2 {
@@ -1197,7 +1214,7 @@ button.swiper-pagination-bullet {
 }
 
 .upcoming-wrapper .text-wrapper p {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   font-family: Playfair Display;
   line-height: 130%;
@@ -1338,6 +1355,10 @@ button.swiper-pagination-bullet {
     margin: 100px auto;
   }
 
+  .front-page-wrapper .text-wrapper p {
+    font-size: 24px;
+  }
+
   .front-page-wrapper .about-wrapper {
     padding: 0;
     margin-bottom: 40px;
@@ -1379,6 +1400,8 @@ button.swiper-pagination-bullet {
     margin-top: 60px;
     font-size: 24px;
     color: white;
+    width: 330px;
+    text-align: right;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper .button-wrapper button {
@@ -1657,6 +1680,10 @@ button:hover {
   line-height: 140%;
 }
 
+.archive p a {
+  border-bottom: 1px solid black;
+}
+
 .archive .button-wrapper {
   margin: 40px 0 30px;
   height: 60px;
@@ -1671,11 +1698,12 @@ button:hover {
 }
 
 .archive .button-wrapper button {
+  font-family: Roboto;
   border: none;
   text-transform: initial;
   margin: 0 50px;
   width: 60px;
-  height: 30px;
+  height: 25px;
 }
 
 .archive .button-wrapper button.active {
@@ -1819,7 +1847,6 @@ button:hover {
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   /* Add Animation - Zoom in the Modal */
   /* The Close Button */
-  /* 100% Image Width on Smaller Screens */
 }
 
 .modal.show {
@@ -1829,7 +1856,7 @@ button:hover {
 .modal .modal-content {
   margin: 50px auto 0;
   display: block;
-  width: 80%;
+  width: 100%;
   max-width: 700px;
 }
 
@@ -1877,12 +1904,6 @@ button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-  .modal .modal-content {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1000px) {
   .archive {
     padding-top: 100px;
@@ -1895,7 +1916,7 @@ button:hover {
 
   .archive h1,
   .archive p {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -1945,6 +1966,10 @@ button:hover {
     width: 31%;
     padding-bottom: 31%;
   }
+
+  .modal-content {
+    width: 80%;
+  }
 }
 
 .program {
@@ -1965,10 +1990,14 @@ button:hover {
 }
 
 .program .button-wrapper {
-  margin: 15px 0;
+  margin: 15px 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.program .button-wrapper button {
+  width: 150px;
 }
 
 .program .filter-wrapper {
@@ -1991,6 +2020,10 @@ button:hover {
 
 .program .filter-wrapper .filter:hover {
   background-color: initial;
+}
+
+.program .filter-wrapper .filter-icon {
+  justify-self: flex-end;
 }
 
 .program .filter-wrapper .filter-icon.rotate {
@@ -2140,7 +2173,7 @@ button:hover {
   .program h1,
   .program p,
   .program .button-wrapper {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -2317,9 +2350,13 @@ button:hover {
 
 .single-event-wrapper .info-wrapper .image-wrapper {
   margin: 0 20px 10px;
+  width: 89%;
+  padding-bottom: 89%;
+  position: relative;
 }
 
 .single-event-wrapper .info-wrapper .image-wrapper img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2365,7 +2402,7 @@ button:hover {
 }
 
 .single-event-wrapper .info-wrapper .buy-wrapper .mec-single-event-location .mec-address {
-  text-transform: uppercase;
+  display: none;
 }
 
 .single-event-wrapper .info-wrapper .buy-wrapper .mec-single-event-location .location {
@@ -2423,12 +2460,19 @@ button:hover {
 
 .single-event-wrapper .content-wrapper p {
   padding: 0 20px;
+  font-size: 20px;
+  line-height: 140%;
 }
 
 @media screen and (min-width: 1000px) {
   .single-event-wrapper {
+    padding-top: 130px;
     margin: 0 auto;
     width: 80vw;
+  }
+
+  .single-event-wrapper h1 {
+    font-size: 52px;
   }
 
   .single-event-wrapper .info-wrapper {
@@ -2436,8 +2480,8 @@ button:hover {
   }
 
   .single-event-wrapper .info-wrapper .image-wrapper {
-    width: 750px;
-    height: 500px;
+    width: 70%;
+    padding-bottom: 60%;
   }
 
   .single-event-wrapper .info-wrapper .date-wrapper {
@@ -2460,13 +2504,20 @@ button:hover {
     padding: 0;
   }
 
+  .single-event-wrapper .info-wrapper .buy-wrapper p {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
   .single-event-wrapper .info-wrapper .buy-wrapper button {
-    width: 200px;
+    width: 250px;
   }
 
   .single-event-wrapper .content-wrapper p {
     width: 60%;
   }
+}
+
 .search-page {
   padding: 100px 20px 20px 20px;
 }
