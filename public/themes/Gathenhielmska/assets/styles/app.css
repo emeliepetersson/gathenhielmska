@@ -1671,6 +1671,62 @@ button:hover {
   .about h1 {
     text-align: center;
   }
+
+  .company-ledningsgruppen {
+    width: 100%;
+    background: #f3f0e7;
+    margin-bottom: 5px;
+    margin-left: -20px;
+    margin-right: -20px;
+    height: 200px;
+    position: relative;
+  }
+
+  .company-ledningsgruppen .company-left {
+    float: left;
+  }
+
+  .company-ledningsgruppen .company-left img {
+    object-fit: cover;
+    width: 134px;
+    height: 200px;
+  }
+
+  .company-ledningsgruppen .company-right {
+    float: left;
+    position: relative;
+    height: 200px;
+    width: 30%;
+  }
+
+  .company-ledningsgruppen .company-right .name {
+    font-family: Playfair Display;
+    font-size: 18px;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .company-ledningsgruppen .company-right .proffesion {
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .company-ledningsgruppen .company-right a {
+    font-family: Roboto;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .company-ledningsgruppen .company-right .mail {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+  }
 }
 
 .archive {
