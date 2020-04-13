@@ -7,18 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<?php
-if (is_front_page()) {
-    $awesome_classes = ['awesome-class', 'my-class'];
-} else {
-    $awesome_classes = ['no-awesome-class'];
-}
-
-?>
-
-<body <?php body_class($awesome_classes); ?>>
-
-
+<body>
     <nav class="container">
         <a href="/index.php">Gathenhielmska</a>
         <div class="menu-container">
@@ -66,8 +55,8 @@ if (is_front_page()) {
                 <?php endforeach; ?>
                 <li class="languages">Other languages</li>
                 <li class="media-icons">
-                    <a href="#"><img src="/themes/Gathenhielmska/assets/images/Facebook.svg" alt="Facebook icon"></a>
-                    <a href="#"><img src="/themes/Gathenhielmska/assets/images/Instagram.svg" alt="Instagram icon"></a>
+                    <a href="https://www.facebook.com"><img src="/themes/Gathenhielmska/assets/images/Facebook-white.svg" alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com"><img src="/themes/Gathenhielmska/assets/images/Instagram-white.svg" alt="Instagram icon"></a>
                 </li>
             </ul>
         </div>

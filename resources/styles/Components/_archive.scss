@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cccccc;
+    background-color: $waveWhite;
 
     br {
       display: none;
@@ -37,9 +37,12 @@
       margin: 0 50px;
       width: 60px;
       height: 25px;
+      background-color: transparent;
+      color: $deepTurquoise;
+      border-radius: 0;
 
       &.active {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $deepTurquoise;
       }
     }
     button:hover {
@@ -57,13 +60,14 @@
   }
 
   .post {
-    padding: 0 10px 50px;
+    padding: 0 10px 30px;
 
     .info {
       padding: 0 10px;
       width: 100%;
       display: flex;
       justify-content: space-between;
+      color: $mandarin;
 
       span {
         font-family: Roboto;
@@ -91,7 +95,6 @@
 
     .images, .videos {
       width: 100%;
-      position: relative;
 
       & div:last-child {
         margin-bottom: 40px;
@@ -108,7 +111,6 @@
 
       div {
         margin: 10px;
-        float:left;
         position: relative;
         width: 95%;
         padding-bottom: 95%;
@@ -126,21 +128,20 @@
   }
 }
 
-// Images modal
+// IMAGES MODAL
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.664);
 
   &.show {
     display: block;
@@ -154,16 +155,18 @@
     max-width: 700px;
   }
 
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Caption of Modal Image (Image Text) */
   .caption {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: $waveWhite;
     padding: 10px 0;
     height: 150px;
+    font-family: roboto;
+    font-size: 16px;
   }
 
   /* Add Animation - Zoom in the Modal */
@@ -240,6 +243,7 @@
         }
 
         div{
+          // float:left;
           width: 31%;
           padding-bottom: 31%;
         }
