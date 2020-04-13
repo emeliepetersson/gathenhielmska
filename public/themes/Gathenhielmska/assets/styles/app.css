@@ -2,10 +2,8 @@
 
 /* Colors */
 
-/** GENERAL STYLING **/
-
 div .container-booking {
-  padding: 100px 20px;
+  padding: 100px 20px 70px;
 }
 
 div .container-booking h1 {
@@ -14,6 +12,7 @@ div .container-booking h1 {
 
 div .container-booking h2 {
   margin: 30px 0 10px;
+  color: #FF823F;
 }
 
 div .container-booking p {
@@ -32,17 +31,21 @@ div .container-booking p {
 
 .areas .show-area {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 10px 0 5px;
   cursor: pointer;
 }
 
 .areas .show-area .title-wrapper {
   width: 100%;
-  background-color: rgba(221, 215, 215, 0.39);
   z-index: -2;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
   height: 50px;
+}
+
+.areas .show-area .title-wrapper h3 {
+  color: #223533;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 .areas .show-area .plus-icon {
@@ -67,12 +70,12 @@ div .container-booking p {
   top: 50px;
   background-color: white;
   z-index: 2;
-  background-color: #dad8d8;
+  background-color: #F3F0E7;
   transform-origin: top;
-  animation: slide-in 200ms linear forwards;
+  animation: slide-down 200ms linear forwards;
 }
 
-@keyframes slide-in {
+@keyframes slide-down {
   0% {
     transform: scaleY(0);
   }
@@ -156,10 +159,24 @@ div .container-booking p {
 .wpcf7 .wpcf7-form .time {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wpcf7 .wpcf7-form .time .label {
+  width: 100%;
+  font-size: 18px;
+}
+
+.wpcf7 .wpcf7-form .time label {
+  width: 48%;
 }
 
 .wpcf7 .wpcf7-form .time br {
   display: none;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
+  margin-bottom: 0;
 }
 
 /* Image */
@@ -185,8 +202,7 @@ div .container-booking p {
 /* Button */
 
 .wpcf7 .wpcf7-form p input[type=submit] {
-  font-family: Playfair Display;
-  border: 1px solid black;
+  font-family: Roboto;
   width: 177px;
   height: 51px;
   background-color: none;
@@ -194,12 +210,15 @@ div .container-booking p {
   text-transform: uppercase;
   cursor: pointer;
   margin: 20px 0;
+  border: none;
+  background-color: #223533;
+  border-radius: 3px;
+  color: #F3F0E7;
 }
 
 .wpcf7 .wpcf7-form p input[type=submit]:hover {
-  border: 3px inset #a19d9d;
-  color: #494848;
-  font-size: 17px;
+  background-color: #4B6966;
+  transform: translate(-2px, -2px);
 }
 
 @media screen and (min-width: 1000px) {
@@ -299,7 +318,7 @@ div .container-booking p {
 
 nav {
   position: fixed;
-  background-color: #e2e0e0;
+  background-color: #223533;
   z-index: 100;
   display: flex;
   width: 100vw;
@@ -309,6 +328,10 @@ nav {
   padding: 30px 30px;
   /* HAMBURGER ICON */
   /* When clicking on hamburger icon */
+}
+
+nav a {
+  color: #F3F0E7;
 }
 
 nav .menu-container {
@@ -333,7 +356,8 @@ nav .menu-container .search-form input[type=text] {
   padding-left: 5px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F3F0E7;
+  color: #F3F0E7;
 }
 
 nav .menu-container .search-icon {
@@ -355,25 +379,42 @@ nav .show-menu {
   right: 0;
   padding: 30px 30px;
   z-index: 10;
-  background-color: #C4C4C4;
+  background-color: #223533;
   width: 300px;
   height: 100vh;
+  box-shadow: -1px 0 20px #444444;
+  animation: slide-in 300ms linear forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 nav .show-menu li {
-  margin: 15px 0 10px;
+  margin: 22px 0 10px;
   text-transform: uppercase;
   font-size: 20px;
 }
 
 nav .show-menu li a:hover {
-  color: #4e4d4d;
+  color: #F3F0E7;
 }
 
 nav .show-menu li .plus-icon {
   display: inline-block;
   padding-top: 13px;
   z-index: -1;
+}
+
+nav .show-menu li .plus-icon .bar1,
+nav .show-menu li .plus-icon .bar2 {
+  background-color: #F3F0E7;
 }
 
 nav .show-menu .parent {
@@ -385,7 +426,7 @@ nav .show-menu .parent {
 }
 
 nav .show-menu .active a {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F3F0E7;
 }
 
 nav .show-menu .hide-child {
@@ -409,6 +450,7 @@ nav .show-menu .languages {
   left: 30px;
   bottom: 100px;
   font-size: 16px;
+  color: #F3F0E7;
 }
 
 nav .show-menu .media-icons {
@@ -434,7 +476,7 @@ nav .hamburger .bar3 {
   width: 30px;
   border-radius: 2px;
   height: 1px;
-  background-color: black;
+  background-color: #F3F0E7;
   transition: 0.3s;
 }
 
@@ -782,8 +824,8 @@ nav .hamburger.change .bar3 {
 }
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   display: inline-block;
   border-radius: 100%;
   border: 1px solid white;
@@ -1184,11 +1226,17 @@ button.swiper-pagination-bullet {
 
 .upcoming-wrapper .mec-event-image {
   width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .upcoming-wrapper .mec-event-image img {
-  height: 450px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot.active span {
@@ -1212,7 +1260,12 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 100px;
+  padding: 30px 0 20px;
+  margin: 50px 0 60px;
+  background: url(/themes/Gathenhielmska/assets/images/wallpaper-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .upcoming-wrapper .text-wrapper p {
@@ -1230,14 +1283,16 @@ button.swiper-pagination-bullet {
 
 .front-page-wrapper > p {
   text-align: center;
-  padding: 40px 20px 0;
+  padding: 40px 20px;
   font-family: Playfair Display;
   font-size: 22px;
   line-height: 149%;
+  background-color: #223533;
+  color: #F3F0E7;
 }
 
 .front-page-wrapper .about-wrapper {
-  padding: 0 20px 40px;
+  padding: 0 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1260,37 +1315,45 @@ button.swiper-pagination-bullet {
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper h1 {
+  padding: 0 20px;
   font-size: 36px;
   text-transform: uppercase;
   font-weight: lighter;
-  margin: 10px 0 30px;
+  margin: 10px 0;
   letter-spacing: 0.02em;
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper p {
+  padding: 0 20px;
   font-weight: normal;
   line-height: 25px;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.front-page-wrapper .about-wrapper .text-wrapper a {
+.front-page-wrapper .about-wrapper .text-wrapper > a {
+  padding: 0 20px;
   font-family: Roboto;
   font-size: 20px;
+  color: #FF823F;
 }
 
-.front-page-wrapper .about-wrapper .text-wrapper a img {
+.front-page-wrapper .about-wrapper .text-wrapper > a img {
   margin-left: 10px;
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper .center {
-  margin: 50px 0 20px;
+  margin-top: 30px;
+  padding: 50px 0 20px;
+  background-color: #6C8381;
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper .center p {
   width: 100%;
   text-align: center;
   font-family: Playfair Display;
+  font-size: 22px;
+  color: #F3F0E7;
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper .button-wrapper {
@@ -1305,10 +1368,6 @@ button.swiper-pagination-bullet {
   width: 155px;
 }
 
-.front-page-wrapper .about-wrapper .text-wrapper .button-wrapper button a {
-  font-family: Playfair Display;
-}
-
 @media screen and (min-width: 1000px) {
   /* Event carousel */
 
@@ -1319,8 +1378,8 @@ button.swiper-pagination-bullet {
   /* Info */
 
   .front-page-wrapper > p {
-    width: 600px;
-    margin: 100px auto;
+    width: 100%;
+    padding: 100px 25%;
   }
 
   .front-page-wrapper .text-wrapper p {
@@ -1356,15 +1415,17 @@ button.swiper-pagination-bullet {
     align-items: center;
     height: 100%;
     color: #ffffff;
-    padding-top: 110px;
+    padding: 110px 0 0;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper h1,
   .front-page-wrapper .about-wrapper .text-wrapper p {
+    padding: 0;
     width: 55%;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper a {
+    padding: 0;
     margin-top: 60px;
     font-size: 24px;
     color: white;
@@ -1402,29 +1463,39 @@ button.swiper-pagination-bullet {
   position: absolute;
   bottom: 50px;
   width: 100vw;
-  height: 200px;
-  background-color: rgba(243, 240, 231, 0.6);
+  height: auto;
+  background-color: #F3F0E7;
   padding: 10px 40px 10px 10px;
 }
 
 .swiper-container .slider-text h2 {
   font-weight: 100;
   margin-bottom: 10px;
+  font-size: 26px;
 }
 
 .swiper-container .slider-text a {
-  color: #15201f;
+  color: #223533;
   font-family: Playfair Display;
 }
 
 .swiper-container .slider-text .read-more {
+  font-family: Roboto;
+  font-size: 18px;
   display: block;
-  width: 130px;
-  height: 40px;
-  border: 1px solid #15201f;
+  width: 135px;
+  height: 42px;
+  background-color: #223533;
+  border-radius: 3px;
+  color: #F3F0E7;
   text-transform: uppercase;
   padding: 10px 28px;
   margin-top: 20px;
+}
+
+.swiper-container .slider-text .read-more:hover {
+  background-color: #4B6966;
+  transform: translate(-2px, -2px);
 }
 
 @media screen and (min-width: 1000px) {
@@ -1441,8 +1512,7 @@ button.swiper-pagination-bullet {
 }
 
 button {
-  font-family: Playfair Display;
-  border: 1px solid black;
+  font-family: Roboto;
   width: 177px;
   height: 51px;
   background-color: none;
@@ -1450,11 +1520,19 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   margin: 20px 0;
-  background-color: transparent;
+  border: none;
+  background-color: #223533;
+  border-radius: 3px;
+}
+
+button a {
+  color: #F3F0E7;
+  font-family: Roboto;
 }
 
 button:hover {
-  background-color: #ff823f;
+  background-color: #4B6966;
+  transform: translate(-2px, -2px);
 }
 
 .about {
@@ -1642,7 +1720,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cccccc;
+  background-color: #F3F0E7;
 }
 
 .archive .button-wrapper br {
@@ -1656,10 +1734,13 @@ button:hover {
   margin: 0 50px;
   width: 60px;
   height: 25px;
+  background-color: transparent;
+  color: #223533;
+  border-radius: 0;
 }
 
 .archive .button-wrapper button.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #223533;
 }
 
 .archive .button-wrapper button:hover {
@@ -1678,7 +1759,7 @@ button:hover {
 
 .images-posts .post,
 .videos-posts .post {
-  padding: 0 10px 50px;
+  padding: 0 10px 30px;
 }
 
 .images-posts .post .info,
@@ -1687,6 +1768,7 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: #FF823F;
 }
 
 .images-posts .post .info span,
@@ -1720,7 +1802,6 @@ button:hover {
 .videos-posts .post .images,
 .videos-posts .post .videos {
   width: 100%;
-  position: relative;
 }
 
 .images-posts .post .images div:last-child,
@@ -1750,7 +1831,6 @@ button:hover {
 .videos-posts .post .images div,
 .videos-posts .post .videos div {
   margin: 10px;
-  float: left;
   position: relative;
   width: 95%;
   padding-bottom: 95%;
@@ -1776,27 +1856,17 @@ button:hover {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.664);
   /* Modal Content (Image) */
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Caption of Modal Image (Image Text) */
   /* Add Animation - Zoom in the Modal */
   /* The Close Button */
 }
@@ -1818,9 +1888,11 @@ button:hover {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: #F3F0E7;
   padding: 10px 0;
   height: 150px;
+  font-family: roboto;
+  font-size: 16px;
 }
 
 .modal .modal-content,
@@ -1953,7 +2025,7 @@ button:hover {
 }
 
 .program .filter-wrapper {
-  background-color: #C4C4C4;
+  background-color: #F3F0E7;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -1962,12 +2034,14 @@ button:hover {
 }
 
 .program .filter-wrapper .filter {
+  background-color: transparent;
   font-family: Roboto;
   font-size: 18px;
   text-transform: initial;
   border: none;
   width: 100px;
   margin: 0;
+  color: #223533;
 }
 
 .program .filter-wrapper .filter:hover {
@@ -1993,7 +2067,7 @@ button:hover {
 }
 
 .program .mec-skin-list-container .mec-search-form {
-  background-color: #C4C4C4;
+  background-color: #F3F0E7;
   border: none;
   display: none;
 }
@@ -2033,7 +2107,7 @@ button:hover {
 
 .program .mec-skin-list-container .mec-event-article {
   margin-top: 20px;
-  background-color: #e0dddd;
+  background-color: #F3F0E7;
   height: 200px;
   padding: 0;
 }
@@ -2061,6 +2135,7 @@ button:hover {
   font-family: roboto;
   font-size: 15px;
   margin-top: 5px;
+  color: #223533;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-start-date-label {
@@ -2079,14 +2154,19 @@ button:hover {
   padding-right: 30px;
 }
 
+.program .mec-skin-list-container .mec-event-article .mec-event-title .mec-color-hover {
+  color: #223533;
+}
+
 .program .mec-skin-list-container .mec-event-article .mec-event-title .mec-color-hover:hover {
-  color: grey;
+  color: #6d8885;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-event-detail {
   font-family: roboto;
   font-size: 16px;
   line-height: initial;
+  color: #223533;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-event-detail i {
@@ -2317,7 +2397,7 @@ button:hover {
 
 .single-event-wrapper .info-wrapper .date-wrapper {
   width: 100%;
-  background-color: #acacac;
+  background-color: #223533;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
@@ -2327,22 +2407,22 @@ button:hover {
   line-height: 28px;
 }
 
-.single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-date {
+.single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-date,
+.single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-time {
   padding: 0;
   margin: 0;
+  color: #F3F0E7;
 }
 
 .single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-time {
   font-size: 20px;
-  padding: 0;
-  margin: 0;
 }
 
 .single-event-wrapper .info-wrapper .buy-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e7e7e7;
+  background-color: #F3F0E7;
   width: 100%;
   padding: 20px 0;
 }
@@ -2372,6 +2452,7 @@ button:hover {
   font-weight: normal;
   font-size: 24px;
   line-height: 32px;
+  color: #223533;
   order: 1;
 }
 
@@ -2382,10 +2463,16 @@ button:hover {
   font-size: 24px;
   line-height: 32px;
   margin: 10px 0;
+  color: #223533;
 }
 
 .single-event-wrapper .info-wrapper .buy-wrapper button {
   width: 80%;
+}
+
+.single-event-wrapper .info-wrapper .buy-wrapper button .mec-event-more-info {
+  padding: 0;
+  margin: 0;
 }
 
 .single-event-wrapper .content-wrapper .mec-single-event-category {
@@ -2402,12 +2489,16 @@ button:hover {
   margin-right: 10px;
   margin-top: 30px;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #FF823F;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+.single-event-wrapper .content-wrapper .mec-single-event-category dd .mec-color-hover {
+  color: #FF823F;
 }
 
 .single-event-wrapper .content-wrapper p {
@@ -2510,12 +2601,12 @@ button:hover {
 .footer-wrapper {
   padding: 30px 20px 20px;
   background-color: #F3F0E7;
-  color: #F3F0E7;
+  color: #6C8381;
   text-align: center;
 }
 
 .footer-wrapper h3 {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   font-weight: normal;
   font-size: 24px;
@@ -2572,6 +2663,7 @@ ul {
 
 body {
   font-family: "Playfair Display", serif;
+  background-color: #FFFDF8;
 }
 
 p {
@@ -2581,6 +2673,7 @@ p {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
+  color: #223533;
 }
 
 h1 {
@@ -2589,6 +2682,7 @@ h1 {
   font-weight: normal;
   font-size: 36px;
   line-height: 121.2%;
+  color: #223533;
 }
 
 h2 {
@@ -2597,6 +2691,7 @@ h2 {
   font-weight: normal;
   font-size: 24px;
   line-height: 157.19%;
+  color: #223533;
 }
 
 a {

@@ -4,6 +4,7 @@ const hamburger = document.querySelector(".hamburger");
 const menuItems = document.querySelector(".menu-items");
 const hideChild = document.querySelectorAll(".hide-child");
 const parents = document.querySelectorAll(".parent");
+const mediaIcons = document.querySelectorAll(".media-icons");
 
 const togglePlusIcon = e => {
   const plusIcon = e.currentTarget.querySelector(".plus-icon");
@@ -46,6 +47,8 @@ const menu = (function() {
     if (
       e.target != menuItems &&
       e.target != hamburger &&
+      e.target != mediaIcons &&
+      e.target.parentNode.parentNode != mediaIcons &&
       e.target.parentNode.parentNode != menuItems &&
       e.target.parentNode != menuItems &&
       e.target.parentNode != hamburger &&
