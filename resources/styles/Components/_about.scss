@@ -1,6 +1,10 @@
 .about {
   padding: 100px 20px 20px 20px;
 
+  button {
+    color: $waveWhite;
+  }
+
   h1 {
     padding: 0 0 10px 0;
   }
@@ -17,7 +21,7 @@
   }
 
   h2 {
-    color: #ff823f;
+    color: $mandarin;
   }
 
   h3 {
@@ -49,12 +53,12 @@
   }
 
   h3 {
-    color: #ff823f;
+    color: $mandarin;
   }
 }
 
 .company-house {
-  background: #f3f0e7;
+  background: $waveWhite;
   margin-bottom: 5px;
   margin-left: -20px;
   margin-right: -20px;
@@ -85,7 +89,7 @@
 }
 
 .company-ledningsgruppen {
-  background: #f3f0e7;
+  background: $waveWhite;
   margin-bottom: 5px;
   margin-left: -20px;
   margin-right: -20px;
@@ -143,10 +147,10 @@
   text-align: center;
   margin: 20px 0 20px 0;
   padding: 20px;
-  background: #f3f0e7;
+  background: $waveWhite;
 
   h3 {
-    color: #ff823f;
+    color: $mandarin;
   }
 
   p {
@@ -192,7 +196,7 @@
 
   .company-ledningsgruppen {
     width: 100%;
-    background: #f3f0e7;
+    background: $waveWhite;
     margin-bottom: 5px;
     margin-left: -20px;
     margin-right: -20px;
@@ -244,5 +248,14 @@
         left: 10px;
       }
     }
+  }
+
+  .about-hide {
+    padding: 10px 0 10px 0;
+    display: block;
+  }
+
+  .plus-icon {
+    display: none;
   }
 }
