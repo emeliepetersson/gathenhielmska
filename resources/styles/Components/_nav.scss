@@ -59,7 +59,7 @@ nav {
     background-color: $deepTurquoise;
     width: 300px;
     height: 100vh;
-    box-shadow: -1px 0 20px rgb(68, 68, 68);
+    box-shadow: -1px 0 20px rgba(3, 3, 3, 0.411);
     animation: slide-in 300ms linear forwards;
 
     @keyframes slide-in {
