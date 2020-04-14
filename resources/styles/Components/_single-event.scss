@@ -1,6 +1,5 @@
 .single-event-wrapper {
   padding-top: 100px;
-  padding-bottom: 50px;
 
   &>a img{
     margin: 0 20px 10px;
@@ -118,11 +117,17 @@
         .mec-event-more-info {
           padding: 0;
           margin: 0;
+
+          a:hover {
+            color: $waveWhite;
+          }
         }
       }
     }
   }
   .content-wrapper {
+    margin-bottom: 100px;
+
     .mec-single-event-category {
       padding: 0 20px;
       margin-bottom: 20px;
@@ -155,9 +160,14 @@
   }
 }
 
+.upcoming-wrapper.single-event-page {
+  margin-bottom: 70px;
+}
+
 @media screen and (min-width: 1000px) {
   .single-event-wrapper {
     padding-top: 130px;
+    padding-bottom: 50px;
     margin: 0 auto;
     width: 80vw;
 
@@ -178,6 +188,10 @@
 
         .mec-single-event-date {
           margin-bottom: 10px;
+          color: $deepTurquoise;
+        }
+        .mec-single-event-time {
+          color: $deepTurquoise;
         }
       }
       .buy-wrapper {

@@ -1,5 +1,7 @@
 .archive {
-  padding-top: 100px;
+  & div:first-child {
+    padding-top: 100px;
+  }
 
   h1 {
     padding: 0 20px 20px;
@@ -47,6 +49,7 @@
     }
     button:hover {
       background-color: transparent;
+      transform: translate(0);
     }
   }
 }
@@ -201,11 +204,16 @@
 
 @media screen and (min-width: 1000px) {
   .archive {
-    padding-top: 100px;
+
+    & div:first-child {
+      padding-top: 100px;
+      background-color: $waveWhite;
+    }
 
     h1 {
       padding: 40px 50px;
       text-align: center;
+      font-size: 52px;
     }
 
     h1, p {
@@ -216,9 +224,12 @@
     .button-wrapper {
       margin-top: 90px;
       justify-content: space-evenly;
+      background-color: $background;
+      height: 100px;
 
       button {
         margin: 0;
+        font-family: Playfair Display;
       }
     }
   }
@@ -226,6 +237,10 @@
   .images-posts, .videos-posts {
     .post {
       padding-bottom: 80px;
+
+      h2 {
+        font-size: 36px;
+      }
 
       .info {
         justify-content: flex-start;

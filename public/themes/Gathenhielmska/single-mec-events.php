@@ -11,7 +11,6 @@
         ?>
 
         <div class="single-event-wrapper">
-            <a href="/program"><img src="/themes/Gathenhielmska/assets/images/back-arrow-orange.svg" alt="back-arrow"></a>
 
             <h1><?php the_title() ?></h1>
 
@@ -40,7 +39,10 @@
                 <?php $single->display_category_widget($single_event_obj); ?>
                 <?php the_content() ?>
             </div>
+        </div>
 
+        <div class="upcoming-wrapper single-event-page">
+            <?php echo do_shortcode('[MEC id="240"]') ?>
         </div>
 
     <?php endwhile; ?>
