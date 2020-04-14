@@ -53,6 +53,7 @@ div .container-booking p {
   top: 10px;
   right: 0;
   z-index: -1;
+  padding-top: 14px;
 }
 
 .areas .show-area .area-wrapper {
@@ -69,7 +70,7 @@ div .container-booking p {
   display: block;
   top: 50px;
   background-color: white;
-  z-index: 2;
+  z-index: -20;
   background-color: #F3F0E7;
   transform-origin: top;
   animation: slide-down 200ms linear forwards;
@@ -77,7 +78,7 @@ div .container-booking p {
 
 @keyframes slide-down {
   0% {
-    transform: scaleY(0);
+    transform: scaleY(0.6);
   }
 
   100% {
@@ -107,7 +108,7 @@ div .container-booking p {
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: #F3F0E7;
   height: 50px;
   border: none;
   margin-top: 5px;
@@ -117,6 +118,20 @@ div .container-booking p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-ms-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-ms-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
+  color: #C9C5BB;
 }
 
 /* Bookable areas */
@@ -124,13 +139,25 @@ div .container-booking p {
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
   width: 100%;
   height: 85px;
-  background-color: #f3f3f3;
+  background-color: #F3F0E7;
   padding: 20px 23px;
   border: none;
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: Roboto;
   font-size: 14px;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-webkit-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-ms-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::placeholder {
+  color: #C9C5BB;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
@@ -144,7 +171,7 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
-  background-color: #f3f3f3;
+  background-color: #F3F0E7;
   height: 50px;
   width: 100%;
   border: none;
@@ -154,6 +181,18 @@ div .container-booking p {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-webkit-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-ms-input-placeholder {
+  color: #C9C5BB;
+}
+
+.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::placeholder {
+  color: #C9C5BB;
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -222,6 +261,20 @@ div .container-booking p {
 }
 
 @media screen and (min-width: 1000px) {
+  div .container-booking {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+
+  div .container-booking .content {
+    padding: 100px 0 0;
+    background-color: #F3F0E7;
+  }
+
+  div .container-booking .content h1 {
+    font-size: 52px;
+  }
+
   div .container-booking .content p,
   div .container-booking .content h1 {
     width: 60%;
@@ -229,12 +282,14 @@ div .container-booking p {
   }
 
   div .container-booking .content h2 {
-    padding: 0 20px;
+    padding: 30px 40px 10px;
+    background-color: #FFFDF8;
+    font-size: 36px;
   }
 
   div .container-booking .areas {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -243,6 +298,12 @@ div .container-booking p {
 
   div .container-booking .areas > div {
     width: 32%;
+    margin-bottom: 10px;
+  }
+
+  div .container-booking .areas .show-area .title-wrapper {
+    background-color: rgba(219, 214, 198, 0.431);
+    padding-left: 20px;
   }
 
   div .container-booking h1 {
@@ -255,7 +316,6 @@ div .container-booking p {
   }
 
   .wpcf7 .wpcf7-form {
-    background-color: #c4c2c2;
     padding: 20px 50px;
     margin: 20px auto;
     width: 70%;
@@ -264,6 +324,7 @@ div .container-booking p {
   .wpcf7 .wpcf7-form .text {
     padding-bottom: 30px;
     padding-left: 30%;
+    padding-right: 20%;
   }
 
   .wpcf7 .wpcf7-form h2 {
@@ -294,7 +355,29 @@ div .container-booking p {
   }
 
   .wpcf7 .wpcf7-form p .time {
-    width: 50%;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .wpcf7 .wpcf7-form p .time .label {
+    width: 30%;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .wpcf7 .wpcf7-form p .time:first-child label {
+    margin-right: 10px;
+  }
+
+  .wpcf7 .wpcf7-form p .time label {
+    width: 25%;
+  }
+
+  .wpcf7 .wpcf7-form p .time label .wpcf7-form-control-wrap {
+    width: 95%;
   }
 
   .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item,
@@ -382,7 +465,7 @@ nav .show-menu {
   background-color: #223533;
   width: 300px;
   height: 100vh;
-  box-shadow: -1px 0 20px #444444;
+  box-shadow: -1px 0 20px rgba(3, 3, 3, 0.411);
   animation: slide-in 300ms linear forwards;
 }
 
@@ -1239,11 +1322,19 @@ button.swiper-pagination-bullet {
   box-shadow: none;
 }
 
-.upcoming-wrapper .mec-event-carousel-content h4 {
+.upcoming-wrapper .mec-event-carousel-content:hover {
+  box-shadow: none;
+}
+
+.upcoming-wrapper .mec-event-carousel-content .mec-event-carousel-title {
   margin-top: 20px;
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 24px;
+}
+
+.upcoming-wrapper .mec-event-carousel-content .mec-event-carousel-title .mec-color-hover:hover {
+  color: #6C8381;
 }
 
 .upcoming-wrapper .mec-event-carousel-content p {
@@ -1267,6 +1358,10 @@ button.swiper-pagination-bullet {
 
 .upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot.active span {
   background-color: #223533;
+}
+
+.upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot:focus {
+  outline: none;
 }
 
 .upcoming-wrapper .mec-owl-theme .owl-dots .owl-dot span {
@@ -1395,21 +1490,29 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (min-width: 1000px) {
-  /* Event carousel */
+  .front-page-wrapper {
+    /* Event carousel */
+    /* Info */
+  }
 
-  .upcoming-wrapper h2 {
+  .front-page-wrapper .upcoming-wrapper h2 {
     text-align: center;
   }
 
-  /* Info */
+  .front-page-wrapper .upcoming-wrapper .text-wrapper {
+    background: #6C8381;
+    padding: 70px 0 50px;
+  }
+
+  .front-page-wrapper .upcoming-wrapper .text-wrapper p {
+    color: #F3F0E7;
+    font-size: 24px;
+  }
 
   .front-page-wrapper > p {
     width: 100%;
     padding: 100px 25%;
-  }
-
-  .front-page-wrapper .text-wrapper p {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .front-page-wrapper .about-wrapper {
@@ -1419,7 +1522,7 @@ button.swiper-pagination-bullet {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 730px;
+    height: 630px;
   }
 
   .front-page-wrapper .about-wrapper .image {
@@ -1440,7 +1543,6 @@ button.swiper-pagination-bullet {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    color: #ffffff;
     padding: 110px 0 0;
   }
 
@@ -1448,6 +1550,7 @@ button.swiper-pagination-bullet {
   .front-page-wrapper .about-wrapper .text-wrapper p {
     padding: 0;
     width: 55%;
+    color: #F3F0E7;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper a {
@@ -1459,15 +1562,23 @@ button.swiper-pagination-bullet {
     text-align: right;
   }
 
-  .front-page-wrapper .about-wrapper .text-wrapper .button-wrapper button {
-    border: 1px solid #ffffff;
+  .front-page-wrapper .about-wrapper .text-wrapper .center {
+    background-color: transparent;
+  }
+
+  .front-page-wrapper .about-wrapper .text-wrapper .center .button-wrapper button {
     margin-right: 10px;
     width: 200px;
     margin-bottom: 50px;
+    background-color: #F3F0E7;
   }
 
-  .front-page-wrapper .about-wrapper .text-wrapper .button-wrapper button a {
-    color: #ffffff;
+  .front-page-wrapper .about-wrapper .text-wrapper .center .button-wrapper button:hover {
+    background-color: #dad6cd;
+  }
+
+  .front-page-wrapper .about-wrapper .text-wrapper .center .button-wrapper button a {
+    color: #223533;
     font-size: 18px;
   }
 }
@@ -1820,7 +1931,7 @@ button:hover {
   }
 }
 
-.archive {
+.archive div:first-child {
   padding-top: 100px;
 }
 
@@ -1872,6 +1983,7 @@ button:hover {
 
 .archive .button-wrapper button:hover {
   background-color: transparent;
+  transform: translate(0);
 }
 
 .images-posts,
@@ -2056,13 +2168,15 @@ button:hover {
 }
 
 @media screen and (min-width: 1000px) {
-  .archive {
+  .archive div:first-child {
     padding-top: 100px;
+    background-color: #F3F0E7;
   }
 
   .archive h1 {
     padding: 40px 50px;
     text-align: center;
+    font-size: 52px;
   }
 
   .archive h1,
@@ -2074,15 +2188,23 @@ button:hover {
   .archive .button-wrapper {
     margin-top: 90px;
     justify-content: space-evenly;
+    background-color: #FFFDF8;
+    height: 100px;
   }
 
   .archive .button-wrapper button {
     margin: 0;
+    font-family: Playfair Display;
   }
 
   .images-posts .post,
   .videos-posts .post {
     padding-bottom: 80px;
+  }
+
+  .images-posts .post h2,
+  .videos-posts .post h2 {
+    font-size: 36px;
   }
 
   .images-posts .post .info,
@@ -2124,10 +2246,13 @@ button:hover {
 }
 
 .program {
-  padding-top: 100px;
   /* buttons */
   /* Filter */
   /* Events */
+}
+
+.program .header {
+  padding-top: 100px;
 }
 
 .program h1 {
@@ -2137,7 +2262,7 @@ button:hover {
 .program p {
   padding: 0 20px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 140%;
 }
 
 .program .button-wrapper {
@@ -2191,6 +2316,10 @@ button:hover {
   100% {
     transform: rotate(180deg);
   }
+}
+
+.program .mec-skin-list-container {
+  padding-bottom: 30px;
 }
 
 .program .mec-skin-list-container .mec-search-form {
@@ -2294,6 +2423,7 @@ button:hover {
   font-size: 16px;
   line-height: initial;
   color: #223533;
+  font-weight: 300;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-event-detail i {
@@ -2306,21 +2436,33 @@ button:hover {
   display: none;
 }
 
-.program .mec-skin-list-container .mec-load-more-button {
-  font-family: Playfair Display;
-  border: 1px solid black;
-  border-radius: initial;
+.program .mec-skin-list-container .mec-load-more-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program .mec-skin-list-container .mec-load-more-wrap .mec-load-more-button {
+  font-family: Roboto;
   width: 177px;
   height: 51px;
+  background-color: none;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
-  padding-top: 5px;
-  color: black;
+  margin: 20px 0;
+  border: none;
+  background-color: #223533;
+  border-radius: 3px;
+  color: #F3F0E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.program .mec-skin-list-container .mec-load-more-button:hover {
-  background-color: #ff823f;
+.program .mec-skin-list-container .mec-load-more-wrap .mec-load-more-button:hover {
+  background-color: #4B6966;
+  transform: translate(-2px, -2px);
 }
 
 @media screen and (min-width: 1000px) {
@@ -2329,24 +2471,31 @@ button:hover {
     /* Events */
   }
 
-  .program h1,
-  .program p,
-  .program .button-wrapper {
+  .program .header {
+    background-color: #F3F0E7;
+    padding-bottom: 40px;
+  }
+
+  .program .header h1,
+  .program .header p,
+  .program .header .button-wrapper {
     width: 60%;
     margin: 0 auto;
   }
 
-  .program h1 {
+  .program .header h1 {
     text-align: center;
     padding: 40px 0 50px;
+    font-size: 52px;
   }
 
-  .program .button-wrapper {
-    justify-content: flex-start;
-    margin-bottom: 40px;
+  .program .header .button-wrapper {
+    justify-content: center;
+    margin-top: 30px;
   }
 
-  .program .button-wrapper button {
+  .program .header .button-wrapper button {
+    width: 177px;
     margin-left: 20px;
   }
 
@@ -2358,6 +2507,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    padding-top: 20px;
   }
 
   .program .mec-skin-list-container .mec-search-form i {
@@ -2435,10 +2586,13 @@ button:hover {
     font-weight: normal;
     font-size: 36px;
     line-height: 48px;
+    margin-bottom: 10px;
   }
 
   .program .mec-wrap .mec-month-divider span {
     border-bottom: 0;
+    text-transform: capitalize;
+    font-size: 32px;
   }
 
   .program .mec-wrap .mec-month-divider span:before {
@@ -2452,6 +2606,7 @@ button:hover {
   }
 
   .program .mec-wrap .mec-event-list-classic .mec-event-article {
+    background-color: transparent;
     margin: 10px;
     width: 400px;
     height: 550px;
@@ -2480,7 +2635,6 @@ button:hover {
 
 .single-event-wrapper {
   padding-top: 100px;
-  padding-bottom: 50px;
 }
 
 .single-event-wrapper > a img {
@@ -2602,6 +2756,14 @@ button:hover {
   margin: 0;
 }
 
+.single-event-wrapper .info-wrapper .buy-wrapper button .mec-event-more-info a:hover {
+  color: #F3F0E7;
+}
+
+.single-event-wrapper .content-wrapper {
+  margin-bottom: 100px;
+}
+
 .single-event-wrapper .content-wrapper .mec-single-event-category {
   padding: 0 20px;
   margin-bottom: 20px;
@@ -2634,9 +2796,14 @@ button:hover {
   line-height: 140%;
 }
 
+.upcoming-wrapper.single-event-page {
+  margin-bottom: 70px;
+}
+
 @media screen and (min-width: 1000px) {
   .single-event-wrapper {
     padding-top: 130px;
+    padding-bottom: 50px;
     margin: 0 auto;
     width: 80vw;
   }
@@ -2662,6 +2829,11 @@ button:hover {
 
   .single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-date {
     margin-bottom: 10px;
+    color: #223533;
+  }
+
+  .single-event-wrapper .info-wrapper .date-wrapper .mec-single-event-time {
+    color: #223533;
   }
 
   .single-event-wrapper .info-wrapper .buy-wrapper {
@@ -2728,7 +2900,7 @@ button:hover {
 .footer-wrapper {
   padding: 30px 20px 20px;
   background-color: #F3F0E7;
-  color: #6C8381;
+  color: #223533;
   text-align: center;
 }
 
@@ -2741,6 +2913,7 @@ button:hover {
 
 .footer-wrapper p {
   margin-bottom: 10px;
+  color: #6C8381;
 }
 
 .footer-wrapper .social-media-wrapper a {
