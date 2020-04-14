@@ -1,5 +1,8 @@
 .program {
-  padding-top: 100px;
+
+  .header {
+    padding-top: 100px;
+  }
 
   h1 {
     padding: 0 20px 20px;
@@ -8,7 +11,7 @@
   p {
     padding: 0 20px;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 140%;
   }
 
   /* buttons */
@@ -66,6 +69,8 @@
 
   /* Events */
   .mec-skin-list-container {
+    padding-bottom: 30px;
+
     .mec-search-form {
       background-color: $waveWhite;
       border: none;
@@ -167,26 +172,39 @@
         font-size: 16px;
         line-height: initial;
         color: $deepTurquoise;
+        font-weight: 300;
       }
 
       .event-color, .mec-sl-calendar, .mec-sl-clock {
         display: none;
       }
     }
-    .mec-load-more-button {
-      font-family: Playfair Display;
-      border: 1px solid black;
-      border-radius: initial;
-      width: 177px;
-      height: 51px;
-      font-size: 18px;
-      text-transform: uppercase;
-      cursor: pointer;
-      padding-top: 5px;
-      color: black;
+    .mec-load-more-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      &:hover {
-        background-color: #ff823f;
+      .mec-load-more-button {
+        font-family: Roboto;
+        width: 177px;
+        height: 51px;
+        background-color: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 20px 0;
+        border: none;
+        background-color: $deepTurquoise;
+        border-radius: 3px;
+        color: $waveWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #4B6966;
+          transform: translate(-2px, -2px);
+        }
       }
     }
   }
@@ -194,22 +212,29 @@
 
 @media screen and (min-width: 1000px) {
   .program {
-    h1, p, .button-wrapper {
-      width: 60%;
-      margin: 0 auto;
-    }
+    .header {
+      background-color: $waveWhite;
+      padding-bottom: 40px;
 
-    h1 {
-      text-align: center;
-      padding: 40px 0 50px;
-    }
+      h1, p, .button-wrapper {
+        width: 60%;
+        margin: 0 auto;
+      }
 
-    .button-wrapper {
-      justify-content: flex-start;
-      margin-bottom: 40px;
+      h1 {
+        text-align: center;
+        padding: 40px 0 50px;
+        font-size: 52px;
+      }
 
-      button {
-        margin-left: 20px;
+      .button-wrapper {
+        justify-content: center;
+        margin-top: 30px;
+
+        button {
+          width: 177px;
+          margin-left: 20px;
+        }
       }
     }
 
@@ -223,6 +248,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: transparent;
+        padding-top: 20px;
 
         i {
           display: none;
@@ -302,9 +329,12 @@
         font-weight: normal;
         font-size: 36px;
         line-height: 48px;
+        margin-bottom: 10px;
 
         span {
           border-bottom: 0;
+          text-transform: capitalize;
+          font-size: 32px;
         }
 
         span:before {
@@ -318,6 +348,7 @@
         flex-wrap: wrap;
 
         .mec-event-article {
+          background-color: transparent;
           margin: 10px;
           width: 400px;
           height: 550px;

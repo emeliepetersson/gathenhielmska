@@ -44,6 +44,7 @@ div .container-booking {
       top: 10px;
       right: 0;
       z-index: -1;
+      padding-top: 14px;
     }
 
     .area-wrapper {
@@ -59,14 +60,14 @@ div .container-booking {
         display: block;
         top: 50px;
         background-color: white;
-        z-index: 2;
+        z-index: -20;
         background-color: $waveWhite;
         transform-origin: top;
         animation: slide-down 200ms linear forwards;
 
         @keyframes slide-down {
           0% {
-            transform: scaleY(0);
+            transform: scaleY(0.6);
           }
           100% {
             transform: scaleY(1);
@@ -97,7 +98,7 @@ div .container-booking {
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: $waveWhite;
   height: 50px;
   border: none;
   margin-top: 5px;
@@ -107,19 +108,28 @@ div .container-booking {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
+  color: #C9C5BB;
+
+  &::placeholder {
+    color: #C9C5BB;
+  }
 }
 
 /* Bookable areas */
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
   width: 100%;
   height: 85px;
-  background-color: #f3f3f3;
+  background-color: $waveWhite;
   padding: 20px 23px;
   border: none;
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: Roboto;
   font-size: 14px;
+
+  &::placeholder {
+    color: #C9C5BB;
+  }
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
@@ -132,7 +142,7 @@ div .container-booking {
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
-  background-color: #f3f3f3;
+  background-color: $waveWhite;
   height: 50px;
   width: 100%;
   border: none;
@@ -142,6 +152,10 @@ div .container-booking {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+
+  &::placeholder {
+    color: #C9C5BB;
+  }
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -211,20 +225,30 @@ div .container-booking {
 
 @media screen and (min-width: 1000px) {
   div .container-booking {
+    padding: 0;
+    padding-bottom: 70px;
 
-   .content {
+    .content {
+      padding: 100px 0 0;
+      background-color: $waveWhite;
+
+      h1 {
+        font-size: 52px;
+      }
       p, h1 {
         width: 60%;
         margin: 0 auto;
       }
       h2 {
-        padding: 0 20px;
+        padding: 30px 40px 10px;
+        background-color: $background;
+        font-size: 36px;
       }
     }
 
     .areas {
       width: 100%;
-      padding: 0 20px;
+      padding: 0 40px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -232,6 +256,14 @@ div .container-booking {
 
       &>div {
         width: 32%;
+        margin-bottom: 10px;
+      }
+
+      .show-area {
+        .title-wrapper {
+          background-color: rgba(219, 214, 198, 0.431);
+          padding-left: 20px;
+        }
       }
     }
 
@@ -245,7 +277,6 @@ div .container-booking {
   }
   .wpcf7 {
     .wpcf7-form {
-      background-color: rgb(196, 194, 194);
       padding: 20px 50px;
       margin: 20px auto;
       width: 70%;
@@ -253,6 +284,7 @@ div .container-booking {
       .text {
         padding-bottom: 30px;
         padding-left: 30%;
+        padding-right: 20%;
       }
 
       h2 {
@@ -263,6 +295,7 @@ div .container-booking {
       p {
         label {
           display: flex;
+
           .label {
             display: flex;
             justify-content: flex-end;
@@ -282,7 +315,29 @@ div .container-booking {
         }
 
         .time {
-          width: 50%;
+          justify-content: flex-start;
+          width: 100%;
+
+          .label {
+            width: 30%;
+            padding-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: right;
+          }
+
+          &:first-child label {
+            margin-right: 10px;
+          }
+
+          label {
+            width: 25%;
+
+            .wpcf7-form-control-wrap {
+              width: 95%;
+            }
+          }
         }
       }
       p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item, p input[type="submit"]  {
