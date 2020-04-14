@@ -20,11 +20,19 @@
     margin: 0;
     box-shadow: none;
 
-    h4{
+    &:hover {
+      box-shadow: none;
+    }
+
+    .mec-event-carousel-title{
       margin-top: 20px;
       font-family: Playfair Display;
       font-weight: bold;
       font-size: 24px;
+
+      .mec-color-hover:hover {
+        color: $linenBlue;
+      }
     }
 
     p {
@@ -51,6 +59,11 @@
     &.active span {
       background-color: #223533;
     }
+
+    &:focus {
+      outline: none;
+    }
+
     span{
       border: 1px solid #223533;
       background-color: transparent;
@@ -179,22 +192,29 @@
 }
 
 @media screen and (min-width: 1000px) {
-  /* Event carousel */
-  .upcoming-wrapper {
-    h2 {
-      text-align: center;
-    }
-  }
-
-  /* Info */
   .front-page-wrapper {
+    /* Event carousel */
+    .upcoming-wrapper {
+      h2 {
+        text-align: center;
+      }
+
+      .text-wrapper {
+        background: $linenBlue;
+        padding: 70px 0 50px;
+
+        p {
+          color: $waveWhite;
+          font-size: 24px;
+        }
+      }
+    }
+
+    /* Info */
     & > p {
       width: 100%;
       padding: 100px 25%;
-    }
-
-    .text-wrapper p {
-      font-size: 24px;
+      font-size: 30px;
     }
 
     .about-wrapper {
@@ -204,7 +224,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      height: 730px;
+      height: 630px;
 
       .image {
         max-width: 40vw;
@@ -224,12 +244,12 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        color: #ffffff;
         padding: 110px 0 0;
 
         h1, p {
           padding: 0;
           width: 55%;
+          color: $waveWhite;
         }
 
         a {
@@ -241,20 +261,27 @@
           text-align: right;
         }
 
-        .button-wrapper {
-          button {
-            border: 1px solid #ffffff;
-            margin-right: 10px;
-            width: 200px;
-            margin-bottom: 50px;
+        .center {
+          background-color: transparent;
 
-            a {
-              color: #ffffff;
-              font-size: 18px;
+          .button-wrapper {
+            button {
+              margin-right: 10px;
+              width: 200px;
+              margin-bottom: 50px;
+              background-color: $waveWhite;
+
+              &:hover {
+                background-color: rgb(218, 214, 205);
+              }
+
+              a {
+                color: $deepTurquoise;
+                font-size: 18px;
+              }
             }
           }
         }
-
       }
     }
   }

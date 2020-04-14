@@ -7,7 +7,7 @@
 
         <?php while (have_posts()) : the_post(); ?>
 
-            <div>
+            <div class="header">
                 <h1><?php the_title(); ?></h1>
 
                 <?php if (has_post_thumbnail()) : ?>
@@ -20,9 +20,9 @@
                 <?php endif; ?>
                 <?php the_content(); ?>
 
-                <?php echo do_shortcode('[MEC id="242"]') ?>
-
             </div>
+
+            <?php echo do_shortcode('[MEC id="242"]') ?>
 
         <?php endwhile; ?>
 
