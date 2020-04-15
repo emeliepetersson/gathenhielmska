@@ -32,10 +32,10 @@ const menu = (function() {
     togglePlusIcon(e);
   });
 
-  parents[1].addEventListener("click", e => {
-    hideChild[2].classList.toggle("show-child");
-    togglePlusIcon(e);
-  });
+  // parents[1].addEventListener("click", e => {
+  //   hideChild[2].classList.toggle("show-child");
+  //   togglePlusIcon(e);
+  // });
 
   // Hide menu when clicking on anything else than menu-elements
   window.addEventListener("click", e => {
