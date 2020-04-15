@@ -24,11 +24,6 @@ const menu = (function() {
     const plusIcon = parents[0].querySelector(".plus-icon");
     plusIcon.classList.add("change");
   }
-  if (parents[1].classList.contains("active")) {
-    hideChild[2].classList.add("show-child");
-    const plusIcon = parents[1].querySelector(".plus-icon");
-    plusIcon.classList.add("change");
-  }
 
   // Toggle between class names to show/hide menu items and change styling to menu and icon.
   parents[0].addEventListener("click", e => {
