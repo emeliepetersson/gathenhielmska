@@ -1,5 +1,6 @@
 .contact {
   padding: 100px 20px 20px 20px;
+  color: $deepTurquoise;
 
   h1 {
     padding: 0 0 20px 0;
@@ -13,7 +14,7 @@
   h3 {
     padding: 20px 0 10px 0;
     font-size: 24px;
-    color: #ff823f;
+    color: $mandarin;
   }
 
   h2 {
@@ -31,8 +32,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ff823f;
-  background: #223533;
+  color: $mandarin;
+  background: $deepTurquoise;
   text-align: center;
   margin-bottom: 5px;
 
@@ -44,7 +45,7 @@
   p {
     padding: 10px 0 5px 0;
     font-size: 16px;
-    color: #f3f0e7;
+    color: $background;
   }
 }
 
@@ -53,5 +54,10 @@
     padding: 140px 20px 20px 20px;
     width: 60%;
     margin: auto;
+
+    h1 {
+      font-size: 52px;
+      text-align: center;
+    }
   }
 }
