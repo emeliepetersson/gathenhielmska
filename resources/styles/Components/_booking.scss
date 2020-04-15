@@ -108,10 +108,10 @@ div .container-booking {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #C9C5BB;
+  color: #c9c5bb;
 
   &::placeholder {
-    color: #C9C5BB;
+    color: #c9c5bb;
   }
 }
 
@@ -128,7 +128,7 @@ div .container-booking {
   font-size: 14px;
 
   &::placeholder {
-    color: #C9C5BB;
+    color: #c9c5bb;
   }
 }
 
@@ -154,7 +154,7 @@ div .container-booking {
   text-align: center;
 
   &::placeholder {
-    color: #C9C5BB;
+    color: #c9c5bb;
   }
 }
 
@@ -172,7 +172,7 @@ div .container-booking {
     width: 48%;
   }
 
-  br{
+  br {
     display: none;
   }
   .wpcf7-form-control-wrap input {
@@ -219,7 +219,7 @@ div .container-booking {
 }
 
 .wpcf7 .wpcf7-form p input[type="submit"]:hover {
-  background-color: #4B6966;
+  background-color: #4b6966;
   transform: translate(-2px, -2px);
 }
 
@@ -235,7 +235,8 @@ div .container-booking {
       h1 {
         font-size: 52px;
       }
-      p, h1 {
+      p,
+      h1 {
         width: 60%;
         margin: 0 auto;
       }
@@ -254,7 +255,7 @@ div .container-booking {
       justify-content: space-between;
       margin-bottom: 70px;
 
-      &>div {
+      & > div {
         width: 32%;
         margin-bottom: 10px;
       }
@@ -340,10 +341,10 @@ div .container-booking {
           }
         }
       }
-      p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item, p input[type="submit"]  {
-         margin-left: 30%;
+      p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item,
+      p input[type="submit"] {
+        margin-left: 30%;
       }
     }
   }
 }
-

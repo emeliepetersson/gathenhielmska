@@ -118,20 +118,20 @@ div .container-booking p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-ms-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 /* Bookable areas */
@@ -149,15 +149,15 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
@@ -184,15 +184,15 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -256,7 +256,7 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form p input[type=submit]:hover {
-  background-color: #4B6966;
+  background-color: #4b6966;
   transform: translate(-2px, -2px);
 }
 
@@ -1246,6 +1246,7 @@ button.swiper-pagination-bullet {
 
 .contact {
   padding: 100px 20px 20px 20px;
+  color: #223533;
 }
 
 .contact h1 {
@@ -1260,7 +1261,7 @@ button.swiper-pagination-bullet {
 .contact h3 {
   padding: 20px 0 10px 0;
   font-size: 24px;
-  color: #ff823f;
+  color: #FF823F;
 }
 
 .contact h2 {
@@ -1277,7 +1278,7 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ff823f;
+  color: #FF823F;
   background: #223533;
   text-align: center;
   margin-bottom: 5px;
@@ -1291,7 +1292,7 @@ button.swiper-pagination-bullet {
 .contact-card p {
   padding: 10px 0 5px 0;
   font-size: 16px;
-  color: #f3f0e7;
+  color: #FFFDF8;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1299,6 +1300,11 @@ button.swiper-pagination-bullet {
     padding: 140px 20px 20px 20px;
     width: 60%;
     margin: auto;
+  }
+
+  .contact h1 {
+    font-size: 52px;
+    text-align: center;
   }
 }
 
@@ -1674,6 +1680,19 @@ button:hover {
 
 .about {
   padding: 100px 20px 20px 20px;
+  color: #223533;
+}
+
+.about a {
+  color: #223533;
+}
+
+.about button {
+  color: #F3F0E7;
+}
+
+.about button a {
+  color: #F3F0E7;
 }
 
 .about h1 {
@@ -1692,7 +1711,7 @@ button:hover {
 }
 
 .about h2 {
-  color: #ff823f;
+  color: #FF823F;
 }
 
 .about h3 {
@@ -1718,15 +1737,15 @@ button:hover {
 }
 
 .about-facility h2 {
-  color: black;
+  color: #223533;
 }
 
 .about-facility h3 {
-  color: #ff823f;
+  color: #FF823F;
 }
 
 .company-house {
-  background: #f3f0e7;
+  background: #F3F0E7;
   margin-bottom: 5px;
   margin-left: -20px;
   margin-right: -20px;
@@ -1757,7 +1776,7 @@ button:hover {
 }
 
 .company-ledningsgruppen {
-  background: #f3f0e7;
+  background: #F3F0E7;
   margin-bottom: 5px;
   margin-left: -20px;
   margin-right: -20px;
@@ -1815,11 +1834,11 @@ button:hover {
   text-align: center;
   margin: 20px 0 20px 0;
   padding: 20px;
-  background: #f3f0e7;
+  background: #F3F0E7;
 }
 
 .historia h3 {
-  color: #ff823f;
+  color: #FF823F;
 }
 
 .historia p {
@@ -1858,15 +1877,22 @@ button:hover {
   }
 
   .about h1 {
+    font-size: 52px;
     text-align: center;
   }
 
+  .about .about-hide {
+    padding: 10px 0 10px 0;
+    display: block;
+  }
+
+  .about .plus-icon {
+    display: none;
+  }
+
   .company-ledningsgruppen {
-    width: 100%;
-    background: #f3f0e7;
-    margin-bottom: 5px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 200px;
     position: relative;
   }
@@ -2851,15 +2877,19 @@ button:hover {
   padding: 100px 20px 20px 20px;
 }
 
+.search-result a {
+  color: #223533;
+}
+
 .search-result button {
   width: auto;
   height: auto;
   padding: 10px;
+  color: #F3F0E7;
 }
 
 .search-result button:hover {
   cursor: default;
-  background: white;
 }
 
 .search-result button:focus {
@@ -2882,6 +2912,19 @@ button:hover {
   position: absolute;
   bottom: 30px;
   right: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .search-page {
+    padding: 140px 20px 20px 20px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .search-page h1 {
+    font-size: 52px;
+    text-align: center;
+  }
 }
 
 .footer-wrapper {

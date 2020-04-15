@@ -242,6 +242,14 @@ var menu = function () {
     hideChild[1].classList.add("show-child");
     var plusIcon = parents[0].querySelector(".plus-icon");
     plusIcon.classList.add("change");
+  }
+
+  if (parents[1].classList.contains("active")) {
+    hideChild[2].classList.add("show-child");
+
+    var _plusIcon = parents[1].querySelector(".plus-icon");
+
+    _plusIcon.classList.add("change");
   } // Toggle between class names to show/hide menu items and change styling to menu and icon.
 
 
