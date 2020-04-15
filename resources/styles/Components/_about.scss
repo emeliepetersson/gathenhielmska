@@ -1,7 +1,16 @@
 .about {
   padding: 100px 20px 20px 20px;
+  color: $deepTurquoise;
+
+  a {
+    color: $deepTurquoise;
+  }
 
   button {
+    color: $waveWhite;
+  }
+
+  button a {
     color: $waveWhite;
   }
 
@@ -49,7 +58,7 @@
   }
 
   h2 {
-    color: black;
+    color: $deepTurquoise;
   }
 
   h3 {
@@ -190,16 +199,23 @@
     margin: auto;
 
     h1 {
+      font-size: 52px;
       text-align: center;
+    }
+
+    .about-hide {
+      padding: 10px 0 10px 0;
+      display: block;
+    }
+
+    .plus-icon {
+      display: none;
     }
   }
 
   .company-ledningsgruppen {
-    width: 100%;
-    background: $waveWhite;
-    margin-bottom: 5px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 200px;
     position: relative;
 
@@ -248,14 +264,5 @@
         left: 10px;
       }
     }
-  }
-
-  .about-hide {
-    padding: 10px 0 10px 0;
-    display: block;
-  }
-
-  .plus-icon {
-    display: none;
   }
 }
