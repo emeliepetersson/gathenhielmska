@@ -1680,7 +1680,6 @@ button:hover {
 
 .about {
   padding: 100px 20px 20px 20px;
-  color: #223533;
 }
 
 .about a {
@@ -1716,6 +1715,7 @@ button:hover {
 
 .about h3 {
   font-size: 24px;
+  color: #223533;
 }
 
 .about .right-button {
@@ -1941,6 +1941,37 @@ button:hover {
     position: absolute;
     bottom: 30px;
     left: 10px;
+  }
+
+  .company-house {
+    background: #F3F0E7;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 80px;
+    position: relative;
+  }
+
+  .company-house .name {
+    font-family: Playfair Display;
+    font-size: 18px;
+  }
+
+  .company-house .proffesion {
+    font-size: 14px;
+  }
+
+  .company-house h3,
+  .company-house p {
+    padding-left: 20px;
+  }
+
+  .company-house a {
+    font-family: Roboto;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
   }
 }
 
