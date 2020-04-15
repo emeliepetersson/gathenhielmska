@@ -236,7 +236,8 @@ div .container-booking {
       h1 {
         font-size: 52px;
       }
-      p, h1 {
+      p,
+      h1 {
         width: 60%;
         margin: 0 auto;
       }
@@ -255,7 +256,7 @@ div .container-booking {
       justify-content: space-between;
       margin-bottom: 70px;
 
-      &>div {
+      & > div {
         width: 32%;
         margin-bottom: 10px;
       }
@@ -348,4 +349,3 @@ div .container-booking {
     }
   }
 }
-
