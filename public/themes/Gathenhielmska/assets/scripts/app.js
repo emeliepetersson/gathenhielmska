@@ -98,16 +98,16 @@
 
 var showAbout = document.querySelectorAll(".about-hide");
 var icon = document.querySelectorAll(".plus-icon");
-icon[2].addEventListener("click", function () {
+icon[1].addEventListener("click", function () {
   showAbout[0].classList.toggle("show");
 });
-icon[3].addEventListener("click", function () {
+icon[2].addEventListener("click", function () {
   showAbout[1].classList.toggle("show");
 });
-icon[4].addEventListener("click", function () {
+icon[3].addEventListener("click", function () {
   showAbout[2].classList.toggle("show");
 });
-icon[5].addEventListener("click", function () {
+icon[4].addEventListener("click", function () {
   showAbout[3].classList.toggle("show");
 }); // export default about;
 
@@ -249,11 +249,11 @@ var menu = function () {
     hideChild[0].classList.toggle("show-child");
     hideChild[1].classList.toggle("show-child");
     togglePlusIcon(e);
-  });
-  parents[1].addEventListener("click", function (e) {
-    hideChild[2].classList.toggle("show-child");
-    togglePlusIcon(e);
-  }); // Hide menu when clicking on anything else than menu-elements
+  }); // parents[1].addEventListener("click", e => {
+  //   hideChild[2].classList.toggle("show-child");
+  //   togglePlusIcon(e);
+  // });
+  // Hide menu when clicking on anything else than menu-elements
 
   window.addEventListener("click", function (e) {
     if (e.target != menuItems && e.target != hamburger && e.target != mediaIcons && e.target.parentNode.parentNode != mediaIcons && e.target.parentNode.parentNode != menuItems && e.target.parentNode != menuItems && e.target.parentNode != hamburger && menuItems.classList.contains("show-menu")) {
