@@ -1,6 +1,5 @@
 .about {
   padding: 100px 20px 20px 20px;
-  color: $deepTurquoise;
 
   a {
     color: $deepTurquoise;
@@ -35,6 +34,7 @@
 
   h3 {
     font-size: 24px;
+    color: $deepTurquoise;
   }
 
   .right-button {
@@ -263,6 +263,37 @@
         bottom: 30px;
         left: 10px;
       }
+    }
+  }
+
+  .company-house {
+    background: $waveWhite;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 80px;
+    position: relative;
+
+    .name {
+      font-family: Playfair Display;
+      font-size: 18px;
+    }
+
+    .proffesion {
+      font-size: 14px;
+    }
+
+    h3,
+    p {
+      padding-left: 20px;
+    }
+
+    a {
+      font-family: Roboto;
+      font-size: 12px;
+      position: absolute;
+      right: 20px;
+      bottom: 8px;
     }
   }
 }

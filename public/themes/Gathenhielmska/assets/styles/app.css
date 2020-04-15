@@ -4,6 +4,14 @@
 
 div .container-booking {
   padding: 100px 20px 70px;
+  /** BOOKING AREAS **/
+  /** BOOKING FORM **/
+  /* Bookable areas */
+  /* time */
+  /* Image */
+  /* Description/textarea */
+  /* checkboxes */
+  /* Button */
 }
 
 div .container-booking h1 {
@@ -23,32 +31,30 @@ div .container-booking p {
   line-height: 140%;
 }
 
-/** BOOKING AREAS **/
-
-.areas {
+div .container-booking .areas {
   width: 100%;
 }
 
-.areas .show-area {
+div .container-booking .areas .show-area {
   position: relative;
   margin: 10px 0 5px;
   cursor: pointer;
 }
 
-.areas .show-area .title-wrapper {
+div .container-booking .areas .show-area .title-wrapper {
   width: 100%;
   z-index: -2;
   padding: 10px 10px 10px 0px;
   height: 50px;
 }
 
-.areas .show-area .title-wrapper h3 {
+div .container-booking .areas .show-area .title-wrapper h3 {
   color: #223533;
   font-weight: lighter;
   font-size: 20px;
 }
 
-.areas .show-area .plus-icon {
+div .container-booking .areas .show-area .plus-icon {
   position: absolute;
   top: 10px;
   right: 0;
@@ -56,17 +62,17 @@ div .container-booking p {
   padding-top: 14px;
 }
 
-.areas .show-area .area-wrapper {
+div .container-booking .areas .show-area .area-wrapper {
   display: none;
 }
 
-.areas .show-area .area-wrapper img {
+div .container-booking .areas .show-area .area-wrapper img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.areas .show-area .area-wrapper.show {
+div .container-booking .areas .show-area .area-wrapper.show {
   display: block;
   top: 50px;
   background-color: white;
@@ -86,27 +92,25 @@ div .container-booking p {
   }
 }
 
-.areas .show-area .area-wrapper p {
+div .container-booking .areas .show-area .area-wrapper p {
   padding: 20px 10px;
 }
 
-/** BOOKING FORM **/
-
-.wpcf7-form {
+div .container-booking .wpcf7-form {
   width: 100%;
   margin-right: 0;
 }
 
-.wpcf7-form label {
+div .container-booking .wpcf7-form label {
   font-size: 18px;
 }
 
-.wpcf7-form p {
+div .container-booking .wpcf7-form p {
   margin: 10px 0;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
   width: 100%;
   background-color: #F3F0E7;
   height: 50px;
@@ -118,25 +122,23 @@ div .container-booking p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #c9c5bb;
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-webkit-input-placeholder, div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-ms-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-ms-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-ms-input-placeholder, div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-ms-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
+  color: #C9C5BB;
 }
 
-/* Bookable areas */
-
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
   width: 100%;
   height: 85px;
   background-color: #F3F0E7;
@@ -148,29 +150,27 @@ div .container-booking p {
   font-size: 14px;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-webkit-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-webkit-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-ms-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-ms-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
   padding: 5px;
 }
 
-/* time */
-
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap {
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap {
   width: 47%;
 }
 
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
   background-color: #F3F0E7;
   height: 50px;
   width: 100%;
@@ -183,64 +183,56 @@ div .container-booking p {
   text-align: center;
 }
 
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-webkit-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-webkit-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-ms-input-placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-ms-input-placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::placeholder {
-  color: #c9c5bb;
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::placeholder {
+  color: #C9C5BB;
 }
 
-.wpcf7 .wpcf7-form .time {
+div .container-booking .wpcf7 .wpcf7-form .time {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.wpcf7 .wpcf7-form .time .label {
+div .container-booking .wpcf7 .wpcf7-form .time .label {
   width: 100%;
   font-size: 18px;
 }
 
-.wpcf7 .wpcf7-form .time label {
+div .container-booking .wpcf7 .wpcf7-form .time label {
   width: 48%;
 }
 
-.wpcf7 .wpcf7-form .time br {
+div .container-booking .wpcf7 .wpcf7-form .time br {
   display: none;
 }
 
-.wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
+div .container-booking .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
   margin-bottom: 0;
 }
 
-/* Image */
-
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input[type=file] {
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input[type=file] {
   padding-top: 12px;
 }
 
-/* Description/textarea */
-
-.wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
   height: 200px;
   padding-top: 23px;
 }
 
-/* checkboxes */
-
-.wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item {
+div .container-booking .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item {
   margin: 5px 0;
   display: block;
 }
 
-/* Button */
-
-.wpcf7 .wpcf7-form p input[type=submit] {
+div .container-booking .wpcf7 .wpcf7-form p input[type=submit] {
   font-family: Roboto;
   width: 177px;
   height: 51px;
@@ -255,8 +247,8 @@ div .container-booking p {
   color: #F3F0E7;
 }
 
-.wpcf7 .wpcf7-form p input[type=submit]:hover {
-  background-color: #4b6966;
+div .container-booking .wpcf7 .wpcf7-form p input[type=submit]:hover {
+  background-color: #4B6966;
   transform: translate(-2px, -2px);
 }
 
@@ -315,28 +307,28 @@ div .container-booking p {
     margin: 110px 0 10px;
   }
 
-  .wpcf7 .wpcf7-form {
+  div .container-booking .wpcf7 .wpcf7-form {
     padding: 20px 50px;
     margin: 20px auto;
     width: 70%;
   }
 
-  .wpcf7 .wpcf7-form .text {
+  div .container-booking .wpcf7 .wpcf7-form .text {
     padding-bottom: 30px;
     padding-left: 30%;
     padding-right: 20%;
   }
 
-  .wpcf7 .wpcf7-form h2 {
+  div .container-booking .wpcf7 .wpcf7-form h2 {
     margin-top: 20px;
     padding-left: 30%;
   }
 
-  .wpcf7 .wpcf7-form p label {
+  div .container-booking .wpcf7 .wpcf7-form p label {
     display: flex;
   }
 
-  .wpcf7 .wpcf7-form p label .label {
+  div .container-booking .wpcf7 .wpcf7-form p label .label {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -345,21 +337,21 @@ div .container-booking p {
     padding-right: 15px;
   }
 
-  .wpcf7 .wpcf7-form p label .label.description {
+  div .container-booking .wpcf7 .wpcf7-form p label .label.description {
     align-items: flex-start;
     padding-top: 10px;
   }
 
-  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
+  div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
     width: 50%;
   }
 
-  .wpcf7 .wpcf7-form p .time {
+  div .container-booking .wpcf7 .wpcf7-form p .time {
     justify-content: flex-start;
     width: 100%;
   }
 
-  .wpcf7 .wpcf7-form p .time .label {
+  div .container-booking .wpcf7 .wpcf7-form p .time .label {
     width: 30%;
     padding-right: 15px;
     display: flex;
@@ -368,20 +360,20 @@ div .container-booking p {
     text-align: right;
   }
 
-  .wpcf7 .wpcf7-form p .time:first-child label {
+  div .container-booking .wpcf7 .wpcf7-form p .time:first-child label {
     margin-right: 10px;
   }
 
-  .wpcf7 .wpcf7-form p .time label {
+  div .container-booking .wpcf7 .wpcf7-form p .time label {
     width: 25%;
   }
 
-  .wpcf7 .wpcf7-form p .time label .wpcf7-form-control-wrap {
+  div .container-booking .wpcf7 .wpcf7-form p .time label .wpcf7-form-control-wrap {
     width: 95%;
   }
 
-  .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item,
-  .wpcf7 .wpcf7-form p input[type=submit] {
+  div .container-booking .wpcf7 .wpcf7-form p .wpcf7-form-control-wrap .wpcf7-form-control .wpcf7-list-item,
+  div .container-booking .wpcf7 .wpcf7-form p input[type=submit] {
     margin-left: 30%;
   }
 }
@@ -1680,7 +1672,6 @@ button:hover {
 
 .about {
   padding: 100px 20px 20px 20px;
-  color: #223533;
 }
 
 .about a {
@@ -1716,6 +1707,7 @@ button:hover {
 
 .about h3 {
   font-size: 24px;
+  color: #223533;
 }
 
 .about .right-button {
@@ -1941,6 +1933,37 @@ button:hover {
     position: absolute;
     bottom: 30px;
     left: 10px;
+  }
+
+  .company-house {
+    background: #F3F0E7;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 80px;
+    position: relative;
+  }
+
+  .company-house .name {
+    font-family: Playfair Display;
+    font-size: 18px;
+  }
+
+  .company-house .proffesion {
+    font-size: 14px;
+  }
+
+  .company-house h3,
+  .company-house p {
+    padding-left: 20px;
+  }
+
+  .company-house a {
+    font-family: Roboto;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
   }
 }
 
