@@ -9,7 +9,7 @@
                     <p><?php echo wp_trim_words($content, '20'); ?></p>
                     <div class="search-link">
                         <button>Event</button>
-                        <a href="<?php the_permalink(); ?>">Länk</a>
+                        <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/back.png' ?>" alt="arrow"></a>
                     </div>
                 <?php endwhile; ?>
         </div>
