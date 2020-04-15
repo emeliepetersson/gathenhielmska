@@ -1261,7 +1261,7 @@ button.swiper-pagination-bullet {
 .contact h3 {
   padding: 20px 0 10px 0;
   font-size: 24px;
-  color: #FF823F;
+  color: #FFFDF8;
 }
 
 .contact h2 {
@@ -1909,7 +1909,7 @@ button:hover {
 }
 
 .about-facility h3 {
-  color: #FF823F;
+  color: #6C8381;
 }
 
 .company-house {
@@ -3130,7 +3130,7 @@ button:hover {
 .search-result .search-link a {
   position: absolute;
   bottom: 30px;
-  right: 20px;
+  right: 0px;
 }
 
 @media screen and (min-width: 1000px) {
