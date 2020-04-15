@@ -1919,6 +1919,12 @@ button:hover {
   font-size: 14px;
 }
 
+.company-house .link img {
+  position: relative;
+  width: 20px;
+  top: 2px;
+}
+
 .company-house h3,
 .company-house p {
   padding-left: 20px;
@@ -1955,7 +1961,7 @@ button:hover {
   float: left;
   position: relative;
   height: 200px;
-  width: 30%;
+  width: calc(100% - 134px);
 }
 
 .company-ledningsgruppen .company-right .name {
@@ -1985,6 +1991,18 @@ button:hover {
   position: absolute;
   bottom: 30px;
   left: 10px;
+}
+
+.company-ledningsgruppen .company-right .mail img {
+  position: relative;
+  width: 15px;
+  top: 2px;
+}
+
+.company-ledningsgruppen .company-right .phone img {
+  position: relative;
+  width: 15px;
+  top: 2px;
 }
 
 .historia {

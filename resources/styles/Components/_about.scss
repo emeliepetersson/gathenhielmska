@@ -84,6 +84,14 @@
     font-size: 14px;
   }
 
+  .link {
+    img {
+      position: relative;
+      width: 20px;
+      top: 2px;
+    }
+  }
+
   h3,
   p {
     padding-left: 20px;
@@ -120,7 +128,7 @@
     float: left;
     position: relative;
     height: 200px;
-    width: 30%;
+    width: calc(100% - 134px);
 
     .name {
       font-family: Playfair Display;
@@ -149,6 +157,20 @@
       position: absolute;
       bottom: 30px;
       left: 10px;
+
+      img {
+        position: relative;
+        width: 15px;
+        top: 2px;
+      }
+    }
+
+    .phone {
+      img {
+        position: relative;
+        width: 15px;
+        top: 2px;
+      }
     }
   }
 }
