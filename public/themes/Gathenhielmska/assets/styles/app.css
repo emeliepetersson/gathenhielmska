@@ -118,20 +118,20 @@ div .container-booking p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::-ms-input-placeholder, .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 /* Bookable areas */
@@ -149,15 +149,15 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
@@ -184,15 +184,15 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-webkit-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::-ms-input-placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input::placeholder {
-  color: #C9C5BB;
+  color: #c9c5bb;
 }
 
 .wpcf7 .wpcf7-form .time {
@@ -256,7 +256,7 @@ div .container-booking p {
 }
 
 .wpcf7 .wpcf7-form p input[type=submit]:hover {
-  background-color: #4B6966;
+  background-color: #4b6966;
   transform: translate(-2px, -2px);
 }
 
@@ -1246,6 +1246,7 @@ button.swiper-pagination-bullet {
 
 .contact {
   padding: 100px 20px 20px 20px;
+  color: #223533;
 }
 
 .contact h1 {
@@ -1299,6 +1300,11 @@ button.swiper-pagination-bullet {
     padding: 140px 20px 20px 20px;
     width: 60%;
     margin: auto;
+  }
+
+  .contact h1 {
+    font-size: 52px;
+    text-align: center;
   }
 }
 
@@ -1674,9 +1680,18 @@ button:hover {
 
 .about {
   padding: 100px 20px 20px 20px;
+  color: #223533;
+}
+
+.about a {
+  color: #223533;
 }
 
 .about button {
+  color: #F3F0E7;
+}
+
+.about button a {
   color: #F3F0E7;
 }
 
@@ -1722,7 +1737,7 @@ button:hover {
 }
 
 .about-facility h2 {
-  color: black;
+  color: #223533;
 }
 
 .about-facility h3 {
@@ -1862,15 +1877,22 @@ button:hover {
   }
 
   .about h1 {
+    font-size: 52px;
     text-align: center;
   }
 
+  .about .about-hide {
+    padding: 10px 0 10px 0;
+    display: block;
+  }
+
+  .about .plus-icon {
+    display: none;
+  }
+
   .company-ledningsgruppen {
-    width: 100%;
-    background: #F3F0E7;
-    margin-bottom: 5px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 200px;
     position: relative;
   }
@@ -1919,15 +1941,6 @@ button:hover {
     position: absolute;
     bottom: 30px;
     left: 10px;
-  }
-
-  .about-hide {
-    padding: 10px 0 10px 0;
-    display: block;
-  }
-
-  .plus-icon {
-    display: none;
   }
 }
 
@@ -2864,6 +2877,10 @@ button:hover {
   padding: 100px 20px 20px 20px;
 }
 
+.search-result a {
+  color: #223533;
+}
+
 .search-result button {
   width: auto;
   height: auto;
@@ -2895,6 +2912,19 @@ button:hover {
   position: absolute;
   bottom: 30px;
   right: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .search-page {
+    padding: 140px 20px 20px 20px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .search-page h1 {
+    font-size: 52px;
+    text-align: center;
+  }
 }
 
 .footer-wrapper {
