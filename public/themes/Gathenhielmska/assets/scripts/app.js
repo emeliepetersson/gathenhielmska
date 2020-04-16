@@ -200,9 +200,11 @@ var showHideImageModal = function () {
 
   var close = document.querySelector("#close-modal"); // When the user clicks on close, close the modal
 
-  close.onclick = function () {
-    modal.classList.remove("show");
-  };
+  if (close !== null) {
+    close.onclick = function () {
+      modal.classList.remove("show");
+    };
+  }
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (showHideImageModal);

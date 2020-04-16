@@ -20,7 +20,7 @@ div .container-booking h1 {
 
 div .container-booking h2 {
   margin: 30px 0 10px;
-  color: #FF823F;
+  color: #E15600;
 }
 
 div .container-booking p {
@@ -28,7 +28,6 @@ div .container-booking p {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 140%;
 }
 
 div .container-booking .areas {
@@ -136,6 +135,12 @@ div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input
 div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input::placeholder,
 div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea::placeholder {
   color: #C9C5BB;
+}
+
+div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea:focus {
+  color: #223533;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 div .container-booking .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
@@ -376,19 +381,6 @@ div .container-booking .wpcf7 .wpcf7-form p input[type=submit]:hover {
   div .container-booking .wpcf7 .wpcf7-form p input[type=submit] {
     margin-left: 30%;
   }
-}
-
-/**
- * Theme Name: Gathenhielmska
- * Theme URI:
- * Description: The WordPress theme for Gathenhielmska
- * Version: 1.0.0
- * Author: Emelie Petersson
- * Author URI:
- */
-
-.mec-event-grid-modern .mec-event-article {
-  border: 1px solid #c76060;
 }
 
 nav {
@@ -1253,7 +1245,7 @@ button.swiper-pagination-bullet {
 .contact h3 {
   padding: 20px 0 10px 0;
   font-size: 24px;
-  color: #FF823F;
+  color: #E15600;
 }
 
 .contact h2 {
@@ -1270,7 +1262,7 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FF823F;
+  color: #E15600;
   background: #223533;
   text-align: center;
   margin-bottom: 5px;
@@ -1302,15 +1294,38 @@ button.swiper-pagination-bullet {
 
 /* Events carousel */
 
-.upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel::after,
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel {
   background-color: #223533;
   border: none;
   font-family: Playfair Display;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 2%;
+}
+
+.upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel::after {
+  display: none;
 }
 
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel:before {
   box-shadow: none;
+  height: 100%;
+}
+
+.upcoming-wrapper .event-carousel-type1-head .mec-event-date-info,
+.upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.upcoming-wrapper .event-carousel-type1-head .mec-event-date-info {
+  top: 3%;
+}
+
+.upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
+  top: 35%;
 }
 
 .upcoming-wrapper .mec-event-carousel-content {
@@ -1381,7 +1396,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   padding: 30px 0 20px;
   margin: 50px 0 60px;
-  background: url(/themes/Gathenhielmska/assets/images/wallpaper-bg.png);
+  background: url(../images/wallpaper-bg.png?1897b0f149b632cd1cd2e07db42198e8);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1391,7 +1406,6 @@ button.swiper-pagination-bullet {
   font-size: 22px;
   text-align: center;
   font-family: Playfair Display;
-  line-height: 130%;
 }
 
 .upcoming-wrapper .text-wrapper button {
@@ -1420,6 +1434,7 @@ button.swiper-pagination-bullet {
 .front-page-wrapper .about-wrapper .image {
   min-width: 350px;
   overflow: hidden;
+  height: 240px;
 }
 
 .front-page-wrapper .about-wrapper .image img {
@@ -1445,7 +1460,6 @@ button.swiper-pagination-bullet {
 .front-page-wrapper .about-wrapper .text-wrapper p {
   padding: 0 20px;
   font-weight: normal;
-  line-height: 25px;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -1454,7 +1468,7 @@ button.swiper-pagination-bullet {
   padding: 0 20px;
   font-family: Roboto;
   font-size: 20px;
-  color: #FF823F;
+  color: #E15600;
 }
 
 .front-page-wrapper .about-wrapper .text-wrapper > a img {
@@ -1471,7 +1485,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   text-align: center;
   font-family: Playfair Display;
-  font-size: 22px;
+  font-size: 20px;
   color: #F3F0E7;
 }
 
@@ -1495,6 +1509,23 @@ button.swiper-pagination-bullet {
 
   .front-page-wrapper .upcoming-wrapper h2 {
     text-align: center;
+  }
+
+  .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel {
+    padding-left: 3%;
+  }
+
+  .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info,
+  .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
+    font-size: 20px;
+  }
+
+  .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info {
+    top: 11%;
+  }
+
+  .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
+    top: 40%;
   }
 
   .front-page-wrapper .upcoming-wrapper .text-wrapper {
@@ -1531,7 +1562,7 @@ button.swiper-pagination-bullet {
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper {
-    background: url(/themes/Gathenhielmska/assets/images/flower-wall.jpg);
+    background: url(../images/flower-wall.jpg?4085da3996c84e1665bb29c3104eff20);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1547,25 +1578,36 @@ button.swiper-pagination-bullet {
   .front-page-wrapper .about-wrapper .text-wrapper h1,
   .front-page-wrapper .about-wrapper .text-wrapper p {
     padding: 0;
-    width: 55%;
+    width: 75%;
     color: #F3F0E7;
   }
 
+  .front-page-wrapper .about-wrapper .text-wrapper p {
+    margin-bottom: 0;
+  }
+
   .front-page-wrapper .about-wrapper .text-wrapper a {
+    margin-top: 30px;
     padding: 0;
-    margin-top: 60px;
     font-size: 24px;
-    color: white;
+    color: #F3F0E7;
     width: 330px;
     text-align: right;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper .center {
     background-color: transparent;
+    padding-top: 20px;
+    width: 70%;
+  }
+
+  .front-page-wrapper .about-wrapper .text-wrapper .center .button-wrapper {
+    justify-content: center;
   }
 
   .front-page-wrapper .about-wrapper .text-wrapper .center .button-wrapper button {
     margin-right: 10px;
+    margin-left: 10px;
     width: 200px;
     margin-bottom: 50px;
     background-color: #F3F0E7;
@@ -1612,6 +1654,11 @@ button.swiper-pagination-bullet {
 .swiper-container .slider-text a {
   color: #223533;
   font-family: Playfair Display;
+  line-height: 140%;
+}
+
+.swiper-container .slider-text p a:first-child::after {
+  content: "...";
 }
 
 .swiper-container .slider-text .read-more {
@@ -1702,7 +1749,7 @@ button:hover {
 }
 
 .about h2 {
-  color: #FF823F;
+  color: #E15600;
 }
 
 .about h3 {
@@ -1733,7 +1780,7 @@ button:hover {
 }
 
 .about-facility h3 {
-  color: #FF823F;
+  color: #E15600;
 }
 
 .company-house {
@@ -1830,7 +1877,7 @@ button:hover {
 }
 
 .historia h3 {
-  color: #FF823F;
+  color: #E15600;
 }
 
 .historia p {
@@ -1981,7 +2028,6 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 140%;
 }
 
 .archive p a {
@@ -2043,7 +2089,7 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: #FF823F;
+  color: #E15600;
 }
 
 .images-posts .post .info span,
@@ -2064,7 +2110,6 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 157.19%;
 }
 
 .images-posts .post h2,
@@ -2298,7 +2343,6 @@ button:hover {
 .program p {
   padding: 0 20px;
   font-size: 20px;
-  line-height: 140%;
 }
 
 .program .button-wrapper {
@@ -2393,6 +2437,12 @@ button:hover {
   margin-left: 10px;
 }
 
+.program .mec-skin-list-container .mec-skin-list-no-events-container {
+  padding: 0 30px;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
 .program .mec-skin-list-container .mec-month-divider {
   display: none;
 }
@@ -2441,13 +2491,15 @@ button:hover {
 
 .program .mec-skin-list-container .mec-event-article .mec-event-title {
   font-family: Playfair Display;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: initial;
-  padding-right: 30px;
+  padding-right: 8px;
+  word-wrap: break-word;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-event-title .mec-color-hover {
   color: #223533;
+  line-height: 140%;
 }
 
 .program .mec-skin-list-container .mec-event-article .mec-event-title .mec-color-hover:hover {
@@ -2555,7 +2607,7 @@ button:hover {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background: url("/themes/Gathenhielmska/assets/images/expand-arrow.svg") no-repeat right;
+    background: url(../images/expand-arrow.svg?09c54930600619fb90c31b09a079d555) no-repeat right;
     background-size: 20px;
     border: 0;
     color: black;
@@ -2778,7 +2830,6 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 32px;
   margin: 10px 0;
   color: #223533;
 }
@@ -2814,7 +2865,7 @@ button:hover {
   margin-right: 10px;
   margin-top: 30px;
   display: inline-block;
-  border: 1px solid #FF823F;
+  border: 1px solid #E15600;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2823,13 +2874,12 @@ button:hover {
 }
 
 .single-event-wrapper .content-wrapper .mec-single-event-category dd .mec-color-hover {
-  color: #FF823F;
+  color: #E15600;
 }
 
 .single-event-wrapper .content-wrapper p {
   padding: 0 20px;
   font-size: 20px;
-  line-height: 140%;
 }
 
 .upcoming-wrapper.single-event-page {
@@ -3024,7 +3074,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 150%;
   letter-spacing: 0.02em;
   color: #223533;
 }

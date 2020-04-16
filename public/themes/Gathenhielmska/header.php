@@ -55,8 +55,8 @@
                 <?php endforeach; ?>
                 <li class="languages">Other languages</li>
                 <li class="media-icons">
-                    <a href="https://www.facebook.com"><img src="/themes/Gathenhielmska/assets/images/Facebook-white.svg" alt="Facebook icon"></a>
-                    <a href="https://www.instagram.com"><img src="/themes/Gathenhielmska/assets/images/Instagram-white.svg" alt="Instagram icon"></a>
+                    <a href="https://www.facebook.com"><img src="<?php echo get_template_directory_uri() . '/assets/images/Facebook-white.svg' ?>" alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com"><img src="<?php echo get_template_directory_uri() . '/assets/images/Instagram-white.svg' ?>" alt="Instagram icon"></a>
                 </li>
             </ul>
         </div>

@@ -13,7 +13,6 @@ div .container-booking {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 140%;
   }
 
 
@@ -113,6 +112,12 @@ div .container-booking {
     &::placeholder {
       color: #C9C5BB;
     }
+  }
+
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea:focus {
+    color: $deepTurquoise;
+    font-size: 16px;
+    line-height: 140%;
   }
 
   /* Bookable areas */

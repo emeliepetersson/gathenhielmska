@@ -17,9 +17,11 @@ const showHideImageModal = (function() {
   const close = document.querySelector("#close-modal");
 
   // When the user clicks on close, close the modal
-  close.onclick = function() {
-    modal.classList.remove("show");
-  };
+  if (close !== null) {
+    close.onclick = function() {
+      modal.classList.remove("show");
+    };
+  }
 })();
 
 export default showHideImageModal;

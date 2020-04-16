@@ -14,7 +14,8 @@
     "wordplate/plate": "^6.0",
     "wpackagist-plugin/booking": "^8.7.6",
     "wpackagist-plugin/classic-editor": "^1.5",
-    "wpackagist-plugin/contact-form-7": "^5.1"
+    "wpackagist-plugin/contact-form-7": "^5.1",
+    "wpackagist-plugin/modern-events-calendar-lite": "^5.2"
   },
   "config": {
     "optimize-autoloader": true,
