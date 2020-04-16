@@ -26,8 +26,8 @@
                 <div class="company-right">
                     <p class="name"><?php the_sub_field("name"); ?></p>
                     <p class='proffesion'><?php the_sub_field("proffesion"); ?></p>
-                    <a class="mail" href="mailto:<?php the_sub_field("email"); ?>"><?php the_sub_field("email"); ?></a>
-                    <a href="callto:<?php the_sub_field("number"); ?>"><?php the_sub_field("number"); ?></a>
+                    <a class="mail" href="mailto:<?php the_sub_field("email"); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/mail_icon.svg' ?>" alt="mail-icon"> <?php the_sub_field("email"); ?></a>
+                    <a class="phone" href="callto:<?php the_sub_field("number"); ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/phone_icon.svg' ?>" alt="phone-icon"> <?php the_sub_field("number"); ?></a>
                 </div>
             </div>
     <?php endwhile;
@@ -38,7 +38,7 @@
         while (have_rows('company')) : the_row(); ?>
             <div class="company-house">
                 <p class="name"><?php the_sub_field("name"); ?></p>
-                <a href="<?php the_sub_field("link"); ?>">HEMSIDA</a>
+                <a class="link" href="<?php the_sub_field("link"); ?>">HEMSIDA <img src="<?php echo get_template_directory_uri() . '/assets/images/arrow.png' ?>" alt="arrow"></a>
                 <p class='proffesion'><?php the_sub_field("proffesion"); ?></p>
             </div> <?php endwhile;
             endif; ?>

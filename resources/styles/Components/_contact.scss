@@ -1,5 +1,6 @@
 .contact {
   padding: 100px 20px 20px 20px;
+  margin: 0 0 50px 0;
   color: $deepTurquoise;
 
   h1 {
@@ -21,10 +22,152 @@
     padding: 20px 0 10px 0;
     font-size: 36px;
   }
+
+  /** BOOKING FORM **/
+  .wpcf7-form {
+    width: 100%;
+    margin-right: 0;
+
+    label {
+      font-size: 18px;
+    }
+  }
+
+  .wpcf7-form p {
+    margin: 10px 0;
+  }
+
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+    width: 100%;
+    background-color: $waveWhite;
+    height: 50px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c9c5bb;
+
+    &::placeholder {
+      color: #c9c5bb;
+    }
+  }
+
+  /* Bookable areas */
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select {
+    width: 100%;
+    height: 85px;
+    background-color: $waveWhite;
+    padding: 20px 23px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #c9c5bb;
+    }
+  }
+
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap select option {
+    padding: 5px;
+  }
+
+  /* time */
+  .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap {
+    width: 47%;
+  }
+
+  .wpcf7 .wpcf7-form .time .wpcf7-form-control-wrap input {
+    background-color: $waveWhite;
+    height: 50px;
+    width: 100%;
+    border: none;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    &::placeholder {
+      color: #c9c5bb;
+    }
+  }
+
+  .wpcf7 .wpcf7-form .time {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .label {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    label {
+      width: 48%;
+    }
+
+    br {
+      display: none;
+    }
+    .wpcf7-form-control-wrap input {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Image */
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input[type="file"] {
+    padding-top: 12px;
+  }
+
+  /* Description/textarea */
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap textarea {
+    height: 200px;
+    padding-top: 23px;
+  }
+
+  /* checkboxes */
+  .wpcf7
+    .wpcf7-form
+    p
+    .wpcf7-form-control-wrap
+    .wpcf7-form-control
+    .wpcf7-list-item {
+    margin: 5px 0;
+    display: block;
+  }
+
+  /* Button */
+  .wpcf7 .wpcf7-form p input[type="submit"] {
+    font-family: Roboto;
+    width: 177px;
+    height: 51px;
+    background-color: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px 0;
+    border: none;
+    background-color: $deepTurquoise;
+    border-radius: 3px;
+    color: $waveWhite;
+  }
+
+  .wpcf7 .wpcf7-form p input[type="submit"]:hover {
+    background-color: #4b6966;
+    transform: translate(-2px, -2px);
+  }
 }
 
 .contact-cards {
-  margin: 20px 0 20px 0;
+  margin: 60px 0 20px 0;
 }
 
 .contact-card {
@@ -33,19 +176,30 @@
   align-items: center;
   justify-content: center;
   color: $mandarin;
-  background: $deepTurquoise;
   text-align: center;
   margin-bottom: 5px;
+  position: relative;
 
   h3 {
     font-family: Playfair Display;
     font-size: 24px;
+    color: $background;
   }
 
   p {
     padding: 10px 0 5px 0;
     font-size: 16px;
     color: $background;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -57,6 +211,7 @@
 
     h1 {
       font-size: 52px;
+      padding: 0 0 50px 0;
       text-align: center;
     }
   }

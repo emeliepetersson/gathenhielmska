@@ -1,5 +1,6 @@
 .search-page {
   padding: 100px 20px 20px 20px;
+  margin: 0 0 50px 0;
 }
 
 .search-result {
@@ -36,7 +37,7 @@
     a {
       position: absolute;
       bottom: 30px;
-      right: 20px;
+      right: 0px;
     }
   }
 }
@@ -49,6 +50,7 @@
 
     h1 {
       font-size: 52px;
+      padding: 0 0 50px 0;
       text-align: center;
     }
   }
