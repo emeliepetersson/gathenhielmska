@@ -73,7 +73,7 @@
                         <?php echo esc_html($link_title); ?>
                         <picture>
                             <source srcset="/themes/Gathenhielmska/assets/images/white-arrow.svg" media="(min-width: 1000px)" />
-                            <img src="/themes/Gathenhielmska/assets/images/orange-arrow.svg" loading="lazy" alt="Arrow">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/orange-arrow.svg' ?>" loading="lazy" alt="Arrow">
                         </picture>
                     </a>
                 <?php endif; ?>

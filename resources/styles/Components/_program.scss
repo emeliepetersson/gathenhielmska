@@ -11,7 +11,6 @@
   p {
     padding: 0 20px;
     font-size: 20px;
-    line-height: 140%;
   }
 
   /* buttons */
@@ -109,6 +108,12 @@
       }
     }
 
+    .mec-skin-list-no-events-container {
+      padding: 0 30px;
+      font-family: Roboto;
+      font-size: 20px;
+    }
+
     .mec-month-divider {
       display: none;
     }
@@ -151,12 +156,14 @@
 
       .mec-event-title {
         font-family: Playfair Display;
-        font-size: 20px;
+        font-size: 18px;
         text-transform: initial;
-        padding-right: 30px;
+        padding-right: 8px;
+        word-wrap: break-word;
 
         .mec-color-hover {
           color: $deepTurquoise;
+          line-height: 140%;
         }
 
         .mec-color-hover:hover {
@@ -257,7 +264,7 @@
 
         select {
           appearance: none;
-          background: url("/themes/Gathenhielmska/assets/images/expand-arrow.svg") no-repeat right;
+          background: url(../../images/expand-arrow.svg) no-repeat right;
           background-size: 20px;
           border: 0;
           color: black;

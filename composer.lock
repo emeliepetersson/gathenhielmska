@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc8331abff0399b83a4fc084706f716a",
+    "content-hash": "eb5b488dc641ca7dd6eaaf4e16cc4303",
     "packages": [
         {
             "name": "composer/installers",
@@ -1045,6 +1045,7 @@
                 "wordplate",
                 "wordpress"
             ],
+            "abandoned": "https://vinkla.dev/administration-ui",
             "time": "2019-08-08T13:02:18+00:00"
         },
         {
@@ -1100,6 +1101,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/modern-events-calendar-lite",
+            "version": "5.2.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/modern-events-calendar-lite/",
+                "reference": "tags/5.2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/modern-events-calendar-lite.5.2.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/modern-events-calendar-lite/"
         }
     ],
     "packages-dev": [],

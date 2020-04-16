@@ -27,6 +27,11 @@
     a {
       color: $deepTurquoise;
       font-family: Playfair Display;
+      line-height: 140%;
+    }
+
+    p a:first-child::after {
+      content: "...";
     }
 
     .read-more {

@@ -3,14 +3,37 @@
 
   .event-carousel-type1-head {
 
-    .mec-event-date-carousel::after, .mec-event-date-carousel {
+    .mec-event-date-carousel {
       background-color: #223533;
       border: none;
       font-family: Playfair Display;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      padding-left: 2%;
+    }
+
+    .mec-event-date-carousel::after {
+      display: none;
     }
 
     .mec-event-date-carousel:before{
       box-shadow: none;
+      height: 100%;
+    }
+
+    .mec-event-date-info, .mec-event-date-info-year {
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    .mec-event-date-info {
+      top: 3%;
+    }
+
+    .mec-event-date-info-year {
+      top: 35%;
     }
   }
 
@@ -84,7 +107,7 @@
     align-items: center;
     padding: 30px 0 20px;
     margin: 50px 0 60px;
-    background: url(/themes/Gathenhielmska/assets/images/wallpaper-bg.png);
+    background: url(../../images/wallpaper-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +116,6 @@
       font-size: 22px;
       text-align: center;
       font-family: Playfair Display;
-      line-height: 130%;
     }
 
     button {
@@ -124,6 +146,8 @@
     .image {
       min-width: 350px;
       overflow: hidden;
+      height: 240px;
+
       img {
         width: 100%;
         height: 100%;
@@ -146,7 +170,6 @@
       p {
         padding: 0 20px;
         font-weight: normal;
-        line-height: 25px;
         font-size: 20px;
         margin-bottom: 20px;
       }
@@ -171,7 +194,7 @@
           width: 100%;
           text-align: center;
           font-family: Playfair Display;
-          font-size: 22px;
+          font-size: 20px;
           color: $waveWhite;
         }
       }
@@ -197,6 +220,24 @@
     .upcoming-wrapper {
       h2 {
         text-align: center;
+      }
+
+      .event-carousel-type1-head {
+        .mec-event-date-carousel {
+          padding-left: 3%;
+        }
+
+        .mec-event-date-info, .mec-event-date-info-year {
+          font-size: 20px;
+        }
+
+        .mec-event-date-info {
+          top: 11%;
+        }
+
+        .mec-event-date-info-year {
+          top: 40%;
+        }
       }
 
       .text-wrapper {
@@ -234,7 +275,7 @@
       }
 
       .text-wrapper {
-        background: url(/themes/Gathenhielmska/assets/images/flower-wall.jpg);
+        background: url(../../images/flower-wall.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -248,25 +289,34 @@
 
         h1, p {
           padding: 0;
-          width: 55%;
+          width: 75%;
           color: $waveWhite;
         }
 
+        p {
+          margin-bottom: 0;
+        }
+
         a {
+          margin-top: 30px;
           padding: 0;
-          margin-top: 60px;
           font-size: 24px;
-          color: white;
+          color: $waveWhite;
           width: 330px;
           text-align: right;
         }
 
         .center {
           background-color: transparent;
+          padding-top: 20px;
+          width: 70%;
 
           .button-wrapper {
+            justify-content: center;
+
             button {
               margin-right: 10px;
+              margin-left: 10px;
               width: 200px;
               margin-bottom: 50px;
               background-color: $waveWhite;

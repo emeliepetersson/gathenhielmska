@@ -8,8 +8,8 @@
 
     <div class="social-media-wrapper">
         <h3><?php the_field('title_2', 'option') ?></h3>
-        <a href="<?php get_field('facebook-link', 'option') ?>"><img src="/themes/Gathenhielmska/assets/images/Facebook-green.svg" alt="Facebook icon"></a>
-        <a href="<?php get_field('Instagram-link', 'option') ?>"><img src="/themes/Gathenhielmska/assets/images/Instagram-green.svg" alt="instagram icon"></a>
+        <a href="<?php get_field('facebook-link', 'option') ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/Facebook-green.svg' ?>" alt="Facebook icon"></a>
+        <a href="<?php get_field('Instagram-link', 'option') ?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/Instagram-green.svg' ?>" alt="instagram icon"></a>
     </div>
 
     <div class="sponsors-wrapper">
