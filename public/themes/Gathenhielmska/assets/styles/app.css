@@ -1261,7 +1261,7 @@ button.swiper-pagination-bullet {
 .contact h3 {
   padding: 20px 0 10px 0;
   font-size: 24px;
-  color: #FFFDF8;
+  color: #FF823F;
 }
 
 .contact h2 {
@@ -1443,6 +1443,7 @@ button.swiper-pagination-bullet {
 .contact-card h3 {
   font-family: Playfair Display;
   font-size: 24px;
+  color: #FFFDF8;
 }
 
 .contact-card p {
@@ -1878,7 +1879,7 @@ button:hover {
 }
 
 .about h2 {
-  color: #FF823F;
+  color: #223533;
 }
 
 .about h3 {
