@@ -1247,10 +1247,10 @@ button.swiper-pagination-bullet {
 
 .contact p {
   font-size: 20px;
-  line-height: 23px;
 }
 
 .contact h3 {
+  margin-top: 30px;
   padding: 20px 0 10px 0;
   font-size: 24px;
   color: #E15600;
@@ -1272,6 +1272,7 @@ button.swiper-pagination-bullet {
 
 .contact .wpcf7-form p {
   margin: 10px 0;
+  line-height: 100%;
 }
 
 .contact .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,
@@ -1479,6 +1480,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   padding-bottom: 10px;
   padding-left: 2%;
+  min-width: 140px;
 }
 
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-carousel::after {
@@ -1493,7 +1495,7 @@ button.swiper-pagination-bullet {
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info,
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
   font-size: 18px;
-  margin-left: 5px;
+  margin-left: 11px;
 }
 
 .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info {
@@ -1694,6 +1696,7 @@ button.swiper-pagination-bullet {
   .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info,
   .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info-year {
     font-size: 20px;
+    margin-left: 0;
   }
 
   .front-page-wrapper .upcoming-wrapper .event-carousel-type1-head .mec-event-date-info {
@@ -1916,17 +1919,25 @@ button:hover {
 
 .about p {
   font-size: 20px;
-  line-height: 23px;
   padding: 10px 0 10px 0;
+}
+
+.about div:first-child h3 {
+  margin-top: 40px;
 }
 
 .about h2,
 .about h3 {
-  padding: 20px 0 10px 0;
+  padding: 40px 0 10px 0;
 }
 
 .about h2 {
+  color: #E15600;
+}
+
+.about .history {
   color: #223533;
+  font-size: 36px;
 }
 
 .about h3 {
@@ -1948,16 +1959,21 @@ button:hover {
   height: auto;
 }
 
-.about-facility p {
+.about div .about-facility {
+  border-bottom: 1px solid #223533;
+}
+
+.about div .about-facility p {
   padding: 0 0 0 0;
 }
 
-.about-facility h2 {
+.about div .about-facility h2 {
   color: #223533;
 }
 
-.about-facility h3 {
+.about div .about-facility h3 {
   color: #6C8381;
+  margin-top: 0;
 }
 
 .company-house {
@@ -2092,6 +2108,7 @@ button:hover {
   position: absolute;
   top: 0px;
   right: 0px;
+  padding-top: 25px;
 }
 
 .about-hide {

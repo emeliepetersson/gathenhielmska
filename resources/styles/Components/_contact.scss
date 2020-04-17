@@ -9,10 +9,10 @@
 
   p {
     font-size: 20px;
-    line-height: 23px;
   }
 
   h3 {
+    margin-top: 30px;
     padding: 20px 0 10px 0;
     font-size: 24px;
     color: $mandarin;
@@ -35,6 +35,7 @@
 
   .wpcf7-form p {
     margin: 10px 0;
+    line-height: 100%;
   }
 
   .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input,

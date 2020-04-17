@@ -98,18 +98,30 @@
 
 var showAbout = document.querySelectorAll(".about-hide");
 var icon = document.querySelectorAll(".plus-icon");
-icon[1].addEventListener("click", function () {
-  showAbout[0].classList.toggle("show");
-});
-icon[2].addEventListener("click", function () {
-  showAbout[1].classList.toggle("show");
-});
-icon[3].addEventListener("click", function () {
-  showAbout[2].classList.toggle("show");
-});
-icon[4].addEventListener("click", function () {
-  showAbout[3].classList.toggle("show");
-}); // export default about;
+
+if (icon[1] != null) {
+  icon[1].addEventListener("click", function () {
+    showAbout[0].classList.toggle("show");
+  });
+}
+
+if (icon[2] != null) {
+  icon[2].addEventListener("click", function () {
+    showAbout[1].classList.toggle("show");
+  });
+}
+
+if (icon[3] != null) {
+  icon[3].addEventListener("click", function () {
+    showAbout[2].classList.toggle("show");
+  });
+}
+
+if (icon[4] != null) {
+  icon[4].addEventListener("click", function () {
+    showAbout[3].classList.toggle("show");
+  });
+}
 
 /***/ }),
 
@@ -129,9 +141,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-form */ "./resources/scripts/search-form.js");
 /* harmony import */ var _show_gallery_post__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./show-gallery-post */ "./resources/scripts/show-gallery-post.js");
 /* harmony import */ var _show_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./show-filter */ "./resources/scripts/show-filter.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _image_modal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./image-modal */ "./resources/scripts/image-modal.js");
+/* harmony import */ var _image_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./image-modal */ "./resources/scripts/image-modal.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./about */ "./resources/scripts/about.js");
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_about__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -454,8 +466,8 @@ var swiper = new Swiper(".swiper-container", {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/scripts/app.js */"./resources/scripts/app.js");
-module.exports = __webpack_require__(/*! /Users/mark/GitHub/gathenhielmska/resources/styles/app.scss */"./resources/styles/app.scss");
+__webpack_require__(/*! /Users/emeliepetersson/Documents/GitHub/gathenhielmska/resources/scripts/app.js */"./resources/scripts/app.js");
+module.exports = __webpack_require__(/*! /Users/emeliepetersson/Documents/GitHub/gathenhielmska/resources/styles/app.scss */"./resources/styles/app.scss");
 
 
 /***/ })

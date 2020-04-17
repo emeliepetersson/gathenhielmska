@@ -53,7 +53,9 @@
                         <?php endif ?>
                     </li>
                 <?php endforeach; ?>
-                <li class="languages">Other languages</li>
+                <a href="http://localhost:8000/en">
+                    <li class="languages">English</li>
+                </a>
                 <li class="media-icons">
                     <a href="https://www.facebook.com"><img src="<?php echo get_template_directory_uri() . '/assets/images/Facebook-white.svg' ?>" alt="Facebook icon"></a>
                     <a href="https://www.instagram.com"><img src="<?php echo get_template_directory_uri() . '/assets/images/Instagram-white.svg' ?>" alt="Instagram icon"></a>

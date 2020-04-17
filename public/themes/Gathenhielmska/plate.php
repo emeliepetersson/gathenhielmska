@@ -19,6 +19,7 @@ add_theme_support('plate-disable-menu', [
     'edit-comments.php', // comments
     'index.php', // dashboard
     'upload.php', // media
+    'edit.php'
 ]);
 
 // Disable dashboard widgets.

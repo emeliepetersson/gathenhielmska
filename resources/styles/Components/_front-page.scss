@@ -12,6 +12,7 @@
       align-items: center;
       padding-bottom: 10px;
       padding-left: 2%;
+      min-width: 140px;
     }
 
     .mec-event-date-carousel::after {
@@ -25,7 +26,7 @@
 
     .mec-event-date-info, .mec-event-date-info-year {
       font-size: 18px;
-      margin-left: 5px;
+      margin-left: 11px;
     }
 
     .mec-event-date-info {
@@ -229,6 +230,7 @@
 
         .mec-event-date-info, .mec-event-date-info-year {
           font-size: 20px;
+          margin-left: 0;
         }
 
         .mec-event-date-info {
